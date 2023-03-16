@@ -35,3 +35,22 @@
 ```shell
 sh setup.sh
 ```
+
+## 3. 待完善
+
+* ReactNative 目录层级结构调整
+* Flutter 目录层级结构调整
+* 不同开发模式及示例介绍
+* ReactNative、iOS 通讯示例
+* Flutter、iOS 通讯示例
+* ReactNative 多工程示例
+* Flutter 多工程实例
+* 小程序多工程实例
+* ReactNative 热更新示例
+* ReactNative 网络示例
+* Android 容器工程创建（https://qmuiteam.com/android）
+
+## 4. 参考链接
+
+* [AFJ-iOS 介绍](https://yujiuqie.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2023/02/13/study-notes-sample-projects-afj-ios.html)
+* [Mac 端研发终端工具软件版本管理工具](https://yujiuqie.github.io/%E7%A0%94%E5%8F%91%E5%A4%87%E5%BF%98/2023/03/14/research-and-development-note-mac-dev-tools.html)
