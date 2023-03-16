@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ARViewController">
+            <connections>
+                <outlet property="addNodeButton" destination="jMg-hQ-Gjw" id="HOF-oU-7WE"/>
+                <outlet property="refreshButton" destination="tdy-B4-but" id="DgP-tJ-S9t"/>
+                <outlet property="removeButton" destination="yXP-Ep-NbZ" id="d5P-3l-bC4"/>
+                <outlet property="sceneView" destination="U8v-cV-Vx8" id="NSh-X7-SUe"/>
+                <outlet property="snapshotButton" destination="ZUC-um-DOn" id="rsx-rr-uqK"/>
+                <outlet property="view" destination="q88-c1-VBl" id="ely-xz-YPz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="q88-c1-VBl">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U8v-cV-Vx8">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </arscnView>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMg-hQ-Gjw">
+                    <rect key="frame" x="187" y="802" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="CJi-Dc-eDO"/>
+                        <constraint firstAttribute="width" constant="40" id="dzS-A1-AEG"/>
+                    </constraints>
+                    <state key="normal" title="ADD"/>
+                    <connections>
+                        <action selector="addNodeAction:" destination="-1" eventType="touchUpInside" id="fsQ-j6-VAQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdy-B4-but">
+                    <rect key="frame" x="366" y="44" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="EsV-ki-zOe"/>
+                        <constraint firstAttribute="width" constant="40" id="OyB-rS-CaQ"/>
+                    </constraints>
+                    <state key="normal" image="refresh"/>
+                    <connections>
+                        <action selector="refreshSessionAction:" destination="-1" eventType="touchUpInside" id="Etb-eb-nXJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUC-um-DOn">
+                    <rect key="frame" x="354" y="802" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="1Wy-LM-RVk"/>
+                        <constraint firstAttribute="width" constant="40" id="vsl-V8-uVQ"/>
+                    </constraints>
+                    <state key="normal" title="Save"/>
+                    <connections>
+                        <action selector="snapshotAction:" destination="-1" eventType="touchUpInside" id="eht-we-OTq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXP-Ep-NbZ">
+                    <rect key="frame" x="20" y="802" width="57" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="SDh-3t-MFW"/>
+                        <constraint firstAttribute="width" constant="40" id="UGZ-fk-4w6"/>
+                    </constraints>
+                    <state key="normal" title="Remove"/>
+                    <connections>
+                        <action selector="removeAction:" destination="-1" eventType="touchUpInside" id="1pP-ia-CGG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="40Z-sN-R6T"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="U8v-cV-Vx8" firstAttribute="top" secondItem="q88-c1-VBl" secondAttribute="top" id="L95-QJ-4pv"/>
+                <constraint firstItem="40Z-sN-R6T" firstAttribute="bottom" secondItem="jMg-hQ-Gjw" secondAttribute="bottom" constant="20" id="Rsf-a3-zpQ"/>
+                <constraint firstItem="40Z-sN-R6T" firstAttribute="trailing" secondItem="tdy-B4-but" secondAttribute="trailing" constant="8" id="VQX-zT-uO3"/>
+                <constraint firstItem="yXP-Ep-NbZ" firstAttribute="leading" secondItem="40Z-sN-R6T" secondAttribute="leading" constant="20" id="XR0-Wc-qc5"/>
+                <constraint firstItem="jMg-hQ-Gjw" firstAttribute="centerX" secondItem="40Z-sN-R6T" secondAttribute="centerX" id="aOz-wY-Qpu"/>
+                <constraint firstItem="40Z-sN-R6T" firstAttribute="trailing" secondItem="ZUC-um-DOn" secondAttribute="trailing" constant="20" id="eou-JV-Orm"/>
+                <constraint firstItem="U8v-cV-Vx8" firstAttribute="leading" secondItem="40Z-sN-R6T" secondAttribute="leading" id="h2F-TY-crH"/>
+                <constraint firstItem="tdy-B4-but" firstAttribute="top" secondItem="40Z-sN-R6T" secondAttribute="top" id="i3H-cl-lSZ"/>
+                <constraint firstItem="40Z-sN-R6T" firstAttribute="bottom" secondItem="yXP-Ep-NbZ" secondAttribute="bottom" constant="20" id="ltE-uV-lyp"/>
+                <constraint firstItem="U8v-cV-Vx8" firstAttribute="trailing" secondItem="40Z-sN-R6T" secondAttribute="trailing" id="nCw-2i-q3B"/>
+                <constraint firstAttribute="bottom" secondItem="U8v-cV-Vx8" secondAttribute="bottom" id="rYJ-LF-bHb"/>
+                <constraint firstItem="40Z-sN-R6T" firstAttribute="bottom" secondItem="ZUC-um-DOn" secondAttribute="bottom" constant="20" id="uM8-T3-2HJ"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="-512.27678571428567"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="refresh" width="24" height="24"/>
+    </resources>
+</document>

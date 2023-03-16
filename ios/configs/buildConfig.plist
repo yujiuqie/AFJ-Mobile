@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BUILD_TIME</key>
+	<string>2023-03-16T17:28:53+0800</string>
+	<key>GIT_SHA</key>
+	<string>60f3777</string>
+	<key>TOTAL_CODE_NUM</key>
+	<string>1205042</string>
+	<key>TOTAL_FILE_NUM</key>
+	<string>54243</string>
+	<key>TOTAL_IMAGE_NUM</key>
+	<string>3665</string>
+	<key>TOTAL_IMAGE_SIZE</key>
+	<string>231540</string>
+	<key>{cpp}_CODE_NUM</key>
+	<string>8810</string>
+	<key>{cpp}_FILE_NUM</key>
+	<string>34</string>
+	<key>{c}_CODE_NUM</key>
+	<string>24821</string>
+	<key>{c}_FILE_NUM</key>
+	<string>169</string>
+	<key>{h}_CODE_NUM</key>
+	<string>524580</string>
+	<key>{h}_FILE_NUM</key>
+	<string>7103</string>
+	<key>{java}_CODE_NUM</key>
+	<string>0</string>
+	<key>{java}_FILE_NUM</key>
+	<string>0</string>
+	<key>{js}_CODE_NUM</key>
+	<string>22511</string>
+	<key>{js}_FILE_NUM</key>
+	<string>131</string>
+	<key>{mm}_CODE_NUM</key>
+	<string>6418</string>
+	<key>{mm}_FILE_NUM</key>
+	<string>22</string>
+	<key>{m}_CODE_NUM</key>
+	<string>580098</string>
+	<key>{m}_FILE_NUM</key>
+	<string>3432</string>
+	<key>{py}_CODE_NUM</key>
+	<string>0</string>
+	<key>{py}_FILE_NUM</key>
+	<string>0</string>
+	<key>{swift}_CODE_NUM</key>
+	<string>37804</string>
+	<key>{swift}_FILE_NUM</key>
+	<string>207</string>
+</dict>
+</plist>

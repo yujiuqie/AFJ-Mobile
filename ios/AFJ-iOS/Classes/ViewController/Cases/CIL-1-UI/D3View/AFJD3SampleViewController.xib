@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AFJD3SampleViewController">
+            <connections>
+                <outlet property="d3view" destination="U1C-B2-olM" id="rWc-JT-Cpg"/>
+                <outlet property="picker" destination="iYd-kJ-La0" id="jTT-7Y-o3o"/>
+                <outlet property="segment" destination="B4a-wK-yDM" id="h2b-8M-vGO"/>
+                <outlet property="view" destination="hfc-Iv-idB" id="Bi9-dh-Pfi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="hfc-Iv-idB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iYd-kJ-La0">
+                    <rect key="frame" x="0.0" y="414" width="414" height="448"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Ite-gT-j36"/>
+                        <outlet property="delegate" destination="-1" id="guh-7D-QXa"/>
+                    </connections>
+                </pickerView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1C-B2-olM">
+                    <rect key="frame" x="157" y="124" width="100" height="100"/>
+                    <color key="backgroundColor" red="0.013796687130000001" green="0.47876036170000003" blue="0.98392951490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="XaS-HG-gpP"/>
+                        <constraint firstAttribute="height" constant="100" id="zN4-Po-en5"/>
+                    </constraints>
+                </view>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="B4a-wK-yDM">
+                    <rect key="frame" x="20" y="344" width="374" height="32"/>
+                    <segments>
+                        <segment title="Left"/>
+                        <segment title="Right"/>
+                        <segment title="Top"/>
+                        <segment title="Bottom"/>
+                    </segments>
+                    <connections>
+                        <action selector="segmentChanged:" destination="-1" eventType="valueChanged" id="rQK-9d-tfz"/>
+                    </connections>
+                </segmentedControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="nt9-Ap-1j6"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="U1C-B2-olM" secondAttribute="centerX" id="80k-HT-ogr"/>
+                <constraint firstItem="U1C-B2-olM" firstAttribute="top" secondItem="nt9-Ap-1j6" secondAttribute="top" constant="80" id="GCI-L5-UUA"/>
+                <constraint firstItem="B4a-wK-yDM" firstAttribute="top" secondItem="U1C-B2-olM" secondAttribute="bottom" constant="120" id="LzU-nO-wgd"/>
+                <constraint firstItem="iYd-kJ-La0" firstAttribute="leading" secondItem="hfc-Iv-idB" secondAttribute="leadingMargin" constant="-20" id="N4v-Nf-6eh"/>
+                <constraint firstItem="iYd-kJ-La0" firstAttribute="centerX" secondItem="hfc-Iv-idB" secondAttribute="centerX" id="Zut-y8-adp"/>
+                <constraint firstItem="nt9-Ap-1j6" firstAttribute="trailing" secondItem="B4a-wK-yDM" secondAttribute="trailing" constant="20" id="ajd-ND-AG6"/>
+                <constraint firstItem="iYd-kJ-La0" firstAttribute="height" secondItem="hfc-Iv-idB" secondAttribute="height" multiplier="1/2" id="drG-Bv-5Hc"/>
+                <constraint firstItem="iYd-kJ-La0" firstAttribute="bottom" secondItem="nt9-Ap-1j6" secondAttribute="bottom" id="ek8-Hz-pcx"/>
+                <constraint firstAttribute="trailingMargin" secondItem="iYd-kJ-La0" secondAttribute="trailing" constant="-20" id="gd0-oE-MRn"/>
+                <constraint firstItem="B4a-wK-yDM" firstAttribute="leading" secondItem="nt9-Ap-1j6" secondAttribute="leading" constant="20" id="jtQ-Uu-Sw7"/>
+            </constraints>
+            <point key="canvasLocation" x="830" y="-129"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZFRotationViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dph-dn-uja">
+                    <rect key="frame" x="30" y="318.5" width="62" height="30"/>
+                    <state key="normal" title="横屏全屏"/>
+                    <connections>
+                        <action selector="landscapeClick" destination="-1" eventType="touchUpInside" id="tOB-0V-ShI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6He-YW-l3l">
+                    <rect key="frame" x="283" y="318.5" width="62" height="30"/>
+                    <state key="normal" title="竖屏全屏"/>
+                    <connections>
+                        <action selector="portraitClick" destination="-1" eventType="touchUpInside" id="05S-hb-cM7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6He-YW-l3l" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="82a-l9-o6N"/>
+                <constraint firstItem="dph-dn-uja" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="etX-Y2-8U7"/>
+                <constraint firstAttribute="trailing" secondItem="6He-YW-l3l" secondAttribute="trailing" constant="30" id="fUg-Fr-p2i"/>
+                <constraint firstItem="dph-dn-uja" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="xWN-YV-l3p"/>
+            </constraints>
+            <point key="canvasLocation" x="135" y="154"/>
+        </view>
+    </objects>
+</document>

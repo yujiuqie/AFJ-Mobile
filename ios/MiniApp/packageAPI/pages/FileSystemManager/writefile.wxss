@@ -1,0 +1,6 @@
+/* pages/file-2/index.wxss */
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 300rpx;
+}

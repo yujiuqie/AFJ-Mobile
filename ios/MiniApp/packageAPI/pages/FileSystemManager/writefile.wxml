@@ -1,0 +1,383 @@
+<view>
+<!--pages/writefile/index.wxml-->
+<view>路径参数 path 1</view>
+<radio-group data-key="path1"
+             bindchange='setParams'>
+  <radio value="https://www.baidu.com">http地址</radio>
+  <radio value="../../image/6.png">代码包中的一个图片路径</radio>
+  <radio value="{{filePath}}">本地路径</radio>
+  <radio value="">设置为空</radio>
+  <radio value="null">null</radio>
+  <radio wx:for="{{paths}}"
+         wx:key="index"
+         value="{{item}}">{{item}}</radio>
+</radio-group>
+
+
+<view>修改 entries 参数</view>
+<radio-group data-key="entries"
+             bindchange='setParams'>
+  <radio value="all">true</radio>
+  <radio value="111">111</radio>
+  <radio value="">设置为空</radio>
+</radio-group>
+
+
+
+<view>修改 recursive 参数</view>
+<radio-group data-key="recursive"
+             bindchange='setParams'>
+  <radio value="true">true</radio>
+  <radio value="111">111</radio>
+  <radio value="">设置为空</radio>
+</radio-group>
+
+<view>修改 flag 参数</view>
+<radio-group data-key="flag"
+             bindchange='setParams'>
+  <radio value="a">a</radio>
+  <radio value="ax">ax</radio>
+  <radio value="a+">a+</radio>
+  <radio value="ax+">ax+</radio>
+  <radio value="as">as</radio>
+  <radio value="as+">as+</radio>
+  <radio value="r">r</radio>
+  <radio value="r+">r+</radio>
+  <radio value="w">w</radio>
+  <radio value="wx">wx</radio>
+  <radio value="w+">w+</radio>
+  <radio value="wx+">wx+</radio>
+  <radio value="null">null</radio>
+  <radio value="111">111</radio>
+  <radio value="">设置为空</radio>
+</radio-group>
+
+<view>修改 length 参数</view>
+<radio-group data-key="length"
+             bindchange='setParams'>
+  <radio value="-1">-1</radio>
+  <radio value="">空</radio>
+  <radio value="0.5">0.5</radio>
+  <radio value="1">1</radio>
+  <radio value="3">3</radio>
+  <radio value="3.1">3.1</radio>zsad
+  <radio value="3.9">3.9</radio>
+  <radio value="50">50</radio>
+  <radio value="sss">sss</radio>
+  <radio value="null">null</radio>
+</radio-group>
+
+<view>修改 position 参数</view>
+<radio-group data-key="position"
+             bindchange='setParams'>
+  <radio value="-1">-1</radio>
+  <radio value="">空</radio>
+  <radio value="0.5">0.5</radio>
+  <radio value="3">3</radio>
+  <radio value="3.1">3.1</radio>zsad
+  <radio value="3.9">3.9</radio>
+  <radio value="50">50</radio>
+  <radio value="sss">sss</radio>
+  <radio value="null">null</radio>
+</radio-group>
+
+<view>修改 offset 参数</view>
+<radio-group data-key="offset"
+             bindchange='setParams'>
+  <radio value="-1">-1</radio>
+  <radio value="">空</radio>
+  <radio value="0.5">0.5</radio>
+  <radio value="3">3</radio>
+  <radio value="3.1">3.1</radio>zsad
+  <radio value="3.9">3.9</radio>
+  <radio value="50">50</radio>
+  <radio value="sss">sss</radio>
+  <radio value="null">null</radio>
+</radio-group>
+
+<view class="box">
+  <!-- writeFile -->
+  <button type="default"
+          data-api="writeFile"
+          data-file-path="path1"
+          data-encoding
+          data-data
+          bindtap="invokeApi">writeFile</button>
+  <button type="default"
+          data-api="writeFileSync"
+          data-arr="path1,data,encoding"
+          bindtap="invokeApi">writeFileSync</button>
+
+  <!-- access -->
+  <button type="default"
+          data-api="access"
+          data-path="path1"
+          bindtap="invokeApi">access</button>
+  <button type="default"
+          data-api="accessSync"
+          data-arr="path1"
+          bindtap="invokeApi">accessSync</button>
+
+  <!-- appendFile -->
+  <button type="default"
+          data-api="appendFile"
+          data-file-path="path1"
+          data-encoding
+          data-data
+          bindtap="invokeApi">appendFile</button>
+  <button type="default"
+          data-api="appendFileSync"
+          data-arr="path1,data,encoding"
+          bindtap="invokeApi">appendFileSync</button>
+
+
+  <!-- copyFile -->
+  <button type="default"
+          data-api="copyFile"
+          data-src-path="path1"
+          data-dest-path="path2"
+          bindtap="invokeApi">copyFile</button>
+  <button type="default"
+          data-api="copyFileSync"
+          data-arr="path1,path2"
+          bindtap="invokeApi">copyFileSync</button>
+
+  <!-- mkdir -->
+  <button type="default"
+          data-api="mkdir"
+          data-dir-path="path1"
+          data-recursive
+          bindtap="invokeApi">mkdir</button>
+  <button type="default"
+          data-api="mkdirSync"
+          data-arr="path1,recursive"
+          bindtap="invokeApi">mkdirSync</button>
+
+  <!-- readFile -->
+  <button type="default"
+          data-api="readFile"
+          data-file-path="path1"
+          data-encoding
+          data-position
+          data-length
+          bindtap="invokeApi">readFile</button>
+  <button type="default"
+          data-api="readFileSync"
+          data-arr="path1,encoding,position,length"
+          bindtap="invokeApi">readFileSync</button>
+
+  <!-- readdir -->
+  <button type="default"
+          data-api="readdir"
+          data-dir-path="path1"
+          bindtap="invokeApi">readdir</button>
+  <button type="default"
+          data-api="readdirSync"
+          data-arr="path1"
+          bindtap="invokeApi">readdirSync</button>
+
+  <!-- rename -->
+  <button type="default"
+          data-api="rename"
+          data-old-path="path1"
+          data-new-path="path2"
+          bindtap="invokeApi">rename</button>
+  <button type="default"
+          data-api="renameSync"
+          data-arr="path1,path2"
+          bindtap="invokeApi">renameSync</button>
+
+  <!-- rmdir -->
+  <button type="default"
+          data-api="rmdir"
+          data-dir-path="path1"
+          data-recursive
+          bindtap="invokeApi">rmdir</button>
+  <button type="default"
+          data-api="rmdirSync"
+          data-arr="path1,recursive"
+          bindtap="invokeApi">rmdirSync</button>
+
+  <!-- unlink -->
+  <button type="default"
+          data-api="unlink"
+          data-file-path="path1"
+          bindtap="invokeApi">unlink</button>
+  <button type="default"
+          data-api="unlinkSync"
+          data-arr="path1"
+          bindtap="invokeApi">unlinkSync</button>
+
+  <!-- open -->
+  <button type="default"
+          data-api="open"
+          data-file-path="path1"
+          data-flag
+          data-set="fd"
+          bindtap="invokeApi">open</button>
+  <button type="default"
+          data-api="openSync"
+          data-file-path="path1"
+          data-set="fd"
+          data-flag
+          
+          bindtap="invokeApi">openSync</button>
+
+
+  <!-- write -->
+  <button type="default"
+        data-api="write"
+        data-data
+        data-fd="fd"
+        data-encoding
+        bindtap="invokeApi">write</button>
+<button type="default"
+        data-api="writeSync"
+        data-fd="fd"
+        data-data
+        data-encoding
+        bindtap="invokeApi">writeSync</button>
+
+  <!-- read -->
+  <button type="default"
+        data-api="read"
+        data-fd="fd"
+        data-array-buffer="32"
+        data-length
+        bindtap="invokeApi">read</button>
+<button type="default"
+        data-api="readSync"
+        data-array-buffer="32"
+        data-fd="fd"
+        data-length
+        bindtap="invokeApi">readSync</button>
+
+ 
+
+
+  <!-- close -->
+  <button type="default"
+        data-api="close"
+        data-fd="fd"
+        bindtap="invokeApi">close</button>
+<button type="default"
+        data-api="closeSync"
+        data-fd="fd"
+        bindtap="invokeApi">closeSync</button>
+
+  <!-- fstat -->
+  <button type="default"
+        data-api="fstat"
+        data-fd="fd"
+        bindtap="invokeApi">fstat</button>
+<button type="default"
+        data-api="fstatSync"
+        data-fd="fd"
+        bindtap="invokeApi">fstatSync</button>
+
+  <!-- ftruncate -->
+  <button type="default"
+        data-api="ftruncate"
+        data-fd="fd"
+        data-length
+        bindtap="invokeApi">ftruncate</button>
+<button type="default"
+        data-api="ftruncateSync"
+        data-fd="fd"
+        data-length
+        bindtap="invokeApi">ftruncateSync</button>
+
+
+  <!-- stat -->
+  <button type="default"
+          data-api="stat"
+          data-path="path1"
+          data-recursive
+          bindtap="invokeApi">stat</button>
+  <button type="default"
+          data-api="statSync"
+          data-arr="path1,recursive"
+          bindtap="invokeApi">statSync</button>
+
+  <!-- truncate -->
+  <button type="default"
+          data-api="truncate"
+          data-file-path="path1"
+          data-length
+          bindtap="invokeApi">truncate</button>
+  <button type="default"
+          data-api="truncateSync"
+          data-file-path="path1"
+          data-length
+          bindtap="invokeApi">truncateSync</button>
+
+  <!-- savaZipFile -->
+  <button bindtap="downZipSave">上传一个压缩文件</button>
+  <!-- unzip -->
+  <button type="default"
+          data-api="unzip"
+          data-zip-file-path="path1"
+          data-target-path="path2"
+          bindtap="invokeApi">unzip</button>
+
+  <!-- readZipEntry -->
+  <button type="default"
+          data-api="readZipEntry"
+          data-file-path="path1"
+          bindtap="invokeApi">readZipEntry</button>
+</view>
+
+
+
+<view>修改 encoding 参数</view>
+<radio-group data-key="encoding"
+             bindchange='setParams'>
+  <radio value="ascii">ascii</radio>
+  <radio value="base64">base64</radio>
+  <radio value="binary">binary</radio>
+  <radio value="hex">hex</radio>
+  <radio value="ucs2">ucs2(以小端序读取)</radio>
+  <radio value="ucs-2">ucs-2(以小端序读取)</radio>
+  <radio value="utf16le">utf16le(以小端序读取)</radio>
+  <radio value="utf-16le">utf-16le(以小端序读取)</radio>
+  <radio value="utf-8">utf-8</radio>
+  <radio value="utf8">utf8</radio>
+  <radio value="latin1">latin1</radio>
+  <radio value="">空</radio>
+  <radio value="HYR">123</radio>
+</radio-group>
+
+<view>修改 data 参数</view>
+<radio-group data-key="data"
+             bindchange='setParams'>
+  <radio value="">空值</radio>
+  <radio value="abc">abc</radio>
+  <radio value="中文文本测试">中文</radio>
+  <radio value="[]">[]</radio>
+  <radio value="null">null</radio>
+  <radio value="{{base64.image}}">
+    image_base64</radio>
+  <radio value="{{base64.video}}">
+    video_base64</radio>
+  <radio value='{{base64.audio}}'>
+    audio_base64</radio>
+  <radio value='{{base64.file2}}'>
+    wenjian</radio>
+  <radio value="{{base64.file}}">新文件</radio>
+</radio-group>
+
+
+    <view>路径参数 path 2</view>
+<radio-group data-key="path2"
+             bindchange='setParams'>
+  <radio value="https://www.baidu.com">http地址</radio>
+  <radio value="../../image/6.png">代码包中的一个图片路径</radio>
+  <radio value="{{filePath}}">本地路径</radio>
+  <radio value="">设置为空</radio>
+  <radio value="null">null</radio>
+  <radio wx:for="{{paths}}"
+         wx:key="index"
+         value="{{item}}">{{item}}</radio>
+</radio-group>
+
+</view>

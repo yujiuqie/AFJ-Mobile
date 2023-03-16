@@ -1,0 +1,83 @@
+//
+//  MSSecondViewController.m
+//  MSActiveConfig-SampleApp
+//
+//  Created by Javier Soto on 7/6/13.
+//  Copyright (c) 2013 MindSnacks. All rights reserved.
+//
+
+#import "MSSampleViewController.h"
+
+#import "MSActiveConfigManager.h"
+#import "MSActiveConfig.h"
+
+@interface MSSampleViewController () <MSActiveConfigListener> {
+    MSActiveConfig *_activeConfig;
+}
+
+@property(weak, nonatomic) IBOutlet UIView *rectangleView;
+@property(weak, nonatomic) IBOutlet UILabel *label;
+@property(weak, nonatomic) IBOutlet UISwitch *switchButton;
+
+@end
+
+@implementation MSSampleViewController
+
+- (id)init {
+    if ((self = [super init])) {
+
+    }
+
+    return self;
+}
+
+- (void)dealloc {
+    [_activeConfig removeListener:self
+                   forSectionName:@"SampleViewConfiguration"];
+}
+
+#pragma mark - View Life Cycle
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.title = @"Display";
+
+    _activeConfig = [MSActiveConfigManager defaultInstance].activeConfig;
+
+    [_activeConfig registerListener:self
+                     forSectionName:@"SampleViewConfiguration"];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+    [self setViewPropertiesWithConfigSection:_activeConfig[@"SampleViewConfiguration"]];
+}
+
+#pragma mark - Active Config
+
+- (void)setViewPropertiesWithConfigSection:(MSActiveConfigSection *)configSection {
+    NSDictionary *viewBackgroundColorDictionary = [configSection dictionaryForKey:@"ViewBackgroundColor"];
+    const CGFloat redColorComponent = [viewBackgroundColorDictionary[@"red"] floatValue];
+    const CGFloat greenColorComponent = [viewBackgroundColorDictionary[@"green"] floatValue];
+    const CGFloat blueColorComponent = [viewBackgroundColorDictionary[@"blue"] floatValue];
+
+    self.rectangleView.backgroundColor = [UIColor colorWithRed:redColorComponent
+                                                         green:greenColorComponent
+                                                          blue:blueColorComponent
+                                                         alpha:1.0f];
+
+    NSString *labelText = [configSection stringForKey:@"LabelText"];
+    self.label.text = labelText;
+
+    const BOOL buttonEnabled = [configSection boolForKey:@"ButtonEnabled"];
+    self.switchButton.enabled = buttonEnabled;
+}
+
+- (void)   activeConfig:(MSActiveConfig *)activeConfig
+didReceiveConfigSection:(MSActiveConfigSection *)configSection
+         forSectionName:(NSString *)sectionName {
+    [self setViewPropertiesWithConfigSection:configSection];
+}
+
+@end

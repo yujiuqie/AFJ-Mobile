@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="4096" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MSSettingsViewController">
+            <connections>
+                <outlet property="activeConfigStateTextView" destination="9cc-ai-o15" id="wSj-BE-Qqz"/>
+                <outlet property="userIDPickerView" destination="XPa-PI-8UR" id="9jX-TP-jBZ"/>
+                <outlet property="view" destination="ER7-UD-tcQ" id="aqA-qM-UYA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ER7-UD-tcQ">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XPa-PI-8UR">
+                    <rect key="frame" x="0.0" y="259" width="414" height="162"/>
+                    <color key="backgroundColor" systemColor="systemTealColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="162" id="Mj9-bl-eQd"/>
+                        <constraint firstAttribute="width" constant="414" id="vpv-tW-gY2"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="aIX-cB-XqM"/>
+                        <outlet property="delegate" destination="-1" id="4FR-XF-GH2"/>
+                    </connections>
+                </pickerView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90h-Vt-mwo">
+                    <rect key="frame" x="163" y="200" width="88.5" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="lQL-1W-XIc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                    <color key="textColor" systemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cc-ai-o15">
+                    <rect key="frame" x="0.0" y="441" width="414" height="455"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" systemColor="tintColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="90h-Vt-mwo" firstAttribute="centerX" secondItem="XPa-PI-8UR" secondAttribute="centerX" id="0eo-fe-LoQ"/>
+                <constraint firstItem="9cc-ai-o15" firstAttribute="bottom" secondItem="ER7-UD-tcQ" secondAttribute="bottom" id="Dwz-fa-MnW"/>
+                <constraint firstItem="9cc-ai-o15" firstAttribute="leading" secondItem="ER7-UD-tcQ" secondAttribute="leading" id="F7c-2w-1Ry"/>
+                <constraint firstItem="9cc-ai-o15" firstAttribute="trailing" secondItem="XPa-PI-8UR" secondAttribute="trailing" id="GAB-rH-J4g"/>
+                <constraint firstItem="9cc-ai-o15" firstAttribute="leading" secondItem="XPa-PI-8UR" secondAttribute="leading" id="JRi-To-Bg7"/>
+                <constraint firstItem="90h-Vt-mwo" firstAttribute="top" secondItem="ER7-UD-tcQ" secondAttribute="top" constant="200" id="QsF-Xo-GeL"/>
+                <constraint firstItem="XPa-PI-8UR" firstAttribute="top" secondItem="90h-Vt-mwo" secondAttribute="bottom" constant="20" id="U5A-Uj-y4Y"/>
+                <constraint firstAttribute="centerX" secondItem="9cc-ai-o15" secondAttribute="centerX" id="pbI-6b-BXk"/>
+                <constraint firstItem="9cc-ai-o15" firstAttribute="top" secondItem="XPa-PI-8UR" secondAttribute="bottom" priority="775" constant="20" id="r8E-98-xkP"/>
+                <constraint firstAttribute="centerX" secondItem="90h-Vt-mwo" secondAttribute="centerX" id="x4l-gV-Siw"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="132" y="86"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TTMDetailViewController">
+            <connections>
+                <outlet property="detailDescriptionLabel" destination="chO-X4-UMn" id="Aj7-SN-cJ7"/>
+                <outlet property="view" destination="FwL-5f-rLt" id="vwa-dN-Bv9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="FwL-5f-rLt">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="elcaptan" translatesAutoresizingMaskIntoConstraints="NO" id="F7y-jR-Y5B">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Detail view content goes here" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="chO-X4-UMn">
+                    <rect key="frame" x="85" y="440" width="244.5" height="16.5"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="1px-be-LZt"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="F7y-jR-Y5B" firstAttribute="leading" secondItem="1px-be-LZt" secondAttribute="leading" id="6Kf-4B-063"/>
+                <constraint firstItem="chO-X4-UMn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FwL-5f-rLt" secondAttribute="leadingMargin" constant="4" id="Yra-iX-La6"/>
+                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="chO-X4-UMn" secondAttribute="trailing" constant="4" id="bsy-BC-JiL"/>
+                <constraint firstItem="F7y-jR-Y5B" firstAttribute="top" secondItem="FwL-5f-rLt" secondAttribute="top" id="gSj-c8-2NM"/>
+                <constraint firstAttribute="bottom" secondItem="F7y-jR-Y5B" secondAttribute="bottom" id="j6L-QS-iMG"/>
+                <constraint firstItem="1px-be-LZt" firstAttribute="centerX" secondItem="chO-X4-UMn" secondAttribute="centerX" id="yGt-f8-B2a"/>
+                <constraint firstItem="1px-be-LZt" firstAttribute="trailing" secondItem="F7y-jR-Y5B" secondAttribute="trailing" id="ynG-6g-q7T"/>
+                <constraint firstAttribute="centerY" secondItem="chO-X4-UMn" secondAttribute="centerY" id="ysT-0U-ogq"/>
+            </constraints>
+            <point key="canvasLocation" x="152" y="-512"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="elcaptan" width="414" height="736"/>
+    </resources>
+</document>

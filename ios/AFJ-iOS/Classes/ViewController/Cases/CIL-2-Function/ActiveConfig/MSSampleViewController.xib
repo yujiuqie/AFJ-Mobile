@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="4096" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MSSampleViewController">
+            <connections>
+                <outlet property="label" destination="agZ-P6-MzS" id="z7d-0K-ClC"/>
+                <outlet property="rectangleView" destination="8Db-jn-qA0" id="yir-Q4-IQ0"/>
+                <outlet property="switchButton" destination="5LE-XA-llT" id="VjJ-eS-sCC"/>
+                <outlet property="view" destination="R5n-I4-jtW" id="21L-ap-0a8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="R5n-I4-jtW">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Db-jn-qA0">
+                    <rect key="frame" x="48" y="100" width="318" height="467"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="467" id="pLY-Rd-QJg"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="agZ-P6-MzS">
+                    <rect key="frame" x="20" y="255" width="374" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5LE-XA-llT">
+                    <rect key="frame" x="182.5" y="607" width="51" height="31"/>
+                </switch>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8Db-jn-qA0" firstAttribute="top" secondItem="R5n-I4-jtW" secondAttribute="top" constant="100" id="6La-dc-u1R"/>
+                <constraint firstItem="agZ-P6-MzS" firstAttribute="leading" secondItem="R5n-I4-jtW" secondAttribute="leading" constant="20" id="7xn-e5-Dk6"/>
+                <constraint firstItem="8Db-jn-qA0" firstAttribute="leading" secondItem="R5n-I4-jtW" secondAttribute="leading" constant="48" id="LQp-Vi-wB0"/>
+                <constraint firstItem="agZ-P6-MzS" firstAttribute="top" secondItem="R5n-I4-jtW" secondAttribute="top" constant="255" id="SJ7-ct-Ynn"/>
+                <constraint firstItem="5LE-XA-llT" firstAttribute="top" secondItem="8Db-jn-qA0" secondAttribute="bottom" constant="40" id="hTF-S7-zAU"/>
+                <constraint firstAttribute="trailing" secondItem="8Db-jn-qA0" secondAttribute="trailing" constant="48" id="rLC-Su-8bQ"/>
+                <constraint firstItem="5LE-XA-llT" firstAttribute="centerX" secondItem="8Db-jn-qA0" secondAttribute="centerX" id="sSr-IK-Yye"/>
+                <constraint firstAttribute="trailing" secondItem="agZ-P6-MzS" secondAttribute="trailing" constant="20" id="yR2-AQ-Fux"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="132" y="86"/>
+        </view>
+    </objects>
+</document>

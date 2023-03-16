@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AFJFakeLabelViewController">
+            <connections>
+                <outlet property="fakeLabel" destination="3t6-2T-ZpE" id="FlX-RW-8fy"/>
+                <outlet property="view" destination="fWX-xq-osm" id="4nC-vs-W1s"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fWX-xq-osm">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EGG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3t6-2T-ZpE">
+                    <rect key="frame" x="169.5" y="433" width="75" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="TsP-w2-n3R"/>
+                        <constraint firstAttribute="width" constant="75" id="zwf-Jo-tFb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                    <nil key="textColor"/>
+                    <color key="highlightedColor" systemColor="labelColor"/>
+                </label>
+                <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkA-Db-Nfy">
+                    <rect key="frame" x="192" y="523" width="30" height="34"/>
+                    <state key="normal" title="下">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="jlK-V7-GBA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDe-7F-UxF">
+                    <rect key="frame" x="294.5" y="433" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="aAO-se-MEz"/>
+                        <constraint firstAttribute="height" constant="40" id="wnG-fq-0H6"/>
+                    </constraints>
+                    <state key="normal" title="右">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="wtj-7j-prN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBu-HN-AJA">
+                    <rect key="frame" x="187" y="343" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="345-yL-6ID"/>
+                        <constraint firstAttribute="width" constant="40" id="VD8-U9-2mL"/>
+                    </constraints>
+                    <state key="normal" title="上">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="DiI-ej-QKW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LmL-F9-N60">
+                    <rect key="frame" x="79.5" y="433" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="6jg-mk-jjq"/>
+                        <constraint firstAttribute="width" constant="40" id="Woc-en-fzW"/>
+                    </constraints>
+                    <state key="normal" title="左">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="sk2-R1-7Hq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="cbD-Uk-fcv"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LmL-F9-N60" firstAttribute="centerY" secondItem="3t6-2T-ZpE" secondAttribute="centerY" id="4HM-J2-95l"/>
+                <constraint firstItem="3t6-2T-ZpE" firstAttribute="centerY" secondItem="cbD-Uk-fcv" secondAttribute="centerY" id="FU3-UF-I3J"/>
+                <constraint firstItem="YDe-7F-UxF" firstAttribute="centerY" secondItem="3t6-2T-ZpE" secondAttribute="centerY" id="MrY-YJ-bAU"/>
+                <constraint firstItem="KBu-HN-AJA" firstAttribute="centerX" secondItem="3t6-2T-ZpE" secondAttribute="centerX" id="Thu-l0-CG6"/>
+                <constraint firstItem="3t6-2T-ZpE" firstAttribute="leading" secondItem="LmL-F9-N60" secondAttribute="trailing" constant="50" id="Umb-W8-0sf"/>
+                <constraint firstItem="3t6-2T-ZpE" firstAttribute="top" secondItem="KBu-HN-AJA" secondAttribute="bottom" constant="50" id="YiS-xw-hQO"/>
+                <constraint firstItem="UkA-Db-Nfy" firstAttribute="centerX" secondItem="3t6-2T-ZpE" secondAttribute="centerX" id="dRW-4L-jUD"/>
+                <constraint firstItem="YDe-7F-UxF" firstAttribute="leading" secondItem="3t6-2T-ZpE" secondAttribute="trailing" constant="50" id="ffh-tS-xUo"/>
+                <constraint firstItem="3t6-2T-ZpE" firstAttribute="centerX" secondItem="cbD-Uk-fcv" secondAttribute="centerX" id="v9g-2a-8Ug"/>
+                <constraint firstItem="UkA-Db-Nfy" firstAttribute="top" secondItem="3t6-2T-ZpE" secondAttribute="bottom" constant="50" id="zUN-sh-Uia"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="-506.25"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

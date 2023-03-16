@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PieViewController">
+            <connections>
+                <outlet property="animateButton" destination="Vqb-tF-7E0" id="tIj-eF-rZD"/>
+                <outlet property="iconControl" destination="laL-DZ-Npb" id="JxX-yH-Gdr"/>
+                <outlet property="indeterminateSwitch" destination="Agc-To-CJi" id="fUx-qX-EZ2"/>
+                <outlet property="progressSlider" destination="4Uv-lW-cAU" id="axb-Kj-2z9"/>
+                <outlet property="progressView" destination="LOW-D3-mkJ" id="6I1-xu-DC4"/>
+                <outlet property="view" destination="stJ-cI-aVY" id="zxH-tP-64z"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="stJ-cI-aVY">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LOW-D3-mkJ" customClass="M13ProgressViewPie">
+                    <rect key="frame" x="60" y="85" width="294" height="296"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37l-yK-UzO">
+                    <rect key="frame" x="20" y="427" width="73" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" systemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Td9-lC-yMw">
+                    <rect key="frame" x="20" y="497" width="54" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" systemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indeterminate:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJ6-Yv-vxM">
+                    <rect key="frame" x="20" y="570" width="111" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" systemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vqb-tF-7E0">
+                    <rect key="frame" x="99" y="389" width="216" height="30"/>
+                    <state key="normal" title="Animate Progress">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="animateProgress:" destination="-1" eventType="touchUpInside" id="6A6-Bt-yjR"/>
+                    </connections>
+                </button>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4Uv-lW-cAU">
+                    <rect key="frame" x="18" y="457" width="378" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="owh-Tg-AaH"/>
+                    </constraints>
+                    <connections>
+                        <action selector="progressChanged:" destination="-1" eventType="valueChanged" id="maN-56-2Vq"/>
+                    </connections>
+                </slider>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="laL-DZ-Npb">
+                    <rect key="frame" x="20" y="527" width="374" height="32"/>
+                    <segments>
+                        <segment title="None"/>
+                        <segment title="Success"/>
+                        <segment title="Failure"/>
+                    </segments>
+                    <connections>
+                        <action selector="iconChanged:" destination="-1" eventType="valueChanged" id="hpi-sG-Hs8"/>
+                    </connections>
+                </segmentedControl>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Agc-To-CJi">
+                    <rect key="frame" x="139" y="565" width="51" height="31"/>
+                    <connections>
+                        <action selector="indeterminateChanged:" destination="-1" eventType="valueChanged" id="7hu-BM-YJy"/>
+                    </connections>
+                </switch>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Gei-ZX-hdA"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Vqb-tF-7E0" firstAttribute="top" secondItem="LOW-D3-mkJ" secondAttribute="bottom" constant="8" symbolic="YES" id="0Fd-Tg-6Ze"/>
+                <constraint firstItem="laL-DZ-Npb" firstAttribute="leading" secondItem="Td9-lC-yMw" secondAttribute="leading" id="0Ws-p3-Hvr"/>
+                <constraint firstItem="LOW-D3-mkJ" firstAttribute="centerX" secondItem="Vqb-tF-7E0" secondAttribute="centerX" id="1N7-Og-qbT"/>
+                <constraint firstItem="4Uv-lW-cAU" firstAttribute="top" secondItem="Vqb-tF-7E0" secondAttribute="bottom" constant="38" id="1Pu-oA-y1e"/>
+                <constraint firstItem="Vqb-tF-7E0" firstAttribute="leading" secondItem="Gei-ZX-hdA" secondAttribute="leading" constant="99" id="5B8-zN-6Wf"/>
+                <constraint firstItem="Gei-ZX-hdA" firstAttribute="bottom" secondItem="Agc-To-CJi" secondAttribute="bottom" constant="266" id="9ZN-vk-EW4"/>
+                <constraint firstAttribute="trailing" secondItem="4Uv-lW-cAU" secondAttribute="trailing" constant="20" symbolic="YES" id="GKq-q7-PMr"/>
+                <constraint firstItem="Agc-To-CJi" firstAttribute="top" secondItem="laL-DZ-Npb" secondAttribute="bottom" constant="7" id="Hee-ew-yL5"/>
+                <constraint firstItem="laL-DZ-Npb" firstAttribute="top" secondItem="Td9-lC-yMw" secondAttribute="bottom" constant="9" id="MAm-2Z-ZHd"/>
+                <constraint firstItem="Td9-lC-yMw" firstAttribute="leading" secondItem="4Uv-lW-cAU" secondAttribute="leading" id="NXs-VR-YV5"/>
+                <constraint firstItem="laL-DZ-Npb" firstAttribute="leading" secondItem="zJ6-Yv-vxM" secondAttribute="leading" id="R55-Vv-bAe"/>
+                <constraint firstItem="Agc-To-CJi" firstAttribute="leading" secondItem="zJ6-Yv-vxM" secondAttribute="trailing" constant="8" symbolic="YES" id="S1d-eE-AuN"/>
+                <constraint firstItem="4Uv-lW-cAU" firstAttribute="trailing" secondItem="laL-DZ-Npb" secondAttribute="trailing" id="UMy-hg-KUa"/>
+                <constraint firstItem="37l-yK-UzO" firstAttribute="leading" secondItem="stJ-cI-aVY" secondAttribute="leading" constant="20" symbolic="YES" id="UTQ-cQ-MJz"/>
+                <constraint firstItem="4Uv-lW-cAU" firstAttribute="top" secondItem="37l-yK-UzO" secondAttribute="bottom" constant="9" id="ZFn-YL-8dJ"/>
+                <constraint firstItem="LOW-D3-mkJ" firstAttribute="leading" secondItem="stJ-cI-aVY" secondAttribute="leading" constant="60" id="aJ5-Np-B2Z"/>
+                <constraint firstItem="Td9-lC-yMw" firstAttribute="top" secondItem="4Uv-lW-cAU" secondAttribute="bottom" constant="7" id="d2K-dW-xTN"/>
+                <constraint firstItem="LOW-D3-mkJ" firstAttribute="top" secondItem="Gei-ZX-hdA" secondAttribute="top" constant="41" id="eWQ-Pv-uj2"/>
+                <constraint firstItem="37l-yK-UzO" firstAttribute="leading" secondItem="4Uv-lW-cAU" secondAttribute="leading" id="gDt-FN-48r"/>
+                <constraint firstItem="4Uv-lW-cAU" firstAttribute="centerX" secondItem="Vqb-tF-7E0" secondAttribute="centerX" id="hBS-QP-hmd"/>
+                <constraint firstItem="zJ6-Yv-vxM" firstAttribute="centerY" secondItem="Agc-To-CJi" secondAttribute="centerY" id="ue9-Oe-G70"/>
+            </constraints>
+            <point key="canvasLocation" x="99" y="-502"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

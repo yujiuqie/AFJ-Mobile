@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConsoleViewController">
+            <connections>
+                <outlet property="animateButton" destination="J4y-lr-86A" id="DGs-4H-rBl"/>
+                <outlet property="console" destination="Okm-H8-evx" id="k8s-fu-VVe"/>
+                <outlet property="prefixSwitch" destination="cG2-aV-eY5" id="Tgx-gc-6kp"/>
+                <outlet property="progressType" destination="eBb-hu-yDz" id="dEZ-qH-Xy5"/>
+                <outlet property="view" destination="3Dy-PZ-osv" id="L9E-oD-QUY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="3Dy-PZ-osv">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Okm-H8-evx" customClass="M13ProgressConsole">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="379"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4y-lr-86A">
+                    <rect key="frame" x="178.5" y="387" width="57" height="30"/>
+                    <state key="normal" title="Animate">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="animate:" destination="-1" eventType="touchUpInside" id="gt1-kL-R8E"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Prefix:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frT-3Q-yfd">
+                    <rect key="frame" x="20" y="427" width="95" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" systemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cG2-aV-eY5">
+                    <rect key="frame" x="123" y="422" width="51" height="31"/>
+                    <connections>
+                        <action selector="prefixChanged:" destination="-1" eventType="valueChanged" id="44q-a7-viY"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress Type:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sj-bj-SV1">
+                    <rect key="frame" x="20" y="456" width="114" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eBb-hu-yDz">
+                    <rect key="frame" x="20" y="485" width="302" height="32"/>
+                    <segments>
+                        <segment title="Percentage"/>
+                        <segment title="Dots"/>
+                        <segment title="Bar with dots"/>
+                    </segments>
+                    <connections>
+                        <action selector="progressTypeChanged:" destination="-1" eventType="valueChanged" id="M0f-u6-UUe"/>
+                    </connections>
+                </segmentedControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="EST-s7-jfl"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EST-s7-jfl" firstAttribute="bottom" secondItem="eBb-hu-yDz" secondAttribute="bottom" constant="346" id="5uD-qI-u1K"/>
+                <constraint firstItem="J4y-lr-86A" firstAttribute="centerX" secondItem="Okm-H8-evx" secondAttribute="centerX" id="6Jw-xK-m50"/>
+                <constraint firstItem="cG2-aV-eY5" firstAttribute="leading" secondItem="frT-3Q-yfd" secondAttribute="trailing" constant="8" symbolic="YES" id="6S9-s1-ia1"/>
+                <constraint firstItem="Okm-H8-evx" firstAttribute="top" secondItem="3Dy-PZ-osv" secondAttribute="top" id="Dgc-4x-ara"/>
+                <constraint firstItem="frT-3Q-yfd" firstAttribute="leading" secondItem="3Dy-PZ-osv" secondAttribute="leading" constant="20" symbolic="YES" id="FlJ-xP-8cL"/>
+                <constraint firstItem="J4y-lr-86A" firstAttribute="top" secondItem="Okm-H8-evx" secondAttribute="bottom" constant="8" symbolic="YES" id="Ib5-gD-N3B"/>
+                <constraint firstItem="eBb-hu-yDz" firstAttribute="leading" secondItem="4sj-bj-SV1" secondAttribute="leading" id="LCm-TL-tPs"/>
+                <constraint firstItem="Okm-H8-evx" firstAttribute="leading" secondItem="3Dy-PZ-osv" secondAttribute="leading" id="MB7-TM-Uu5"/>
+                <constraint firstItem="cG2-aV-eY5" firstAttribute="top" secondItem="J4y-lr-86A" secondAttribute="bottom" constant="5" id="RPd-ud-umx"/>
+                <constraint firstAttribute="trailing" secondItem="Okm-H8-evx" secondAttribute="trailing" id="f42-Gy-Aoh"/>
+                <constraint firstItem="4sj-bj-SV1" firstAttribute="top" secondItem="frT-3Q-yfd" secondAttribute="bottom" constant="8" symbolic="YES" id="jUQ-lx-FgG"/>
+                <constraint firstItem="eBb-hu-yDz" firstAttribute="top" secondItem="4sj-bj-SV1" secondAttribute="bottom" constant="8" symbolic="YES" id="juJ-de-OAg"/>
+                <constraint firstItem="frT-3Q-yfd" firstAttribute="centerY" secondItem="cG2-aV-eY5" secondAttribute="centerY" id="m7L-xS-N4y"/>
+                <constraint firstItem="4sj-bj-SV1" firstAttribute="leading" secondItem="frT-3Q-yfd" secondAttribute="leading" id="pDE-9r-3wc"/>
+            </constraints>
+            <point key="canvasLocation" x="88" y="-502"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

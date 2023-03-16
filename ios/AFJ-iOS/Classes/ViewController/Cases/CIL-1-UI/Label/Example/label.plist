@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <array>
+        <dict>
+            <key>title</key>
+            <string>基础用法</string>
+            <key>image</key>
+            <string>01</string>
+        </dict>
+        <dict>
+            <key>title</key>
+            <string>圆角和边框</string>
+            <key>image</key>
+            <string>02</string>
+        </dict>
+        <dict>
+            <key>title</key>
+            <string>属性字符串</string>
+            <key>image</key>
+            <string>03</string>
+        </dict>
+        <dict>
+            <key>title</key>
+            <string>查看系统所有字体</string>
+            <key>image</key>
+            <string>04</string>
+        </dict>
+        <dict>
+            <key>title</key>
+            <string>系统字重</string>
+            <key>image</key>
+            <string>04</string>
+        </dict>
+        <dict>
+            <key>title</key>
+            <string>YYLabel - YYText</string>
+            <key>image</key>
+            <string>05</string>
+        </dict>
+    </array>
+</plist>

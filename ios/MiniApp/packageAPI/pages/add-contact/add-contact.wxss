@@ -1,0 +1,12 @@
+/* pages/API/add-contact/add-contact.wxss */
+@import "../../common/lib/weui.wxss";
+
+input {
+  width: 100%;
+}
+
+.tips {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+}

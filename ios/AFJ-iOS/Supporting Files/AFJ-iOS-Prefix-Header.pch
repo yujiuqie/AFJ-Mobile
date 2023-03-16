@@ -1,0 +1,185 @@
+//
+//  AFJ-iOS-Prefix-Header.pch
+//  AFJ-iOS
+//
+//  Created by Alfred on 2022/8/17.
+//
+
+#ifdef __OBJC__
+
+@protocol ChartAxisValueFormatter;
+@protocol ChartValueFormatter;
+
+//消除对应名称的警告
+#pragma clang diagnostic ignored "-Wdocumentation"
+//#pragma clang diagnostic ignored "-Wuninitialized"
+//#pragma clang diagnostic ignored "-Wstrict-prototypes"
+
+    #import <QuartzCore/QuartzCore.h>
+
+    //define this constant if you want to use Masonry without the 'mas_' prefix
+//    #define MAS_SHORTHAND
+
+    //define this constant if you want to enable auto-boxing for default syntax
+    #define MAS_SHORTHAND_GLOBALS
+
+    #import "Masonry.h"
+
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "QMUIKit.h"
+    #import "QDCommonUI.h"
+    #import "QDUIHelper.h"
+    #import "QDThemeManager.h"
+    #import "QDNavigationController.h"
+    #import "QDCommonViewController.h"
+    #import "QDCommonTableViewController.h"
+    #import "Toast.h"
+    #import "ReactiveObjC.h"
+    #import "AFJRootViewController.h"
+    #import "AFJRootListViewController.h"
+    #import "ConstantUI.h"
+    #import "NSString+CN.h"
+    #import "OveralHeader.h"
+    #import "ExtensionHeader.h"
+    #import "Control.h"
+    #import "ThirdParty.h"
+    #import "ColorHeader.h"
+    #import "FontHeader.h"
+    #import <BaiduMapAPI_Base/BMKBaseComponent.h>
+    #import <BaiduMapAPI_Map/BMKMapComponent.h>
+    #import <BaiduMapAPI_Cloud/BMKCloudSearchComponent.h>
+    #import <BaiduMapAPI_Search/BMKSearchComponent.h>
+    #import <BaiduMapAPI_Utils/BMKUtilsComponent.h>
+    #import "LocationManager.h"
+    #import "BaseNetWork.h"
+    #import "JSDVCRouter.h"
+    #import "GetVC.h"
+    #import "OveralHeader.h"
+    #import "CocoaPodHeader.h"
+    #import "ExtensionHeader.h"
+    #import "Control.h"
+    #import "ThirdParty.h"
+    #import "ColorHeader.h"
+    #import "FontHeader.h"
+    #import "UIViewController+popGesture.h"
+    #import "JKCategories.h"
+//    #import "MiscNetworkRequests.h"
+//    #import "CommitListViewController.h"
+//    #import "Person.h"
+
+    // category
+    #import "UIView+SUPNjHuFrame.h"
+    #import "MBProgressHUD+SUP.h"
+    #import "UIView+GestureCallback.h"
+    #import "UIColor+Random.h"
+    #import "UIButton+SUP.h"
+    #import "UITextView+WZB.h"
+    #import "UIViewController+DDPopUpViewController.h"
+    #import "NSDecimalNumber+Addtion.h"
+    #import "UIView+BlockGesture.h"
+//    #import "YYCategories.h"
+//    #import "YYText.h"
+//    #import "YYKit.h"
+
+    #import "UIView+Nib.h"
+    #import "CZAdditions.h"
+
+//    #import <TRemoteDebugger/TLogBiz.h>
+//    #import <TRemoteDebugger/TLogFactory.h>
+//    #import <TRemoteDebugger/TRDManagerService.h>
+//    #import <AlicloudTLog/AlicloudTlogProvider.h>
+//    #import <AlicloudCrash/AlicloudCrashProvider.h>
+//    #import <AlicloudHAUtil/AlicloudHAProvider.h>
+#endif
+
+#ifndef AFJ_iOS_Prefix_Header_pch
+#define AFJ_iOS_Prefix_Header_pch
+
+//    #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+//    #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+    #define widthScale ([UIScreen mainScreen].bounds.size.width/375.0f)
+    #define heightScale ([UIScreen mainScreen].bounds.size.height/667.0f)
+    #define BMKMapVersion [NSString stringWithFormat:@"百度地图iOS SDK %@", BMKGetMapApiVersion()]
+    #define STATUS_BAR_HEIGHT [[UIApplication sharedApplication] statusBarFrame].size.height
+    #define NAV_BAR_HEIGHT self.navigationController.navigationBar.frame.size.height
+    #define SAFEAREA_TOP (STATUS_BAR_HEIGHT + NAV_BAR_HEIGHT)
+    #define SAFEAREA_BOTTOM (STATUS_BAR_HEIGHT > 20 ? 34 : 0)
+    #define CONTENT_HEIGHT (SCREEN_HEIGHT - SAFEAREA_TOP - SAFEAREA_BOTTOM)
+
+    //状态栏高度
+    #define KStatuesBarHeight  ([UIApplication sharedApplication].statusBarFrame.size.height)
+    //导航栏高度
+    #define KNavigationBarHeight 44.0
+    //导航栏高度+状态栏高度
+    #define kViewTopHeight (KStatuesBarHeight + KNavigationBarHeight)
+    //iphoneX适配差值
+    #define KiPhoneXSafeAreaDValue ([[UIApplication sharedApplication] statusBarFrame].size.height>20?34:0)
+
+    #define COLOR(rgbValue)     [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+    #define kHeight_SegMentBackgroud  60
+
+    #define  CNOUT(userAgentInto)   NSLog(@"%@",userAgentInto)
+
+
+    #define weakSelf()                                          __weak __typeof(self) weakSelf = self
+    #define strongSelf()                                        __strong __typeof(weakSelf) strongSelf = weakSelf
+    #define blockSelf()                                         __block __typeof(self) blockSelf = self
+
+    //
+    #define IS_IPAD                                             (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    #define IS_IPHONE                                           (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+    #define IS_RETINA                                           ([[UIScreen mainScreen] scale] >= 2.0)
+
+    //设备型号
+    #define iPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+    #define iPhone4s ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+    #define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+    #define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+    #define iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+    #define iPhone6PlusScale ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2001), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhoneX \
+({BOOL isPhoneX = NO;\
+if (@available(iOS 11.0, *)) {\
+isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom > 0.0;\
+}\
+(isPhoneX);})
+
+    //导航栏
+    #define StatusBarHeight (iPhoneX ? 44.f : 20.f)
+    #define StatusBarAndNavigationBarHeight (iPhoneX ? 88.f : 64.f)
+    #define TabbarHeight (iPhoneX ? (49.f + 34.f) : (49.f))
+    #define BottomSafeAreaHeight (iPhoneX ? (34.f) : (0.f))
+
+    #define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
+    #define RGBRANDOMCOLOR [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:1.0]
+    #define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+    // rgb颜色转换（16进制->10进制）
+    #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+    #define ISIPHONE_X ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? ((NSInteger)(([[UIScreen mainScreen] currentMode].size.height/[[UIScreen mainScreen] currentMode].size.width)*100) == 216) : NO)
+
+    /// 导航栏高度
+    #define KNavBarHeight ISIPHONE_X ? 88 : 64
+
+    #define kAppDelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+
+    /// 播放器view的tag，列表中UI控件唯一tag值
+    #define kPlayerViewTag 100
+
+    //色值
+    #define SUPRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+    #define HEXCOLOR(hex) [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16)) / 255.0 green:((float)((hex & 0xFF00) >> 8)) / 255.0 blue:((float)(hex & 0xFF)) / 255.0 alpha:1]
+
+    #define COLOR_RGB(rgbValue,a) [UIColor colorWithRed:((float)(((rgbValue) & 0xFF0000) >> 16))/255.0 green:((float)(((rgbValue) & 0xFF00)>>8))/255.0 blue: ((float)((rgbValue) & 0xFF))/255.0 alpha:(a)]
+    #define RANDOM_COLOR [UIColor colorWithHue: (arc4random() % 256 / 256.0) saturation:((arc4random()% 128 / 256.0 ) + 0.5) brightness:(( arc4random() % 128 / 256.0 ) + 0.5) alpha:1]
+
+    // 字体大小(常规/粗体)
+    #define BOLDSYSTEMFONT(FONTSIZE)[UIFont boldSystemFontOfSize:FONTSIZE]
+    #define SYSTEMFONT(FONTSIZE)    [UIFont systemFontOfSize:FONTSIZE]
+    #define FONT(NAME, FONTSIZE)    [UIFont fontWithName:(NAME) size:(FONTSIZE)]
+
+#endif /* AFJ_iOS_Prefix_Header_pch */

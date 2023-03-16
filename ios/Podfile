@@ -1,0 +1,390 @@
+source "https://github.com/CocoaPods/Specs.git"
+source "https://github.com/aliyun/aliyun-specs.git"
+
+require_relative '../ReactNative/node_modules/react-native/scripts/react_native_pods'
+require_relative '../ReactNative/node_modules/@react-native-community/cli-platform-ios/native_modules'
+
+platform :ios, '13.0'
+
+flutter_application_path = '../Flutter/afjflutter'
+load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
+
+def hawkeye
+  #< Only used during Debug
+  #< Since the podfile dependency doesn't support environment configuration,
+  #< the dependent pods also need to be explicitly configured as Debug.
+  
+#  pod 'MTHawkeye/DefaultPlugins', :git => 'https://github.com/meitu/MTHawkeye.git'
+
+#  pod 'FLEX' #, :configurations => ['Debug']
+#  pod 'FBRetainCycleDetector'#, :configurations => ['Debug']
+  pod 'fishhook'#, :configurations => ['Debug']
+#  pod 'CocoaLumberjack', '3.6.0' #, :configurations => ['Debug'] # CocoaLumberjack is optional, change to `MTHawkeye/DefaultPluginsWithoutLog` if don't need.
+#  pod 'MTGLDebug'#, :configurations => ['Debug'] # MTGLDebug is exclude by default, change `MTHawkeye` to `MTHawkeye/DefaultPlugins` to include.
+#  pod 'MTAppenderFile', '~> 0.4.0'#, :configurations => ['Debug'], :inhibit_warnings => false
+end
+
+target 'AFJ-iOS' do
+  use_frameworks!
+  use_modular_headers!
+
+  # config = use_native_modules!
+  
+  pod 'RNCAsyncStorage', :path => '../ReactNative/node_modules/@react-native-async-storage/async-storage'
+  pod 'RNCMaskedView', :path => '../ReactNative/node_modules/@react-native-community/masked-view'
+  pod 'RNDeviceInfo', :path => '../ReactNative/node_modules/react-native-device-info'
+  pod 'RNGestureHandler', :path => '../ReactNative/node_modules/react-native-gesture-handler'
+  pod 'RNReanimated', :path => '../ReactNative/node_modules/react-native-reanimated'
+  pod 'RNScreens', :path => '../ReactNative/node_modules/react-native-screens'
+  pod 'RNSVG', :path => '../ReactNative/node_modules/react-native-svg'
+
+  pod 'react-native-appearance', :path => '../ReactNative/node_modules/react-native-appearance'
+  pod 'react-native-safari-view', :path => '../ReactNative/node_modules/react-native-safari-view'
+  pod 'react-native-safe-area-context', :path => '../ReactNative/node_modules/react-native-safe-area-context'
+  
+  use_react_native!(
+    :path => '../ReactNative/node_modules/react-native',
+    :hermes_enabled => false,
+  )
+  
+#  setup_jsc!(
+#    :react_native_path => '../ReactNative/node_modules/react-native',
+#    :fabric_enabled => false,
+#  )
+  
+  install_all_flutter_pods(flutter_application_path)
+  
+  hawkeye
+  
+  pod 'Cordova', '5.1.1'
+  pod 'cordova-plugin-wkwebview-engine'
+  
+  pod 'CRToast'
+  
+#  pod 'AlicloudTLog', '1.0.1.1'
+#  pod 'AlicloudAPM', '1.1.1'
+#  pod 'AlicloudCrash' , '1.2.0'
+  
+  pod 'BlocksKit', '~> 2.2.5'
+  pod 'NBSwipePageView', :git => 'https://github.com/xuzhe/NBSwipePageView.git'
+  
+  pod 'CLImageEditor/AllTools'
+
+  pod 'FinApplet'
+  pod 'FinAppletExt'
+  pod 'FinAppletBDMap'
+  pod 'FinAppletGDMap'
+  pod 'FinAppletWebRTC'
+  pod 'FinAppletBLE'
+  pod 'FinAppletContact'
+  pod 'FinAppletClipBoard'
+
+#  pod 'GPJDataDrivenTableView'
+  pod 'LBXScan/LBXNative','~> 2.5'
+  pod 'LBXScan/LBXZXing','~> 2.5'
+  pod 'LBXScan/UI','~> 2.5'
+  pod 'LBXZBarSDK','~> 1.3'
+  pod 'Toast', '~> 4.0.0'
+  pod 'OHHTTPStubs'
+  pod 'ReactiveObjC'
+  pod 'dsBridge'
+  pod 'SSZipArchive'
+  pod 'JXBWebKit', '~> 1.3.0'
+  
+#  pod 'YYKit'
+  
+  pod 'Bugly'
+  pod 'LSSafeProtector'
+  
+  pod 'SwiftyStoreKit'
+  
+  pod 'MGSwipeTableCell'
+  
+  pod 'QMUIKit', '~> 4.6.3'
+  
+  pod 'Charts', '~> 4.1.0'
+  
+  pod 'YXYDashLayer'
+  
+  pod 'RETableViewManager'
+  
+  # 数据库
+  pod 'FMDB'
+  
+  pod 'ZJAnimationPopView'
+  pod 'JLRoutes','2.1'
+  
+#  pod 'MMDrawerController'
+  
+  pod 'AFNetworking'
+  # 一款非常简单的展示工具。提示框，加载框，空白页提示，alert弹出框。一行代码搞定所有操作。
+  pod 'EasyShowView','~>2.1'
+  # 键盘管理
+  pod 'IQKeyboardManager'
+  # AutoLayout
+#  pod 'Masonry'Masonry
+  # An easy way to use pull-to-refresh.
+  pod 'MJRefresh'
+  # 转换速度快、使用简单方便的字典转模型框架
+  pod 'MJExtension'
+  # iOS中一款高度可定制性商品计数按钮(京东/淘宝/饿了么/美团外卖/百度外卖样式)
+  pod 'PPNumberButton'
+  # Autoscroll Banner. 无限循环图片、文字轮播器。
+  pod 'SDCycleScrollView'
+  # 图片缓存
+  pod 'SDWebImage'
+  # HUD
+  pod 'SVProgressHUD'
+  # 强大,易用,完全自定义的提醒视图，弹出视图
+  pod 'TYAlertController'
+  # 简单，强大，高度定制，页面控制器
+  pod 'TYPagerController'
+  # Template auto layout cell for automatically UITableViewCell height calculating
+  pod 'UITableView+FDTemplateLayoutCell'
+  # 超简单！！！ 一行代码设置状态栏、导航栏按钮、标题、颜色、透明度，移动等
+#  pod 'WRNavigationBar','~>1.2.0'
+  # YYKit
+#  pod 'YYText'
+  # Popup your custom view is easy, support custom mask style, transition effects and gesture to drag.
+  pod 'zhPopupController', '~> 1.0.2'
+  
+  pod 'MBProgressHUD'
+  
+  pod 'MQTTClient'
+  
+  pod 'NerdyUI'
+  
+  pod 'SocketRocket'
+  
+  pod 'TZImagePickerController'
+  
+  pod 'MJRefresh'
+  
+  pod 'GVUserDefaults'
+  
+  pod 'FLAnimatedImage'
+  
+  pod 'JXCategoryView'
+  
+  pod 'GBDeviceInfo', '~> 6.0'
+  
+  pod 'FCUUID'
+  
+#  pod 'CYLTabBarController/Lottie', '~> 1.29.0'  # 依赖Lottie库
+  
+  pod 'BaiduMapKit/Map'
+  pod 'BaiduMapKit/Search'
+  pod 'BaiduMapKit/Base'
+  pod 'BaiduMapKit/Utils'
+  pod 'BaiduMapKit/Cloud'
+  pod 'BMKLocationKit'
+  
+  pod 'UMCommon'
+  pod 'UMDevice'
+  pod 'UMAPM'
+  
+  pod 'MGSwipeTableCell'
+  
+#  pod 'FDFullscreenPopGesture'
+  pod 'ZFPlayer', '~> 4.0'
+  pod 'ZFPlayer/ControlView', '~> 4.0'
+  pod 'ZFPlayer/AVPlayer', '~> 4.0'
+  pod 'ZFPlayer/ijkplayer', '~> 4.0'
+  
+  pod 'MOFSPickerManager'
+  pod 'INTULocationManager' # 位置服务模块
+  pod 'DZNEmptyDataSet'
+  
+  pod 'BEMCheckBox'
+  pod 'JVFloatLabeledTextField'
+  pod 'TTGTagCollectionView'    # Tag 标签
+  
+  pod 'PINRemoteImage', '~> 3.0.3'
+  pod 'SDCycleScrollView'       # 图片轮播器
+  pod 'GPUImage'
+  
+  pod 'Mantle'              # JSON 模型转换框架
+  pod 'ChameleonFramework'            # 颜色
+  pod 'RegexKitLite'                  # 正则表达式
+  
+#  pod  'SandBoxPreviewTool'
+  
+  # 服务模块
+  pod 'WechatOpenSDK', '1.8.4'
+  
+  pod 'UIAlertController+Blocks'
+
+  # 网络音频播放器
+  pod 'StreamingKit'
+  
+  pod 'QTEventBus'
+  pod 'QTEventBus/AppModule'
+  
+  pod 'Aspects'
+  
+  pod 'pop', '~> 1.0.12'
+  
+#  pod 'MLeaksFinder'
+  
+  pod 'HJDanmaku'
+  
+#  pod 'Sandboxer'
+  
+  pod 'FXBlurView'
+  
+  pod 'FSCalendar'
+  
+  pod 'BabyBluetooth'
+  
+  pod 'Onboard'
+  
+  pod 'PYSearch'
+  
+  pod 'MotionBlur'
+  
+  pod 'ZLCollectionViewFlowLayout'
+  
+  pod 'MagicalRecord','~> 2.3.0'
+  
+  pod 'LSAnimator', '~> 2.1.5'
+  
+  pod 'LSTPopView', :git => 'https://github.com/LoSenTrad/LSTPopView'
+  
+  pod 'LSTCategory'
+  
+  pod 'JDStatusBarNotification', '~> 2.0.6'
+  
+  pod 'DateTools'
+  
+  pod 'Shimmer'
+  
+  pod 'PMTween'
+  
+  pod 'RKNotificationHub'
+  
+  pod 'ZSSRichTextEditor', :git => 'https://github.com/nnhubbard/ZSSRichTextEditor'
+  
+  pod 'PinYin4Objc'
+
+  pod 'KWTransition'
+  pod 'ADTransitionController'
+  pod 'VCTransitionsLibrary'
+  pod 'LCZoomTransition'
+  
+  pod 'ISHPermissionKit/Motion'
+  pod 'ISHPermissionKit/Health'
+  pod 'ISHPermissionKit/Location'
+  pod 'ISHPermissionKit/Microphone'
+  pod 'ISHPermissionKit/PhotoLibrary'
+  pod 'ISHPermissionKit/Camera'
+  pod 'ISHPermissionKit/Notifications'
+  pod 'ISHPermissionKit/SocialAccounts'
+  pod 'ISHPermissionKit/Contacts'
+  pod 'ISHPermissionKit/Calendar'
+  pod 'ISHPermissionKit/Reminders'
+  pod 'ISHPermissionKit/Siri'
+  pod 'ISHPermissionKit/Speech'
+  pod 'ISHPermissionKit/MusicLibrary'
+
+  target 'AFJ-iOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'AFJ-iOSUITests' do
+    # Pods for testing
+  end
+  
+  $static_framework = ['RNCAsyncStorage','RNCMaskedView','RNDeviceInfo','RNGestureHandler','RNReanimated','RNScreens','RNSVG','react-native-appearance','react-native-safari-view','react-native-safe-area-context']
+  
+  pre_install do |installer|
+   Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
+   installer.pod_targets.each do |pod|
+     if $static_framework.include?(pod.name)
+       def pod.build_type
+         Pod::BuildType.static_library
+       end
+     end
+    end
+  end
+
+  post_install do |installer|
+    
+    flutter_post_install(installer) if defined?(flutter_post_install)
+#    react_native_post_install(installer)
+#    __apply_Xcode_12_5_M1_post_install_workaround(installer)
+    
+    ## Fix for iOS 16
+    find_and_replace("Pods/MTHawkeye/MTHawkeye/UISkeleton/MTHawkeyeUIClient.m",
+                     "return [[UIApplication sharedApplication] valueForKey:statusBarString];",
+                     "return !@available(iOS 16, *) ? [UIApplication.sharedApplication valueForKey:statusBarString] : nil;")
+
+    ## Fix for iOS 16
+    find_and_replace("Pods/FLEX/Classes/ExplorerInterface/FLEXExplorerViewController.m",
+                     "return [UIApplication.sharedApplication valueForKey:statusBarString];",
+                     "return !@available(iOS 16, *) ? [UIApplication.sharedApplication valueForKey:statusBarString] : nil;")
+
+    ## Fix for XCode 12.5
+    find_and_replace("Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/FBClassStrongLayout.mm",
+                     "layoutCache[currentClass] = ivars;",
+                     "layoutCache[(id<NSCopying>)currentClass] = ivars;")
+                     
+    ## Fix for when building on iOS 13+
+    ## Refer - https://github.com/facebook/react-native/commit/46bdb4161c84b33f1d0612e9c7cdd824462a31fd
+    ## Fix from - https://github.com/facebook/react-native/issues/25182#issuecomment-546997351
+    find_and_replace("Pods/FBRetainCycleDetector/fishhook/fishhook.c",
+                     "indirect_symbol_bindings[i] = cur->rebindings[j].replacement;",
+                     "if(i < (sizeof(indirect_symbol_bindings) /sizeof(indirect_symbol_bindings[0]))) {indirect_symbol_bindings[i] = cur->rebindings[j].replacement;}")
+      
+    installer.pods_project.targets.each do |target|
+        flutter_additional_ios_build_settings(target)
+        target.build_configurations.each do |config|
+            if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 11.0
+              config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+            end
+          
+            config.build_settings['CODE_SIGNING_REQUIRED'] = "NO"
+            config.build_settings['CODE_SIGNING_ALLOWED'] = "NO"
+            config.build_settings['ENABLE_STRICT_OBJC_MSGSEND'] = 'NO'
+            config.build_settings['APPLICATION_EXTENSION_API_ONLY'] = 'NO'
+            #https://stackoverflow.com/questions/56957632/could-not-find-module-for-target-x86-64-apple-ios-simulator
+            config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
+            config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+            config.build_settings['VALID_ARCHS'] = 'arm64 arm64e x86_64'
+            
+            if target.name == "YYKit" || target.name == "WechatOpenSDK" || target.name == "React" || target.name == "react_native_safari_view" || target.name == "react_native_appearance"
+              config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
+            end
+            
+            if target.name == "SwiftAlgorithms"
+               config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'NO'
+            end
+ 
+            if target.respond_to?(:product_type) and target.product_type == "com.apple.product-type.bundle"
+              target.build_configurations.each do |config|
+                config.build_settings['CODE_SIGNING_ALLOWED'] = 'NO'
+              end
+            end
+ 
+#            if config.build_settings['WRAPPER_EXTENSION'] == 'bundle'
+#              config.build_settings['DEVELOPMENT_TEAM'] = 'YOUR_DEVELOPMENT_TEAM_ID'
+#            end
+        end
+    end
+  end
+
+  def find_and_replace(dir, findstr, replacestr)
+    Dir[dir].each do |name|
+      FileUtils.chmod("+w", name) #add
+      text = File.read(name)
+      replace = text.gsub(findstr,replacestr)
+      if text != replace
+          puts "Fix: " + name
+          File.open(name, "w") { |file| file.puts replace }
+          STDOUT.flush
+      end
+    end
+    Dir[dir + '*/'].each(&method(:find_and_replace))
+  end
+
+end

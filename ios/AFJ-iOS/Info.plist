@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>weixin</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>wx85663af68a0cbbc8</string>
+			</array>
+		</dict>
+	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>weixin</string>
+		<string>weixinULAPI</string>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>localhost</key>
+			<dict/>
+			<key>NSExceptionAllowsInsecureHTTPLoads</key>
+			<true/>
+		</dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>opensans-regular.ttf</string>
+		<string>roboto-regular.ttf</string>
+		<string>FZLSJW.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+		<string>location</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Allow AFJ-iOS to access your calendar</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Allow AFJ-iOS to use the camera</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Allow AFJ-iOS experiences to access your contacts</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Allow AFJ-iOS to use your location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Allow AFJ-iOS to use your location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Allow AFJ-iOS to use your location</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Allow AFJ-iOS to access your microphone</string>
+	<key>NSMotionUsageDescription</key>
+	<string>Allow AFJ-iOS to access your device&apos;s accelerometer</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Give AFJ-iOS periences permission to save photos</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Give AFJ-iOS periences permission to access your photos</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>Allow AFJ-iOS to access your reminders</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+</dict>
+</plist>

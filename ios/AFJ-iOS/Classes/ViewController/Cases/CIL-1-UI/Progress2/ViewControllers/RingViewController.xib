@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RingViewController">
+            <connections>
+                <outlet property="animateButton" destination="SYh-hi-98G" id="f5P-0D-ety"/>
+                <outlet property="iconControl" destination="BKB-sj-40y" id="wlI-RG-o6k"/>
+                <outlet property="indeterminateSwitch" destination="hsz-xa-Qb8" id="GYk-b7-5iB"/>
+                <outlet property="progressSlider" destination="JVp-A0-XjV" id="61o-yO-ol0"/>
+                <outlet property="progressView" destination="RHP-XQ-zaE" id="rsw-jL-hXI"/>
+                <outlet property="showPercentageSwitch" destination="Pye-hN-PJQ" id="qWj-OZ-PF6"/>
+                <outlet property="view" destination="8r4-5L-dWi" id="ubZ-HL-UO4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8r4-5L-dWi">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RHP-XQ-zaE" customClass="M13ProgressViewRing">
+                    <rect key="frame" x="60" y="87" width="294" height="296"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNm-S7-k7L">
+                    <rect key="frame" x="20" y="429" width="73" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" systemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkd-0P-WQF">
+                    <rect key="frame" x="20" y="499" width="54" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" systemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indeterminate:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luu-Ho-tsU">
+                    <rect key="frame" x="20" y="572" width="111" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" systemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYh-hi-98G">
+                    <rect key="frame" x="99" y="391" width="216" height="30"/>
+                    <state key="normal" title="Animate Progress">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="animateProgress:" destination="-1" eventType="touchUpInside" id="HQx-pR-7ZK"/>
+                    </connections>
+                </button>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="JVp-A0-XjV">
+                    <rect key="frame" x="18" y="458" width="378" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="zuC-z7-67y"/>
+                    </constraints>
+                    <connections>
+                        <action selector="progressChanged:" destination="-1" eventType="valueChanged" id="VFP-C4-JFB"/>
+                    </connections>
+                </slider>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BKB-sj-40y">
+                    <rect key="frame" x="20" y="528" width="374" height="32"/>
+                    <segments>
+                        <segment title="None"/>
+                        <segment title="Success"/>
+                        <segment title="Failure"/>
+                    </segments>
+                    <connections>
+                        <action selector="iconChanged:" destination="-1" eventType="valueChanged" id="KP8-Ou-wtT"/>
+                    </connections>
+                </segmentedControl>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hsz-xa-Qb8">
+                    <rect key="frame" x="139" y="567" width="51" height="31"/>
+                    <connections>
+                        <action selector="indeterminateChanged:" destination="-1" eventType="valueChanged" id="Aln-cu-u87"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percentage:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzs-eV-lBw">
+                    <rect key="frame" x="20" y="611" width="92" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" systemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pye-hN-PJQ">
+                    <rect key="frame" x="120" y="606" width="51" height="31"/>
+                    <connections>
+                        <action selector="showPercentage:" destination="-1" eventType="valueChanged" id="zr4-LR-QEA"/>
+                    </connections>
+                </switch>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="FxU-Rf-2eF"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SYh-hi-98G" firstAttribute="centerX" secondItem="RHP-XQ-zaE" secondAttribute="centerX" id="1vi-ag-i63"/>
+                <constraint firstItem="hsz-xa-Qb8" firstAttribute="centerY" secondItem="luu-Ho-tsU" secondAttribute="centerY" id="6FA-n2-OGQ"/>
+                <constraint firstItem="FxU-Rf-2eF" firstAttribute="bottom" secondItem="Pye-hN-PJQ" secondAttribute="bottom" constant="225" id="6tH-S8-dDz"/>
+                <constraint firstItem="RHP-XQ-zaE" firstAttribute="top" secondItem="FxU-Rf-2eF" secondAttribute="top" constant="43" id="932-fl-UxZ"/>
+                <constraint firstItem="uzs-eV-lBw" firstAttribute="leading" secondItem="luu-Ho-tsU" secondAttribute="leading" id="AF1-3v-zLh"/>
+                <constraint firstItem="JVp-A0-XjV" firstAttribute="top" secondItem="SYh-hi-98G" secondAttribute="bottom" constant="37" id="G3l-4x-4na"/>
+                <constraint firstItem="hsz-xa-Qb8" firstAttribute="top" secondItem="BKB-sj-40y" secondAttribute="bottom" constant="8" symbolic="YES" id="HlD-hK-jpC"/>
+                <constraint firstItem="SYh-hi-98G" firstAttribute="centerX" secondItem="JVp-A0-XjV" secondAttribute="centerX" id="IId-p5-GSN"/>
+                <constraint firstItem="RHP-XQ-zaE" firstAttribute="leading" secondItem="8r4-5L-dWi" secondAttribute="leading" constant="60" id="KUS-eR-Y2b"/>
+                <constraint firstItem="BKB-sj-40y" firstAttribute="leading" secondItem="Hkd-0P-WQF" secondAttribute="leading" id="KmB-3k-SEx"/>
+                <constraint firstItem="Pye-hN-PJQ" firstAttribute="top" secondItem="hsz-xa-Qb8" secondAttribute="bottom" constant="8" symbolic="YES" id="MH5-tZ-GfF"/>
+                <constraint firstItem="uzs-eV-lBw" firstAttribute="centerY" secondItem="Pye-hN-PJQ" secondAttribute="centerY" id="Obl-17-Tdy"/>
+                <constraint firstItem="Pye-hN-PJQ" firstAttribute="leading" secondItem="uzs-eV-lBw" secondAttribute="trailing" constant="8" symbolic="YES" id="Qz5-Ya-s5t"/>
+                <constraint firstItem="Hkd-0P-WQF" firstAttribute="top" secondItem="JVp-A0-XjV" secondAttribute="bottom" constant="8" symbolic="YES" id="Xl9-LZ-ZL8"/>
+                <constraint firstItem="eNm-S7-k7L" firstAttribute="leading" secondItem="8r4-5L-dWi" secondAttribute="leading" constant="20" symbolic="YES" id="ZBz-xZ-rHo"/>
+                <constraint firstItem="JVp-A0-XjV" firstAttribute="top" secondItem="eNm-S7-k7L" secondAttribute="bottom" constant="8" symbolic="YES" id="bgb-ow-1Mv"/>
+                <constraint firstItem="hsz-xa-Qb8" firstAttribute="leading" secondItem="luu-Ho-tsU" secondAttribute="trailing" constant="8" symbolic="YES" id="cjd-2C-Vvd"/>
+                <constraint firstItem="BKB-sj-40y" firstAttribute="top" secondItem="Hkd-0P-WQF" secondAttribute="bottom" constant="8" symbolic="YES" id="fb9-2Q-Yz1"/>
+                <constraint firstItem="JVp-A0-XjV" firstAttribute="leading" secondItem="Hkd-0P-WQF" secondAttribute="leading" id="fdb-sM-v3g"/>
+                <constraint firstAttribute="trailing" secondItem="JVp-A0-XjV" secondAttribute="trailing" constant="20" symbolic="YES" id="fh0-Rl-5CA"/>
+                <constraint firstItem="SYh-hi-98G" firstAttribute="leading" secondItem="FxU-Rf-2eF" secondAttribute="leading" constant="99" id="hKC-FD-9Ld"/>
+                <constraint firstItem="SYh-hi-98G" firstAttribute="top" secondItem="RHP-XQ-zaE" secondAttribute="bottom" constant="8" symbolic="YES" id="laQ-HZ-Z3S"/>
+                <constraint firstItem="BKB-sj-40y" firstAttribute="trailing" secondItem="JVp-A0-XjV" secondAttribute="trailing" id="n8t-ol-817"/>
+                <constraint firstItem="BKB-sj-40y" firstAttribute="leading" secondItem="luu-Ho-tsU" secondAttribute="leading" id="tZt-h3-uRM"/>
+                <constraint firstItem="eNm-S7-k7L" firstAttribute="leading" secondItem="JVp-A0-XjV" secondAttribute="leading" id="yI1-lQ-MMf"/>
+            </constraints>
+            <point key="canvasLocation" x="99" y="-502"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

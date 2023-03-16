@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AFJImageSampleViewController">
+            <connections>
+                <outlet property="_scrollView" destination="31K-IC-qec" id="QNm-GS-UT5"/>
+                <outlet property="view" destination="Z6d-aH-9t9" id="Cwm-ph-PFf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Z6d-aH-9t9">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tabBar contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnx-z2-Ynq">
+                    <rect key="frame" x="0.0" y="729" width="414" height="167"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <items>
+                        <tabBarItem title="New" image="new" id="sgR-aI-h7c"/>
+                        <tabBarItem tag="1" title="Edit" image="edit" id="dED-kc-K3J"/>
+                        <tabBarItem tag="2" title="Save" image="save" id="KuH-xm-YX0"/>
+                    </items>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Ldr-HV-Tq3"/>
+                    </connections>
+                </tabBar>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31K-IC-qec">
+                    <rect key="frame" x="0.0" y="44" width="414" height="685"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="fah-Z0-bq1"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="RVr-D0-Wiy"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="31K-IC-qec" firstAttribute="top" secondItem="RVr-D0-Wiy" secondAttribute="top" id="0wl-hH-SUj"/>
+                <constraint firstAttribute="bottom" secondItem="fnx-z2-Ynq" secondAttribute="bottom" id="3jD-4E-VtQ"/>
+                <constraint firstAttribute="bottom" secondItem="31K-IC-qec" secondAttribute="bottom" constant="167" id="7L6-3F-haE"/>
+                <constraint firstItem="fnx-z2-Ynq" firstAttribute="leading" secondItem="Z6d-aH-9t9" secondAttribute="leading" id="IbX-hh-xkL"/>
+                <constraint firstAttribute="trailing" secondItem="31K-IC-qec" secondAttribute="trailing" id="QAl-ya-6Wn"/>
+                <constraint firstItem="fnx-z2-Ynq" firstAttribute="top" secondItem="31K-IC-qec" secondAttribute="bottom" id="d1P-1d-IOI"/>
+                <constraint firstAttribute="trailing" secondItem="fnx-z2-Ynq" secondAttribute="trailing" id="naY-ly-fLr"/>
+                <constraint firstItem="31K-IC-qec" firstAttribute="leading" secondItem="Z6d-aH-9t9" secondAttribute="leading" id="pjs-ji-8SA"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="-512"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="edit" width="30" height="30"/>
+        <image name="new" width="30" height="30"/>
+        <image name="save" width="30" height="30"/>
+    </resources>
+</document>

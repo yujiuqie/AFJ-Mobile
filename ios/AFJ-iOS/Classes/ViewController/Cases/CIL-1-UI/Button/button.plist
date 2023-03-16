@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <array>
+        <dict>
+            <key>title</key>
+            <string>UIButtonType</string>
+            <key>image</key>
+            <string>01</string>
+        </dict>
+        <dict>
+            <key>title</key>
+            <string>UIControlState</string>
+            <key>image</key>
+            <string>02</string>
+        </dict>
+        <dict>
+            <key>title</key>
+            <string>基础用法</string>
+            <key>image</key>
+            <string>03</string>
+        </dict>
+        <dict>
+            <key>title</key>
+            <string>模版：页面底部按钮</string>
+            <key>image</key>
+            <string>04</string>
+        </dict>
+        <dict>
+            <key>title</key>
+            <string>PPNumberButton示例</string>
+            <key>image</key>
+            <string>05</string>
+        </dict>
+        <dict>
+            <key>title</key>
+            <string>BEMCheckBox 示例</string>
+            <key>image</key>
+            <string>06</string>
+        </dict>
+    </array>
+</plist>

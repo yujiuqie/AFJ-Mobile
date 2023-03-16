@@ -1,0 +1,1501 @@
+PODS:
+  - ADTransitionController (1.2.0)
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - AMap3DMap-NO-IDFA (9.4.0):
+    - AMapFoundation-NO-IDFA (>= 1.7.0)
+  - AMapFoundation-NO-IDFA (1.7.0)
+  - AMapLocation-NO-IDFA (2.9.0):
+    - AMapFoundation-NO-IDFA (>= 1.7.0)
+  - AMapSearch-NO-IDFA (9.4.0):
+    - AMapFoundation-NO-IDFA (>= 1.7.0)
+  - Aspects (1.4.1)
+  - BabyBluetooth (0.7.0)
+  - BaiduMapKit/Base (6.3.0)
+  - BaiduMapKit/Cloud (6.3.0):
+    - BaiduMapKit/Base
+  - BaiduMapKit/Map (6.3.0):
+    - BaiduMapKit/Base
+  - BaiduMapKit/Search (6.3.0):
+    - BaiduMapKit/Base
+  - BaiduMapKit/Utils (6.3.0):
+    - BaiduMapKit/Base
+  - BEMCheckBox (1.4.1)
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BMKLocationKit (2.0.4)
+  - boost-for-react-native (1.63.0)
+  - Bugly (2.5.93)
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
+  - Charts (4.1.0):
+    - Charts/Core (= 4.1.0)
+  - Charts/Core (4.1.0):
+    - SwiftAlgorithms (~> 1.0)
+  - CLImageEditor/AllTools (0.2.4):
+    - CLImageEditor/Core
+    - CLImageEditor/EmoticonTool
+    - CLImageEditor/ResizeTool
+    - CLImageEditor/SplashTool
+    - CLImageEditor/StickerTool
+    - CLImageEditor/TextTool
+  - CLImageEditor/Core (0.2.4)
+  - CLImageEditor/EmoticonTool (0.2.4):
+    - CLImageEditor/Core
+  - CLImageEditor/ResizeTool (0.2.4):
+    - CLImageEditor/Core
+  - CLImageEditor/SplashTool (0.2.4):
+    - CLImageEditor/Core
+  - CLImageEditor/StickerTool (0.2.4):
+    - CLImageEditor/Core
+  - CLImageEditor/TextTool (0.2.4):
+    - CLImageEditor/Core
+  - Cordova (5.1.1)
+  - cordova-plugin-wkwebview-engine (1.1.0):
+    - Cordova (>= 4.3.0)
+  - CRToast (0.0.9)
+  - DateTools (2.0.0)
+  - DoubleConversion (1.1.6)
+  - dsBridge (3.0.6)
+  - DZNEmptyDataSet (1.8.1)
+  - EasyShowView (2.1.4):
+    - EasyShowView/EasyAlert (= 2.1.4)
+    - EasyShowView/EasyEmpty (= 2.1.4)
+    - EasyShowView/EasyLoading (= 2.1.4)
+    - EasyShowView/EasyShowUtils (= 2.1.4)
+    - EasyShowView/EasyText (= 2.1.4)
+  - EasyShowView/EasyAlert (2.1.4):
+    - EasyShowView/EasyShowUtils
+  - EasyShowView/EasyEmpty (2.1.4):
+    - EasyShowView/EasyShowUtils
+  - EasyShowView/EasyLoading (2.1.4):
+    - EasyShowView/EasyShowUtils
+  - EasyShowView/EasyShowUtils (2.1.4)
+  - EasyShowView/EasyText (2.1.4):
+    - EasyShowView/EasyShowUtils
+  - FBLazyVector (0.63.4)
+  - FBReactNativeSpec (0.63.4):
+    - Folly (= 2020.01.13.00)
+    - RCTRequired (= 0.63.4)
+    - RCTTypeSafety (= 0.63.4)
+    - React-Core (= 0.63.4)
+    - React-jsi (= 0.63.4)
+    - ReactCommon/turbomodule/core (= 0.63.4)
+  - FCUUID (1.3.1):
+    - UICKeyChainStore (~> 2.1.0)
+  - file_selector_ios (0.0.1):
+    - Flutter
+  - FinApplet (2.37.13)
+  - FinAppletBDMap (2.37.13):
+    - BaiduMapKit/Map (= 6.3.0)
+    - BaiduMapKit/Search
+    - BMKLocationKit
+    - FinAppletExt (= 2.37.13)
+  - FinAppletBLE (2.37.13):
+    - FinAppletExt (= 2.37.13)
+  - FinAppletClipBoard (2.37.13):
+    - FinApplet (= 2.37.13)
+  - FinAppletContact (2.37.13):
+    - FinApplet (= 2.37.13)
+  - FinAppletExt (2.37.13):
+    - FinApplet (= 2.37.13)
+  - FinAppletGDMap (2.37.13):
+    - AMap3DMap-NO-IDFA
+    - AMapLocation-NO-IDFA
+    - AMapSearch-NO-IDFA
+    - FinAppletExt (= 2.37.13)
+  - FinAppletWebRTC (2.37.13):
+    - FinApplet (= 2.37.13)
+    - GoogleWebRTC (= 1.1.26989)
+  - fishhook (0.2)
+  - FLAnimatedImage (1.0.17)
+  - Flutter (1.0.0)
+  - FlutterPluginRegistrant (0.0.1):
+    - file_selector_ios
+    - Flutter
+    - package_info_plus
+    - path_provider_foundation
+    - r_upgrade
+    - share_plus
+    - shared_preferences_ios
+    - sqflite
+    - url_launcher_ios
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - Folly (2020.01.13.00):
+    - boost-for-react-native
+    - DoubleConversion
+    - Folly/Default (= 2020.01.13.00)
+    - glog
+  - Folly/Default (2020.01.13.00):
+    - boost-for-react-native
+    - DoubleConversion
+    - glog
+  - FSCalendar (2.8.4)
+  - FXBlurView (1.6.4)
+  - GBDeviceInfo (6.7.0):
+    - GBDeviceInfo/Core (= 6.7.0)
+  - GBDeviceInfo/Core (6.7.0)
+  - glog (0.3.5)
+  - GoogleWebRTC (1.1.26989)
+  - GPUImage (0.1.7)
+  - GVUserDefaults (1.0.2)
+  - HJDanmaku (2.0.6)
+  - IJKMediaFramework (0.1.5)
+  - INTULocationManager (4.4.0)
+  - IQKeyboardManager (6.5.10)
+  - ISHPermissionKit/Calendar (2.1.3):
+    - ISHPermissionKit/Core
+  - ISHPermissionKit/Camera (2.1.3):
+    - ISHPermissionKit/Core
+  - ISHPermissionKit/Contacts (2.1.3):
+    - ISHPermissionKit/Core
+  - ISHPermissionKit/Core (2.1.3)
+  - ISHPermissionKit/Health (2.1.3):
+    - ISHPermissionKit/Core
+  - ISHPermissionKit/Location (2.1.3):
+    - ISHPermissionKit/Core
+  - ISHPermissionKit/Microphone (2.1.3):
+    - ISHPermissionKit/Core
+  - ISHPermissionKit/Motion (2.1.3):
+    - ISHPermissionKit/Core
+  - ISHPermissionKit/MusicLibrary (2.1.3):
+    - ISHPermissionKit/Core
+  - ISHPermissionKit/Notifications (2.1.3):
+    - ISHPermissionKit/Core
+  - ISHPermissionKit/PhotoLibrary (2.1.3):
+    - ISHPermissionKit/Core
+  - ISHPermissionKit/Reminders (2.1.3):
+    - ISHPermissionKit/Core
+  - ISHPermissionKit/Siri (2.1.3):
+    - ISHPermissionKit/Core
+  - ISHPermissionKit/SocialAccounts (2.1.3):
+    - ISHPermissionKit/Core
+  - ISHPermissionKit/Speech (2.1.3):
+    - ISHPermissionKit/Core
+  - JDStatusBarNotification (2.0.6)
+  - JLRoutes (2.1)
+  - JVFloatLabeledTextField (1.2.2)
+  - JXBWebKit (1.3.0)
+  - JXCategoryView (1.6.1)
+  - KWTransition (0.0.4)
+  - LBXScan/LBXNative (2.5.1):
+    - LBXScan/Types (~> 2.2)
+  - LBXScan/LBXZXing (2.5.1):
+    - LBXScan/Types (~> 2.2)
+  - LBXScan/Types (2.5.1)
+  - LBXScan/UI (2.5.1):
+    - LBXScan/Types (~> 2.2)
+  - LBXZBarSDK (1.3.5)
+  - LCZoomTransition (1.0.0)
+  - LSAnimator (2.1.5)
+  - LSSafeProtector (2.1.4):
+    - LSSafeProtector/Core (= 2.1.4)
+    - LSSafeProtector/Foundation (= 2.1.4)
+    - LSSafeProtector/MRC (= 2.1.4)
+  - LSSafeProtector/Core (2.1.4)
+  - LSSafeProtector/Foundation (2.1.4):
+    - LSSafeProtector/Core
+  - LSSafeProtector/MRC (2.1.4):
+    - LSSafeProtector/Core
+    - LSSafeProtector/Foundation
+  - LSTCategory (0.3.2):
+    - LSTCategory/Code (= 0.3.2)
+    - YYModel
+  - LSTCategory/Code (0.3.2):
+    - YYModel
+  - LSTPopView (0.3.10):
+    - LSTPopView/Code (= 0.3.10)
+    - LSTTimer
+  - LSTPopView/Code (0.3.10):
+    - LSTTimer
+  - LSTTimer (0.2.10)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - Mantle (2.2.0):
+    - Mantle/extobjc (= 2.2.0)
+  - Mantle/extobjc (2.2.0)
+  - MBProgressHUD (1.2.0)
+  - MGSwipeTableCell (1.6.14)
+  - MJExtension (3.4.1)
+  - MJRefresh (3.7.5)
+  - MOFSPickerManager (3.0.1)
+  - MotionBlur (0.2.0)
+  - MQTTClient (0.15.3):
+    - MQTTClient/Core (= 0.15.3)
+  - MQTTClient/Core (0.15.3):
+    - MQTTClient/Manager
+    - MQTTClient/Min
+  - MQTTClient/Manager (0.15.3):
+    - MQTTClient/Min
+  - MQTTClient/Min (0.15.3)
+  - NBSwipePageView (0.1)
+  - NerdyUI (1.2.1):
+    - NerdyUI/Chainable (= 1.2.1)
+    - NerdyUI/Private (= 1.2.1)
+    - NerdyUI/Public (= 1.2.1)
+  - NerdyUI/Chainable (1.2.1):
+    - NerdyUI/Private
+    - NerdyUI/Public
+  - NerdyUI/Private (1.2.1)
+  - NerdyUI/Public (1.2.1):
+    - NerdyUI/Private
+  - OHHTTPStubs (9.1.0):
+    - OHHTTPStubs/Default (= 9.1.0)
+  - OHHTTPStubs/Core (9.1.0)
+  - OHHTTPStubs/Default (9.1.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (9.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (9.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (9.1.0)
+  - Onboard (2.3.3)
+  - package_info_plus (0.4.5):
+    - Flutter
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - PINCache (3.0.3):
+    - PINCache/Arc-exception-safe (= 3.0.3)
+    - PINCache/Core (= 3.0.3)
+  - PINCache/Arc-exception-safe (3.0.3):
+    - PINCache/Core
+  - PINCache/Core (3.0.3):
+    - PINOperation (~> 1.2.1)
+  - PINOperation (1.2.1)
+  - PINRemoteImage (3.0.3):
+    - PINRemoteImage/PINCache (= 3.0.3)
+  - PINRemoteImage/Core (3.0.3):
+    - PINOperation
+  - PINRemoteImage/PINCache (3.0.3):
+    - PINCache (~> 3.0.3)
+    - PINRemoteImage/Core
+  - PinYin4Objc (1.1.1)
+  - PMTween (1.3.7)
+  - pop (1.0.12)
+  - PPNumberButton (0.8.0)
+  - PYSearch (0.9.1)
+  - QMUIKit (4.6.3):
+    - QMUIKit/QMUIComponents (= 4.6.3)
+    - QMUIKit/QMUICore (= 4.6.3)
+    - QMUIKit/QMUILog (= 4.6.3)
+    - QMUIKit/QMUIMainFrame (= 4.6.3)
+    - QMUIKit/QMUIResources (= 4.6.3)
+    - QMUIKit/QMUIWeakObjectContainer (= 4.6.3)
+  - QMUIKit/QMUIComponents (4.6.3):
+    - QMUIKit/QMUIComponents/NavigationBarTransition (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIAlertController (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIAnimation (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIAppearance (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIAssetLibrary (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIBadge (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIButton (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUICAAnimationExtension (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUICALayerExtension (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUICellHeightCache (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUICellHeightKeyCache (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUICellSizeKeyCache (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUICollectionViewPagingLayout (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIConsole (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIDialogViewController (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIEmotionInputManager (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIEmotionView (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIEmptyView (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIFloatLayoutView (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIGridView (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIImagePickerLibrary (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIImagePreviewView (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIKeyboardManager (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUILabel (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUILogManagerViewController (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUILogWithConfigurationSupported (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIMarqueeLabel (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIModalPresentationViewController (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIMoreOperationController (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIMultipleDelegates (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUINavigationButton (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUINavigationTitleView (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIOrderedDictionary (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIPieProgressView (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIPopupContainerView (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIPopupMenuView (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIScrollAnimator (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUISearchBar (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUISearchController (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUISegmentedControl (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIStaticTableView (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUITableView (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUITableViewCell (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUITableViewHeaderFooterView (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUITableViewProtocols (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUITestView (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUITextField (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUITextView (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUITheme (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUITips (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIToastView (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIToolbarButton (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIWindowSizeMonitor (= 4.6.3)
+    - QMUIKit/QMUIComponents/QMUIZoomImageView (= 4.6.3)
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/NavigationBarTransition (4.6.3):
+    - QMUIKit/QMUIComponents/QMUINavigationTitleView
+    - QMUIKit/QMUICore
+    - QMUIKit/QMUIMainFrame
+  - QMUIKit/QMUIComponents/QMUIAlertController (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIAppearance
+    - QMUIKit/QMUIComponents/QMUIButton
+    - QMUIKit/QMUIComponents/QMUIKeyboardManager
+    - QMUIKit/QMUIComponents/QMUILabel
+    - QMUIKit/QMUIComponents/QMUIModalPresentationViewController
+    - QMUIKit/QMUIComponents/QMUITextField
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIAnimation (4.6.3):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIAppearance (4.6.3):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIAssetLibrary (4.6.3):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIBadge (4.6.3):
+    - QMUIKit/QMUIComponents/QMUILabel
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIButton (4.6.3):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUICAAnimationExtension (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIMultipleDelegates
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUICALayerExtension (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIMultipleDelegates
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUICellHeightCache (4.6.3):
+    - QMUIKit/QMUIComponents/QMUITableViewProtocols
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUICellHeightKeyCache (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIMultipleDelegates
+    - QMUIKit/QMUIComponents/QMUITableViewProtocols
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUICellSizeKeyCache (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIMultipleDelegates
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUICollectionViewPagingLayout (4.6.3):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIConsole (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIButton
+    - QMUIKit/QMUIComponents/QMUICAAnimationExtension
+    - QMUIKit/QMUIComponents/QMUICellHeightKeyCache
+    - QMUIKit/QMUIComponents/QMUIPopupMenuView
+    - QMUIKit/QMUIComponents/QMUITableView
+    - QMUIKit/QMUIComponents/QMUITableViewCell
+    - QMUIKit/QMUIComponents/QMUITextField
+    - QMUIKit/QMUIComponents/QMUITextView
+    - QMUIKit/QMUICore
+    - QMUIKit/QMUIResources
+  - QMUIKit/QMUIComponents/QMUIDialogViewController (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIAppearance
+    - QMUIKit/QMUIComponents/QMUIButton
+    - QMUIKit/QMUIComponents/QMUILabel
+    - QMUIKit/QMUIComponents/QMUIModalPresentationViewController
+    - QMUIKit/QMUIComponents/QMUINavigationTitleView
+    - QMUIKit/QMUIComponents/QMUITableView
+    - QMUIKit/QMUIComponents/QMUITableViewCell
+    - QMUIKit/QMUIComponents/QMUITextField
+    - QMUIKit/QMUICore
+    - QMUIKit/QMUIMainFrame
+  - QMUIKit/QMUIComponents/QMUIEmotionInputManager (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIEmotionView
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIEmotionView (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIButton
+    - QMUIKit/QMUICore
+    - QMUIKit/QMUIResources
+  - QMUIKit/QMUIComponents/QMUIEmptyView (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIAppearance
+    - QMUIKit/QMUIComponents/QMUIButton
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIFloatLayoutView (4.6.3):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIGridView (4.6.3):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIImagePickerLibrary (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIAlertController
+    - QMUIKit/QMUIComponents/QMUIAppearance
+    - QMUIKit/QMUIComponents/QMUIAssetLibrary
+    - QMUIKit/QMUIComponents/QMUIButton
+    - QMUIKit/QMUIComponents/QMUIEmptyView
+    - QMUIKit/QMUIComponents/QMUIImagePreviewView
+    - QMUIKit/QMUIComponents/QMUINavigationButton
+    - QMUIKit/QMUIComponents/QMUITableViewCell
+    - QMUIKit/QMUIComponents/QMUIZoomImageView
+    - QMUIKit/QMUICore
+    - QMUIKit/QMUIMainFrame
+    - QMUIKit/QMUIResources
+  - QMUIKit/QMUIComponents/QMUIImagePreviewView (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIAppearance
+    - QMUIKit/QMUIComponents/QMUIButton
+    - QMUIKit/QMUIComponents/QMUICollectionViewPagingLayout
+    - QMUIKit/QMUIComponents/QMUIEmptyView
+    - QMUIKit/QMUIComponents/QMUIPieProgressView
+    - QMUIKit/QMUIComponents/QMUIZoomImageView
+    - QMUIKit/QMUICore
+    - QMUIKit/QMUIMainFrame
+  - QMUIKit/QMUIComponents/QMUIKeyboardManager (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIAppearance
+    - QMUIKit/QMUIComponents/QMUIMultipleDelegates
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUILabel (4.6.3):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUILogManagerViewController (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIPopupMenuView
+    - QMUIKit/QMUIComponents/QMUISearchController
+    - QMUIKit/QMUIComponents/QMUIStaticTableView
+    - QMUIKit/QMUIComponents/QMUITableView
+    - QMUIKit/QMUICore
+    - QMUIKit/QMUIMainFrame
+  - QMUIKit/QMUIComponents/QMUILogWithConfigurationSupported (4.6.3):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIMarqueeLabel (4.6.3):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIModalPresentationViewController (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIAppearance
+    - QMUIKit/QMUIComponents/QMUIKeyboardManager
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIMoreOperationController (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIAppearance
+    - QMUIKit/QMUIComponents/QMUIButton
+    - QMUIKit/QMUIComponents/QMUIModalPresentationViewController
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIMultipleDelegates (4.6.3):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUINavigationButton (4.6.3):
+    - QMUIKit/QMUICore
+    - QMUIKit/QMUIMainFrame
+  - QMUIKit/QMUIComponents/QMUINavigationTitleView (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIAppearance
+    - QMUIKit/QMUIComponents/QMUIButton
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIOrderedDictionary (4.6.3):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIPieProgressView (4.6.3):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIPopupContainerView (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIAppearance
+    - QMUIKit/QMUICore
+    - QMUIKit/QMUIMainFrame
+  - QMUIKit/QMUIComponents/QMUIPopupMenuView (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIButton
+    - QMUIKit/QMUIComponents/QMUIPopupContainerView
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIScrollAnimator (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIMultipleDelegates
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUISearchBar (4.6.3):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUISearchController (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIEmptyView
+    - QMUIKit/QMUIComponents/QMUISearchBar
+    - QMUIKit/QMUICore
+    - QMUIKit/QMUIMainFrame
+  - QMUIKit/QMUIComponents/QMUISegmentedControl (4.6.3):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIStaticTableView (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIMultipleDelegates
+    - QMUIKit/QMUIComponents/QMUITableViewCell
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUITableView (4.6.3):
+    - QMUIKit/QMUIComponents/QMUITableViewProtocols
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUITableViewCell (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIButton
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUITableViewHeaderFooterView (4.6.3):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUITableViewProtocols (4.6.3):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUITestView (4.6.3):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUITextField (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIMultipleDelegates
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUITextView (4.6.3):
+    - QMUIKit/QMUIComponents/QMUILabel
+    - QMUIKit/QMUIComponents/QMUIMultipleDelegates
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUITheme (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIAlertController
+    - QMUIKit/QMUIComponents/QMUIBadge
+    - QMUIKit/QMUIComponents/QMUIButton
+    - QMUIKit/QMUIComponents/QMUIConsole
+    - QMUIKit/QMUIComponents/QMUIEmotionView
+    - QMUIKit/QMUIComponents/QMUIEmptyView
+    - QMUIKit/QMUIComponents/QMUIGridView
+    - QMUIKit/QMUIComponents/QMUIImagePickerLibrary
+    - QMUIKit/QMUIComponents/QMUIImagePreviewView
+    - QMUIKit/QMUIComponents/QMUILabel
+    - QMUIKit/QMUIComponents/QMUIModalPresentationViewController
+    - QMUIKit/QMUIComponents/QMUIPopupContainerView
+    - QMUIKit/QMUIComponents/QMUIPopupMenuView
+    - QMUIKit/QMUIComponents/QMUITextField
+    - QMUIKit/QMUIComponents/QMUITextView
+    - QMUIKit/QMUIComponents/QMUIToastView
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUITips (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIToastView
+    - QMUIKit/QMUICore
+    - QMUIKit/QMUIResources
+  - QMUIKit/QMUIComponents/QMUIToastView (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIKeyboardManager
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIToolbarButton (4.6.3):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIWindowSizeMonitor (4.6.3):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIZoomImageView (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIAssetLibrary
+    - QMUIKit/QMUIComponents/QMUIButton
+    - QMUIKit/QMUIComponents/QMUIEmptyView
+    - QMUIKit/QMUIComponents/QMUIPieProgressView
+    - QMUIKit/QMUICore
+    - QMUIKit/QMUIResources
+  - QMUIKit/QMUICore (4.6.3):
+    - QMUIKit/QMUILog
+    - QMUIKit/QMUIWeakObjectContainer
+  - QMUIKit/QMUILog (4.6.3)
+  - QMUIKit/QMUIMainFrame (4.6.3):
+    - QMUIKit/QMUIComponents/QMUIEmptyView
+    - QMUIKit/QMUIComponents/QMUIKeyboardManager
+    - QMUIKit/QMUIComponents/QMUIMultipleDelegates
+    - QMUIKit/QMUIComponents/QMUINavigationTitleView
+    - QMUIKit/QMUIComponents/QMUITableView
+    - QMUIKit/QMUIComponents/QMUITableViewHeaderFooterView
+    - QMUIKit/QMUICore
+    - QMUIKit/QMUILog
+  - QMUIKit/QMUIResources (4.6.3)
+  - QMUIKit/QMUIWeakObjectContainer (4.6.3)
+  - QTEventBus (0.4.1):
+    - QTEventBus/Core (= 0.4.1)
+  - QTEventBus/AppModule (0.4.1):
+    - QTEventBus/Core
+  - QTEventBus/Core (0.4.1)
+  - r_upgrade (0.0.1):
+    - Flutter
+  - RCTRequired (0.63.4)
+  - RCTTypeSafety (0.63.4):
+    - FBLazyVector (= 0.63.4)
+    - Folly (= 2020.01.13.00)
+    - RCTRequired (= 0.63.4)
+    - React-Core (= 0.63.4)
+  - React (0.63.4):
+    - React-Core (= 0.63.4)
+    - React-Core/DevSupport (= 0.63.4)
+    - React-Core/RCTWebSocket (= 0.63.4)
+    - React-RCTActionSheet (= 0.63.4)
+    - React-RCTAnimation (= 0.63.4)
+    - React-RCTBlob (= 0.63.4)
+    - React-RCTImage (= 0.63.4)
+    - React-RCTLinking (= 0.63.4)
+    - React-RCTNetwork (= 0.63.4)
+    - React-RCTSettings (= 0.63.4)
+    - React-RCTText (= 0.63.4)
+    - React-RCTVibration (= 0.63.4)
+  - React-callinvoker (0.63.4)
+  - React-Core (0.63.4):
+    - Folly (= 2020.01.13.00)
+    - glog
+    - React-Core/Default (= 0.63.4)
+    - React-cxxreact (= 0.63.4)
+    - React-jsi (= 0.63.4)
+    - React-jsiexecutor (= 0.63.4)
+    - Yoga
+  - React-Core/CoreModulesHeaders (0.63.4):
+    - Folly (= 2020.01.13.00)
+    - glog
+    - React-Core/Default
+    - React-cxxreact (= 0.63.4)
+    - React-jsi (= 0.63.4)
+    - React-jsiexecutor (= 0.63.4)
+    - Yoga
+  - React-Core/Default (0.63.4):
+    - Folly (= 2020.01.13.00)
+    - glog
+    - React-cxxreact (= 0.63.4)
+    - React-jsi (= 0.63.4)
+    - React-jsiexecutor (= 0.63.4)
+    - Yoga
+  - React-Core/DevSupport (0.63.4):
+    - Folly (= 2020.01.13.00)
+    - glog
+    - React-Core/Default (= 0.63.4)
+    - React-Core/RCTWebSocket (= 0.63.4)
+    - React-cxxreact (= 0.63.4)
+    - React-jsi (= 0.63.4)
+    - React-jsiexecutor (= 0.63.4)
+    - React-jsinspector (= 0.63.4)
+    - Yoga
+  - React-Core/RCTActionSheetHeaders (0.63.4):
+    - Folly (= 2020.01.13.00)
+    - glog
+    - React-Core/Default
+    - React-cxxreact (= 0.63.4)
+    - React-jsi (= 0.63.4)
+    - React-jsiexecutor (= 0.63.4)
+    - Yoga
+  - React-Core/RCTAnimationHeaders (0.63.4):
+    - Folly (= 2020.01.13.00)
+    - glog
+    - React-Core/Default
+    - React-cxxreact (= 0.63.4)
+    - React-jsi (= 0.63.4)
+    - React-jsiexecutor (= 0.63.4)
+    - Yoga
+  - React-Core/RCTBlobHeaders (0.63.4):
+    - Folly (= 2020.01.13.00)
+    - glog
+    - React-Core/Default
+    - React-cxxreact (= 0.63.4)
+    - React-jsi (= 0.63.4)
+    - React-jsiexecutor (= 0.63.4)
+    - Yoga
+  - React-Core/RCTImageHeaders (0.63.4):
+    - Folly (= 2020.01.13.00)
+    - glog
+    - React-Core/Default
+    - React-cxxreact (= 0.63.4)
+    - React-jsi (= 0.63.4)
+    - React-jsiexecutor (= 0.63.4)
+    - Yoga
+  - React-Core/RCTLinkingHeaders (0.63.4):
+    - Folly (= 2020.01.13.00)
+    - glog
+    - React-Core/Default
+    - React-cxxreact (= 0.63.4)
+    - React-jsi (= 0.63.4)
+    - React-jsiexecutor (= 0.63.4)
+    - Yoga
+  - React-Core/RCTNetworkHeaders (0.63.4):
+    - Folly (= 2020.01.13.00)
+    - glog
+    - React-Core/Default
+    - React-cxxreact (= 0.63.4)
+    - React-jsi (= 0.63.4)
+    - React-jsiexecutor (= 0.63.4)
+    - Yoga
+  - React-Core/RCTSettingsHeaders (0.63.4):
+    - Folly (= 2020.01.13.00)
+    - glog
+    - React-Core/Default
+    - React-cxxreact (= 0.63.4)
+    - React-jsi (= 0.63.4)
+    - React-jsiexecutor (= 0.63.4)
+    - Yoga
+  - React-Core/RCTTextHeaders (0.63.4):
+    - Folly (= 2020.01.13.00)
+    - glog
+    - React-Core/Default
+    - React-cxxreact (= 0.63.4)
+    - React-jsi (= 0.63.4)
+    - React-jsiexecutor (= 0.63.4)
+    - Yoga
+  - React-Core/RCTVibrationHeaders (0.63.4):
+    - Folly (= 2020.01.13.00)
+    - glog
+    - React-Core/Default
+    - React-cxxreact (= 0.63.4)
+    - React-jsi (= 0.63.4)
+    - React-jsiexecutor (= 0.63.4)
+    - Yoga
+  - React-Core/RCTWebSocket (0.63.4):
+    - Folly (= 2020.01.13.00)
+    - glog
+    - React-Core/Default (= 0.63.4)
+    - React-cxxreact (= 0.63.4)
+    - React-jsi (= 0.63.4)
+    - React-jsiexecutor (= 0.63.4)
+    - Yoga
+  - React-CoreModules (0.63.4):
+    - FBReactNativeSpec (= 0.63.4)
+    - Folly (= 2020.01.13.00)
+    - RCTTypeSafety (= 0.63.4)
+    - React-Core/CoreModulesHeaders (= 0.63.4)
+    - React-jsi (= 0.63.4)
+    - React-RCTImage (= 0.63.4)
+    - ReactCommon/turbomodule/core (= 0.63.4)
+  - React-cxxreact (0.63.4):
+    - boost-for-react-native (= 1.63.0)
+    - DoubleConversion
+    - Folly (= 2020.01.13.00)
+    - glog
+    - React-callinvoker (= 0.63.4)
+    - React-jsinspector (= 0.63.4)
+  - React-jsi (0.63.4):
+    - boost-for-react-native (= 1.63.0)
+    - DoubleConversion
+    - Folly (= 2020.01.13.00)
+    - glog
+    - React-jsi/Default (= 0.63.4)
+  - React-jsi/Default (0.63.4):
+    - boost-for-react-native (= 1.63.0)
+    - DoubleConversion
+    - Folly (= 2020.01.13.00)
+    - glog
+  - React-jsiexecutor (0.63.4):
+    - DoubleConversion
+    - Folly (= 2020.01.13.00)
+    - glog
+    - React-cxxreact (= 0.63.4)
+    - React-jsi (= 0.63.4)
+  - React-jsinspector (0.63.4)
+  - react-native-appearance (0.3.4):
+    - React
+  - react-native-safari-view (1.0.0):
+    - React
+  - react-native-safe-area-context (3.1.9):
+    - React-Core
+  - React-RCTActionSheet (0.63.4):
+    - React-Core/RCTActionSheetHeaders (= 0.63.4)
+  - React-RCTAnimation (0.63.4):
+    - FBReactNativeSpec (= 0.63.4)
+    - Folly (= 2020.01.13.00)
+    - RCTTypeSafety (= 0.63.4)
+    - React-Core/RCTAnimationHeaders (= 0.63.4)
+    - React-jsi (= 0.63.4)
+    - ReactCommon/turbomodule/core (= 0.63.4)
+  - React-RCTBlob (0.63.4):
+    - FBReactNativeSpec (= 0.63.4)
+    - Folly (= 2020.01.13.00)
+    - React-Core/RCTBlobHeaders (= 0.63.4)
+    - React-Core/RCTWebSocket (= 0.63.4)
+    - React-jsi (= 0.63.4)
+    - React-RCTNetwork (= 0.63.4)
+    - ReactCommon/turbomodule/core (= 0.63.4)
+  - React-RCTImage (0.63.4):
+    - FBReactNativeSpec (= 0.63.4)
+    - Folly (= 2020.01.13.00)
+    - RCTTypeSafety (= 0.63.4)
+    - React-Core/RCTImageHeaders (= 0.63.4)
+    - React-jsi (= 0.63.4)
+    - React-RCTNetwork (= 0.63.4)
+    - ReactCommon/turbomodule/core (= 0.63.4)
+  - React-RCTLinking (0.63.4):
+    - FBReactNativeSpec (= 0.63.4)
+    - React-Core/RCTLinkingHeaders (= 0.63.4)
+    - React-jsi (= 0.63.4)
+    - ReactCommon/turbomodule/core (= 0.63.4)
+  - React-RCTNetwork (0.63.4):
+    - FBReactNativeSpec (= 0.63.4)
+    - Folly (= 2020.01.13.00)
+    - RCTTypeSafety (= 0.63.4)
+    - React-Core/RCTNetworkHeaders (= 0.63.4)
+    - React-jsi (= 0.63.4)
+    - ReactCommon/turbomodule/core (= 0.63.4)
+  - React-RCTSettings (0.63.4):
+    - FBReactNativeSpec (= 0.63.4)
+    - Folly (= 2020.01.13.00)
+    - RCTTypeSafety (= 0.63.4)
+    - React-Core/RCTSettingsHeaders (= 0.63.4)
+    - React-jsi (= 0.63.4)
+    - ReactCommon/turbomodule/core (= 0.63.4)
+  - React-RCTText (0.63.4):
+    - React-Core/RCTTextHeaders (= 0.63.4)
+  - React-RCTVibration (0.63.4):
+    - FBReactNativeSpec (= 0.63.4)
+    - Folly (= 2020.01.13.00)
+    - React-Core/RCTVibrationHeaders (= 0.63.4)
+    - React-jsi (= 0.63.4)
+    - ReactCommon/turbomodule/core (= 0.63.4)
+  - ReactCommon/turbomodule/core (0.63.4):
+    - DoubleConversion
+    - Folly (= 2020.01.13.00)
+    - glog
+    - React-callinvoker (= 0.63.4)
+    - React-Core (= 0.63.4)
+    - React-cxxreact (= 0.63.4)
+    - React-jsi (= 0.63.4)
+  - ReactiveObjC (3.1.1)
+  - REFormattedNumberField (1.1.6)
+  - RegexKitLite (4.0)
+  - RETableViewManager (1.7):
+    - REFormattedNumberField (~> 1.1.5)
+    - REValidation (~> 0.1.4)
+  - REValidation (0.1.4)
+  - RKNotificationHub (2.0.5)
+  - RNCAsyncStorage (1.14.1):
+    - React-Core
+  - RNCMaskedView (0.1.10):
+    - React
+  - RNDeviceInfo (5.6.5):
+    - React
+  - RNGestureHandler (1.8.0):
+    - React
+  - RNReanimated (1.13.2):
+    - React-Core
+  - RNScreens (2.15.2):
+    - React-Core
+  - RNSVG (12.1.0):
+    - React
+  - SDCycleScrollView (1.82):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.13.2):
+    - SDWebImage/Core (= 5.13.2)
+  - SDWebImage/Core (5.13.2)
+  - share_plus (0.0.1):
+    - Flutter
+  - shared_preferences_ios (0.0.1):
+    - Flutter
+  - Shimmer (1.0.2)
+  - SocketRocket (0.6.0)
+  - sqflite (0.0.2):
+    - Flutter
+    - FMDB (>= 2.7.5)
+  - SSZipArchive (2.4.3)
+  - StreamingKit (0.1.30)
+  - SVProgressHUD (2.2.5)
+  - SwiftAlgorithms (1.0.0)
+  - SwiftyStoreKit (0.16.1)
+  - Toast (4.0.0)
+  - TTGTagCollectionView (2.1.0)
+  - TYAlertController (1.2.0)
+  - TYPagerController (2.1.2)
+  - TZImagePickerController (3.8.3):
+    - TZImagePickerController/Basic (= 3.8.3)
+    - TZImagePickerController/Location (= 3.8.3)
+  - TZImagePickerController/Basic (3.8.3)
+  - TZImagePickerController/Location (3.8.3)
+  - "UIAlertController+Blocks (0.9.2)"
+  - UICKeyChainStore (2.1.2)
+  - "UITableView+FDTemplateLayoutCell (1.6)"
+  - UMAPM (1.7.0)
+  - UMCommon (7.3.7):
+    - UMDevice
+  - UMDevice (2.2.1)
+  - url_launcher_ios (0.0.1):
+    - Flutter
+  - VCTransitionsLibrary (1.5.0)
+  - WechatOpenSDK (1.8.4)
+  - Yoga (1.14.0)
+  - YXYDashLayer (1.0.0)
+  - YYModel (1.0.4)
+  - ZFPlayer (4.0.3):
+    - ZFPlayer/Core (= 4.0.3)
+  - ZFPlayer/AVPlayer (4.0.3):
+    - ZFPlayer/Core
+  - ZFPlayer/ControlView (4.0.3):
+    - ZFPlayer/Core
+  - ZFPlayer/Core (4.0.3)
+  - ZFPlayer/ijkplayer (4.0.3):
+    - IJKMediaFramework
+    - ZFPlayer/Core
+  - zhPopupController (1.0.3)
+  - ZJAnimationPopView (1.0.5)
+  - ZLCollectionViewFlowLayout (1.4.7)
+  - ZSSRichTextEditor (0.5.2.2)
+
+DEPENDENCIES:
+  - ADTransitionController
+  - AFNetworking
+  - Aspects
+  - BabyBluetooth
+  - BaiduMapKit/Base
+  - BaiduMapKit/Cloud
+  - BaiduMapKit/Map
+  - BaiduMapKit/Search
+  - BaiduMapKit/Utils
+  - BEMCheckBox
+  - BlocksKit (~> 2.2.5)
+  - BMKLocationKit
+  - Bugly
+  - ChameleonFramework
+  - Charts (~> 4.1.0)
+  - CLImageEditor/AllTools
+  - Cordova (= 5.1.1)
+  - cordova-plugin-wkwebview-engine
+  - CRToast
+  - DateTools
+  - DoubleConversion (from `../ReactNative/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
+  - dsBridge
+  - DZNEmptyDataSet
+  - EasyShowView (~> 2.1)
+  - FBLazyVector (from `../ReactNative/node_modules/react-native/Libraries/FBLazyVector`)
+  - FBReactNativeSpec (from `../ReactNative/node_modules/react-native/Libraries/FBReactNativeSpec`)
+  - FCUUID
+  - file_selector_ios (from `../Flutter/afjflutter/.ios/.symlinks/plugins/file_selector_ios/ios`)
+  - FinApplet
+  - FinAppletBDMap
+  - FinAppletBLE
+  - FinAppletClipBoard
+  - FinAppletContact
+  - FinAppletExt
+  - FinAppletGDMap
+  - FinAppletWebRTC
+  - fishhook
+  - FLAnimatedImage
+  - Flutter (from `../Flutter/afjflutter/.ios/Flutter`)
+  - FlutterPluginRegistrant (from `../Flutter/afjflutter/.ios/Flutter/FlutterPluginRegistrant`)
+  - FMDB
+  - Folly (from `../ReactNative/node_modules/react-native/third-party-podspecs/Folly.podspec`)
+  - FSCalendar
+  - FXBlurView
+  - GBDeviceInfo (~> 6.0)
+  - glog (from `../ReactNative/node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - GPUImage
+  - GVUserDefaults
+  - HJDanmaku
+  - INTULocationManager
+  - IQKeyboardManager
+  - ISHPermissionKit/Calendar
+  - ISHPermissionKit/Camera
+  - ISHPermissionKit/Contacts
+  - ISHPermissionKit/Health
+  - ISHPermissionKit/Location
+  - ISHPermissionKit/Microphone
+  - ISHPermissionKit/Motion
+  - ISHPermissionKit/MusicLibrary
+  - ISHPermissionKit/Notifications
+  - ISHPermissionKit/PhotoLibrary
+  - ISHPermissionKit/Reminders
+  - ISHPermissionKit/Siri
+  - ISHPermissionKit/SocialAccounts
+  - ISHPermissionKit/Speech
+  - JDStatusBarNotification (~> 2.0.6)
+  - JLRoutes (= 2.1)
+  - JVFloatLabeledTextField
+  - JXBWebKit (~> 1.3.0)
+  - JXCategoryView
+  - KWTransition
+  - LBXScan/LBXNative (~> 2.5)
+  - LBXScan/LBXZXing (~> 2.5)
+  - LBXScan/UI (~> 2.5)
+  - LBXZBarSDK (~> 1.3)
+  - LCZoomTransition
+  - LSAnimator (~> 2.1.5)
+  - LSSafeProtector
+  - LSTCategory
+  - LSTPopView (from `https://github.com/LoSenTrad/LSTPopView`)
+  - MagicalRecord (~> 2.3.0)
+  - Mantle
+  - MBProgressHUD
+  - MGSwipeTableCell
+  - MJExtension
+  - MJRefresh
+  - MOFSPickerManager
+  - MotionBlur
+  - MQTTClient
+  - NBSwipePageView (from `https://github.com/xuzhe/NBSwipePageView.git`)
+  - NerdyUI
+  - OHHTTPStubs
+  - Onboard
+  - package_info_plus (from `../Flutter/afjflutter/.ios/.symlinks/plugins/package_info_plus/ios`)
+  - path_provider_foundation (from `../Flutter/afjflutter/.ios/.symlinks/plugins/path_provider_foundation/ios`)
+  - PINRemoteImage (~> 3.0.3)
+  - PinYin4Objc
+  - PMTween
+  - pop (~> 1.0.12)
+  - PPNumberButton
+  - PYSearch
+  - QMUIKit (~> 4.6.3)
+  - QTEventBus
+  - QTEventBus/AppModule
+  - r_upgrade (from `../Flutter/afjflutter/.ios/.symlinks/plugins/r_upgrade/ios`)
+  - RCTRequired (from `../ReactNative/node_modules/react-native/Libraries/RCTRequired`)
+  - RCTTypeSafety (from `../ReactNative/node_modules/react-native/Libraries/TypeSafety`)
+  - React (from `../ReactNative/node_modules/react-native/`)
+  - React-callinvoker (from `../ReactNative/node_modules/react-native/ReactCommon/callinvoker`)
+  - React-Core (from `../ReactNative/node_modules/react-native/`)
+  - React-Core/DevSupport (from `../ReactNative/node_modules/react-native/`)
+  - React-Core/RCTWebSocket (from `../ReactNative/node_modules/react-native/`)
+  - React-CoreModules (from `../ReactNative/node_modules/react-native/React/CoreModules`)
+  - React-cxxreact (from `../ReactNative/node_modules/react-native/ReactCommon/cxxreact`)
+  - React-jsi (from `../ReactNative/node_modules/react-native/ReactCommon/jsi`)
+  - React-jsiexecutor (from `../ReactNative/node_modules/react-native/ReactCommon/jsiexecutor`)
+  - React-jsinspector (from `../ReactNative/node_modules/react-native/ReactCommon/jsinspector`)
+  - react-native-appearance (from `../ReactNative/node_modules/react-native-appearance`)
+  - react-native-safari-view (from `../ReactNative/node_modules/react-native-safari-view`)
+  - react-native-safe-area-context (from `../ReactNative/node_modules/react-native-safe-area-context`)
+  - React-RCTActionSheet (from `../ReactNative/node_modules/react-native/Libraries/ActionSheetIOS`)
+  - React-RCTAnimation (from `../ReactNative/node_modules/react-native/Libraries/NativeAnimation`)
+  - React-RCTBlob (from `../ReactNative/node_modules/react-native/Libraries/Blob`)
+  - React-RCTImage (from `../ReactNative/node_modules/react-native/Libraries/Image`)
+  - React-RCTLinking (from `../ReactNative/node_modules/react-native/Libraries/LinkingIOS`)
+  - React-RCTNetwork (from `../ReactNative/node_modules/react-native/Libraries/Network`)
+  - React-RCTSettings (from `../ReactNative/node_modules/react-native/Libraries/Settings`)
+  - React-RCTText (from `../ReactNative/node_modules/react-native/Libraries/Text`)
+  - React-RCTVibration (from `../ReactNative/node_modules/react-native/Libraries/Vibration`)
+  - ReactCommon/turbomodule/core (from `../ReactNative/node_modules/react-native/ReactCommon`)
+  - ReactiveObjC
+  - RegexKitLite
+  - RETableViewManager
+  - RKNotificationHub
+  - "RNCAsyncStorage (from `../ReactNative/node_modules/@react-native-async-storage/async-storage`)"
+  - "RNCMaskedView (from `../ReactNative/node_modules/@react-native-community/masked-view`)"
+  - RNDeviceInfo (from `../ReactNative/node_modules/react-native-device-info`)
+  - RNGestureHandler (from `../ReactNative/node_modules/react-native-gesture-handler`)
+  - RNReanimated (from `../ReactNative/node_modules/react-native-reanimated`)
+  - RNScreens (from `../ReactNative/node_modules/react-native-screens`)
+  - RNSVG (from `../ReactNative/node_modules/react-native-svg`)
+  - SDCycleScrollView
+  - SDWebImage
+  - share_plus (from `../Flutter/afjflutter/.ios/.symlinks/plugins/share_plus/ios`)
+  - shared_preferences_ios (from `../Flutter/afjflutter/.ios/.symlinks/plugins/shared_preferences_ios/ios`)
+  - Shimmer
+  - SocketRocket
+  - sqflite (from `../Flutter/afjflutter/.ios/.symlinks/plugins/sqflite/ios`)
+  - SSZipArchive
+  - StreamingKit
+  - SVProgressHUD
+  - SwiftyStoreKit
+  - Toast (~> 4.0.0)
+  - TTGTagCollectionView
+  - TYAlertController
+  - TYPagerController
+  - TZImagePickerController
+  - "UIAlertController+Blocks"
+  - "UITableView+FDTemplateLayoutCell"
+  - UMAPM
+  - UMCommon
+  - UMDevice
+  - url_launcher_ios (from `../Flutter/afjflutter/.ios/.symlinks/plugins/url_launcher_ios/ios`)
+  - VCTransitionsLibrary
+  - WechatOpenSDK (= 1.8.4)
+  - Yoga (from `../ReactNative/node_modules/react-native/ReactCommon/yoga`)
+  - YXYDashLayer
+  - ZFPlayer (~> 4.0)
+  - ZFPlayer/AVPlayer (~> 4.0)
+  - ZFPlayer/ControlView (~> 4.0)
+  - ZFPlayer/ijkplayer (~> 4.0)
+  - zhPopupController (~> 1.0.2)
+  - ZJAnimationPopView
+  - ZLCollectionViewFlowLayout
+  - ZSSRichTextEditor (from `https://github.com/nnhubbard/ZSSRichTextEditor`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - ADTransitionController
+    - AFNetworking
+    - AMap3DMap-NO-IDFA
+    - AMapFoundation-NO-IDFA
+    - AMapLocation-NO-IDFA
+    - AMapSearch-NO-IDFA
+    - Aspects
+    - BabyBluetooth
+    - BaiduMapKit
+    - BEMCheckBox
+    - BlocksKit
+    - BMKLocationKit
+    - boost-for-react-native
+    - Bugly
+    - ChameleonFramework
+    - Charts
+    - CLImageEditor
+    - Cordova
+    - cordova-plugin-wkwebview-engine
+    - CRToast
+    - DateTools
+    - dsBridge
+    - DZNEmptyDataSet
+    - EasyShowView
+    - FCUUID
+    - FinApplet
+    - FinAppletBDMap
+    - FinAppletBLE
+    - FinAppletClipBoard
+    - FinAppletContact
+    - FinAppletExt
+    - FinAppletGDMap
+    - FinAppletWebRTC
+    - fishhook
+    - FLAnimatedImage
+    - FMDB
+    - FSCalendar
+    - FXBlurView
+    - GBDeviceInfo
+    - GoogleWebRTC
+    - GPUImage
+    - GVUserDefaults
+    - HJDanmaku
+    - IJKMediaFramework
+    - INTULocationManager
+    - IQKeyboardManager
+    - ISHPermissionKit
+    - JDStatusBarNotification
+    - JLRoutes
+    - JVFloatLabeledTextField
+    - JXBWebKit
+    - JXCategoryView
+    - KWTransition
+    - LBXScan
+    - LBXZBarSDK
+    - LCZoomTransition
+    - LSAnimator
+    - LSSafeProtector
+    - LSTCategory
+    - LSTTimer
+    - MagicalRecord
+    - Mantle
+    - MBProgressHUD
+    - MGSwipeTableCell
+    - MJExtension
+    - MJRefresh
+    - MOFSPickerManager
+    - MotionBlur
+    - MQTTClient
+    - NerdyUI
+    - OHHTTPStubs
+    - Onboard
+    - PINCache
+    - PINOperation
+    - PINRemoteImage
+    - PinYin4Objc
+    - PMTween
+    - pop
+    - PPNumberButton
+    - PYSearch
+    - QMUIKit
+    - QTEventBus
+    - ReactiveObjC
+    - REFormattedNumberField
+    - RegexKitLite
+    - RETableViewManager
+    - REValidation
+    - RKNotificationHub
+    - SDCycleScrollView
+    - SDWebImage
+    - Shimmer
+    - SocketRocket
+    - SSZipArchive
+    - StreamingKit
+    - SVProgressHUD
+    - SwiftAlgorithms
+    - SwiftyStoreKit
+    - Toast
+    - TTGTagCollectionView
+    - TYAlertController
+    - TYPagerController
+    - TZImagePickerController
+    - "UIAlertController+Blocks"
+    - UICKeyChainStore
+    - "UITableView+FDTemplateLayoutCell"
+    - UMAPM
+    - UMCommon
+    - UMDevice
+    - VCTransitionsLibrary
+    - WechatOpenSDK
+    - YXYDashLayer
+    - YYModel
+    - ZFPlayer
+    - zhPopupController
+    - ZJAnimationPopView
+    - ZLCollectionViewFlowLayout
+
+EXTERNAL SOURCES:
+  DoubleConversion:
+    :podspec: "../ReactNative/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
+  FBLazyVector:
+    :path: "../ReactNative/node_modules/react-native/Libraries/FBLazyVector"
+  FBReactNativeSpec:
+    :path: "../ReactNative/node_modules/react-native/Libraries/FBReactNativeSpec"
+  file_selector_ios:
+    :path: "../Flutter/afjflutter/.ios/.symlinks/plugins/file_selector_ios/ios"
+  Flutter:
+    :path: "../Flutter/afjflutter/.ios/Flutter"
+  FlutterPluginRegistrant:
+    :path: "../Flutter/afjflutter/.ios/Flutter/FlutterPluginRegistrant"
+  Folly:
+    :podspec: "../ReactNative/node_modules/react-native/third-party-podspecs/Folly.podspec"
+  glog:
+    :podspec: "../ReactNative/node_modules/react-native/third-party-podspecs/glog.podspec"
+  LSTPopView:
+    :git: https://github.com/LoSenTrad/LSTPopView
+  NBSwipePageView:
+    :git: https://github.com/xuzhe/NBSwipePageView.git
+  package_info_plus:
+    :path: "../Flutter/afjflutter/.ios/.symlinks/plugins/package_info_plus/ios"
+  path_provider_foundation:
+    :path: "../Flutter/afjflutter/.ios/.symlinks/plugins/path_provider_foundation/ios"
+  r_upgrade:
+    :path: "../Flutter/afjflutter/.ios/.symlinks/plugins/r_upgrade/ios"
+  RCTRequired:
+    :path: "../ReactNative/node_modules/react-native/Libraries/RCTRequired"
+  RCTTypeSafety:
+    :path: "../ReactNative/node_modules/react-native/Libraries/TypeSafety"
+  React:
+    :path: "../ReactNative/node_modules/react-native/"
+  React-callinvoker:
+    :path: "../ReactNative/node_modules/react-native/ReactCommon/callinvoker"
+  React-Core:
+    :path: "../ReactNative/node_modules/react-native/"
+  React-CoreModules:
+    :path: "../ReactNative/node_modules/react-native/React/CoreModules"
+  React-cxxreact:
+    :path: "../ReactNative/node_modules/react-native/ReactCommon/cxxreact"
+  React-jsi:
+    :path: "../ReactNative/node_modules/react-native/ReactCommon/jsi"
+  React-jsiexecutor:
+    :path: "../ReactNative/node_modules/react-native/ReactCommon/jsiexecutor"
+  React-jsinspector:
+    :path: "../ReactNative/node_modules/react-native/ReactCommon/jsinspector"
+  react-native-appearance:
+    :path: "../ReactNative/node_modules/react-native-appearance"
+  react-native-safari-view:
+    :path: "../ReactNative/node_modules/react-native-safari-view"
+  react-native-safe-area-context:
+    :path: "../ReactNative/node_modules/react-native-safe-area-context"
+  React-RCTActionSheet:
+    :path: "../ReactNative/node_modules/react-native/Libraries/ActionSheetIOS"
+  React-RCTAnimation:
+    :path: "../ReactNative/node_modules/react-native/Libraries/NativeAnimation"
+  React-RCTBlob:
+    :path: "../ReactNative/node_modules/react-native/Libraries/Blob"
+  React-RCTImage:
+    :path: "../ReactNative/node_modules/react-native/Libraries/Image"
+  React-RCTLinking:
+    :path: "../ReactNative/node_modules/react-native/Libraries/LinkingIOS"
+  React-RCTNetwork:
+    :path: "../ReactNative/node_modules/react-native/Libraries/Network"
+  React-RCTSettings:
+    :path: "../ReactNative/node_modules/react-native/Libraries/Settings"
+  React-RCTText:
+    :path: "../ReactNative/node_modules/react-native/Libraries/Text"
+  React-RCTVibration:
+    :path: "../ReactNative/node_modules/react-native/Libraries/Vibration"
+  ReactCommon:
+    :path: "../ReactNative/node_modules/react-native/ReactCommon"
+  RNCAsyncStorage:
+    :path: "../ReactNative/node_modules/@react-native-async-storage/async-storage"
+  RNCMaskedView:
+    :path: "../ReactNative/node_modules/@react-native-community/masked-view"
+  RNDeviceInfo:
+    :path: "../ReactNative/node_modules/react-native-device-info"
+  RNGestureHandler:
+    :path: "../ReactNative/node_modules/react-native-gesture-handler"
+  RNReanimated:
+    :path: "../ReactNative/node_modules/react-native-reanimated"
+  RNScreens:
+    :path: "../ReactNative/node_modules/react-native-screens"
+  RNSVG:
+    :path: "../ReactNative/node_modules/react-native-svg"
+  share_plus:
+    :path: "../Flutter/afjflutter/.ios/.symlinks/plugins/share_plus/ios"
+  shared_preferences_ios:
+    :path: "../Flutter/afjflutter/.ios/.symlinks/plugins/shared_preferences_ios/ios"
+  sqflite:
+    :path: "../Flutter/afjflutter/.ios/.symlinks/plugins/sqflite/ios"
+  url_launcher_ios:
+    :path: "../Flutter/afjflutter/.ios/.symlinks/plugins/url_launcher_ios/ios"
+  Yoga:
+    :path: "../ReactNative/node_modules/react-native/ReactCommon/yoga"
+  ZSSRichTextEditor:
+    :git: https://github.com/nnhubbard/ZSSRichTextEditor
+
+CHECKOUT OPTIONS:
+  LSTPopView:
+    :commit: 9456e8862c81a58076d15f9316e66274733219bd
+    :git: https://github.com/LoSenTrad/LSTPopView
+  NBSwipePageView:
+    :commit: d225421d08f027090bcb56775f3268d857ccd0ee
+    :git: https://github.com/xuzhe/NBSwipePageView.git
+  ZSSRichTextEditor:
+    :commit: acb38d8a2d2fae830e8ea183085831ce72b2da2d
+    :git: https://github.com/nnhubbard/ZSSRichTextEditor
+
+SPEC CHECKSUMS:
+  ADTransitionController: bc4014244111edefb98d0974343d61b7c5ab80e4
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  AMap3DMap-NO-IDFA: ad6e60e43f5c7a1a214516e8a0fa8a45790dfafa
+  AMapFoundation-NO-IDFA: e191e554859b375f463e52eb6c994e440ebf7126
+  AMapLocation-NO-IDFA: 6839d1543b3138ae594ddd36ab72741dc87df66f
+  AMapSearch-NO-IDFA: 935289770e93a740599707f9b4cb3946ed87860d
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  BabyBluetooth: d50758aecf24d4a0ab9271d69f0f116d6bee51c9
+  BaiduMapKit: 48fc90c7dd7f3c10aed8745c22584ede8003221f
+  BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
+  BlocksKit: 8639b2848dd51c35c957af4d9fbdc7a769a1fc12
+  BMKLocationKit: 688d8e1194980b96fc9a6585c0eb42e62fbaf780
+  boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
+  Bugly: b8715e6ec4004b7f7fbffab0643ba80545aee3da
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  Charts: 354f86803d11d9c35de280587fef50d1af063978
+  CLImageEditor: dc3e5358f641368da3a76fc1c744a4c2ceb270ad
+  Cordova: 5490a208d8396a5cdbbba24732cb2f8779123f8e
+  cordova-plugin-wkwebview-engine: 38ccefc374b68251e8a0675fec57477dfd18da15
+  CRToast: 5a78c22b921c5ed3487488af605bc403a9c92fed
+  DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
+  DoubleConversion: cde416483dac037923206447da6e1454df403714
+  dsBridge: 48b62ee8a411ad601a88d6f6c8cf6cb634b206b7
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  EasyShowView: ec832e175d5926baef413e2dc095fb4ec5c3add4
+  FBLazyVector: 3bb422f41b18121b71783a905c10e58606f7dc3e
+  FBReactNativeSpec: f2c97f2529dd79c083355182cc158c9f98f4bd6e
+  FCUUID: bb054fc90cd7cd99320f9f6ff8e130fe607fba05
+  file_selector_ios: 16d57dbbbb03f717b5f930ba45eb099dd2174a1d
+  FinApplet: 0d15ce766782741ddeb0b655a16bdbab7ff3f509
+  FinAppletBDMap: 86d005a3f093819343d942681dd3576b47bac4de
+  FinAppletBLE: 00262d4a7ee76e499553ce96d7651e9cf08e6f68
+  FinAppletClipBoard: 95dc1a2f59680616afa11f1e4c9387ab2d77e5e0
+  FinAppletContact: ea899c56519dc52480e76541b3e004963827b586
+  FinAppletExt: 9ae1945ca06d3d7605037f81c193fcd1512ec897
+  FinAppletGDMap: eb89a849c0a92b827c3b5f1905bfbd390f6f4dcd
+  FinAppletWebRTC: 27e5dbe10c63063e8b248b9515200bb51d54fa71
+  fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
+  FLAnimatedImage: bbf914596368867157cc71b38a8ec834b3eeb32b
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  FlutterPluginRegistrant: 883d00a250fdb1d9cef5500a26f6e14c437c827c
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  Folly: b73c3869541e86821df3c387eb0af5f65addfab4
+  FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
+  FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
+  GBDeviceInfo: c1a46e3fe1b5406a0ebaa60f8a871cfed9da9a42
+  glog: 40a13f7840415b9a77023fbcae0f1e6f43192af3
+  GoogleWebRTC: ee984407e3a0fa1183d605900d9c71eee8cbcbdf
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
+  HJDanmaku: b3891e906e0dd1cefa39ccf43253a1ca1efb9241
+  IJKMediaFramework: f1119f6324c96bc4654f3045a5beaa95ba0596c0
+  INTULocationManager: b5a0422782f0b87af0b8db14e0826fb38dbecd19
+  IQKeyboardManager: 45a1fa55c1a5b02c61ac0fd7fd5b62bb4ad20d97
+  ISHPermissionKit: a1bbdd3b84574f56c3159e882782b8664a3ceaf9
+  JDStatusBarNotification: 4f31f9b12544350dad3f46411f71e4b7c5302ad4
+  JLRoutes: d755245322b94227662ea3e43492fdca94e05c5b
+  JVFloatLabeledTextField: df48598472ee015701d509f43e59492a0d4ca208
+  JXBWebKit: 7af9f6581e17d706b52a0979d4ed0dbaef52bccc
+  JXCategoryView: 7b1ee69ede4843c581688afe84d0f047723262f2
+  KWTransition: 72d59eef35ddb67769eb99a41317fa75c0444e1b
+  LBXScan: 90ca10d0c38fb4a5a6980d7782354f3f69f50093
+  LBXZBarSDK: db826d1265fbb4fbdbb2f30d7d1e96142e32bfff
+  LCZoomTransition: 9d444751c10556ee6dbf1fd18c292e1add9530e2
+  LSAnimator: f24d46b5f9b1ecedba14dc76a18e8fe2bbf681ea
+  LSSafeProtector: b2e6c263079d365967cc4d19817b38291b5fcbe6
+  LSTCategory: e7dbe02572cedd738dd7f700ab71c5c94721a140
+  LSTPopView: 9379f00f6ce7d1fc620b50ab00ed3ef97b2d4d52
+  LSTTimer: caf8f02ff366ca175cf4c1778d26c166183c1b6f
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  Mantle: c5aa8794a29a022dfbbfc9799af95f477a69b62d
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MGSwipeTableCell: d99ed6466f393b71cd488c6f798ba112ff5d1d01
+  MJExtension: 21c5f6f8c4d5d8844b7ae8fbae08fed0b501f961
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  MOFSPickerManager: ff19ea9d528afa0d00ad363e7288a5ee54a9deef
+  MotionBlur: 5dc5583a725f087bdf952278b1c41b7bb7ba5f79
+  MQTTClient: 0dfa04e789479c2e461786464969895c1fcb0875
+  NBSwipePageView: 70ac42baadaef15efa2e98edc5fc572f37e4c4b7
+  NerdyUI: ae4506046b544a5cdc0873a58c1ece61b29631d0
+  OHHTTPStubs: 90eac6d8f2c18317baeca36698523dc67c513831
+  Onboard: 4d6e943e20bdd6bc229df967a347dd7514bc2a6f
+  package_info_plus: 6c92f08e1f853dc01228d6f553146438dafcd14e
+  path_provider_foundation: c68054786f1b4f3343858c1e1d0caaded73f0be9
+  PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
+  PINOperation: 00c935935f1e8cf0d1e2d6b542e75b88fc3e5e20
+  PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
+  PinYin4Objc: 3fa9673610368330e2dfb688b1d19a35c3930a78
+  PMTween: 44c5d726a2e7c61d7ae134be9fd78197c13e6e4f
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  PPNumberButton: 4442ff64c21d91733057ca1b3dc05fb4df55f2c0
+  PYSearch: 76dee18eea3309b60921a5d6a69390a63a5dda15
+  QMUIKit: b831835f33d7fb3494809042225e6256eb22b892
+  QTEventBus: ea42577d40303f11fb2392e1383fb5d4a7335609
+  r_upgrade: 44d715c61914cce3d01ea225abffe894fd51c114
+  RCTRequired: 082f10cd3f905d6c124597fd1c14f6f2655ff65e
+  RCTTypeSafety: 8c9c544ecbf20337d069e4ae7fd9a377aadf504b
+  React: b0a957a2c44da4113b0c4c9853d8387f8e64e615
+  React-callinvoker: c3f44dd3cb195b6aa46621fff95ded79d59043fe
+  React-Core: d3b2a1ac9a2c13c3bcde712d9281fc1c8a5b315b
+  React-CoreModules: 0581ff36cb797da0943d424f69e7098e43e9be60
+  React-cxxreact: c1480d4fda5720086c90df537ee7d285d4c57ac3
+  React-jsi: a0418934cf48f25b485631deb27c64dc40fb4c31
+  React-jsiexecutor: 93bd528844ad21dc07aab1c67cb10abae6df6949
+  React-jsinspector: 58aef7155bc9a9683f5b60b35eccea8722a4f53a
+  react-native-appearance: 0f0e5fc2fcef70e03d48c8fe6b00b9158c2ba8aa
+  react-native-safari-view: 955d7160d159241b8e9395d12d10ea0ef863dcdd
+  react-native-safe-area-context: b6e0e284002381d2ff29fa4fff42b4d8282e3c94
+  React-RCTActionSheet: 89a0ca9f4a06c1f93c26067af074ccdce0f40336
+  React-RCTAnimation: 1bde3ecc0c104c55df246eda516e0deb03c4e49b
+  React-RCTBlob: a97d378b527740cc667e03ebfa183a75231ab0f0
+  React-RCTImage: c1b1f2d3f43a4a528c8946d6092384b5c880d2f0
+  React-RCTLinking: 35ae4ab9dc0410d1fcbdce4d7623194a27214fb2
+  React-RCTNetwork: 29ec2696f8d8cfff7331fac83d3e893c95ef43ae
+  React-RCTSettings: 60f0691bba2074ef394f95d4c2265ec284e0a46a
+  React-RCTText: 5c51df3f08cb9dedc6e790161195d12bac06101c
+  React-RCTVibration: ae4f914cfe8de7d4de95ae1ea6cc8f6315d73d9d
+  ReactCommon: 73d79c7039f473b76db6ff7c6b159c478acbbb3b
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  REFormattedNumberField: 70fc5fb1218ebd5ee9983820defd12806d5c6ec6
+  RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
+  RETableViewManager: 0f24d796c42c0890d38c79cc9aeb3871e186726e
+  REValidation: 38c4de1be58455f8b00aab208ac80db316a66b7f
+  RKNotificationHub: e926748820d719f21ff374657a47fceefa1796b4
+  RNCAsyncStorage: fe58eec522885718d6b297b7b658bf87d7ca557b
+  RNCMaskedView: 5a8ec07677aa885546a0d98da336457e2bea557f
+  RNDeviceInfo: c5f8f3a456adcbba405ace475254b08febc4c095
+  RNGestureHandler: 7a5833d0f788dbd107fbb913e09aa0c1ff333c39
+  RNReanimated: e03f7425cb7a38dcf1b644d680d1bfc91c3337ad
+  RNScreens: 3d682bcaba69a4f8e55543d90818704f34338db1
+  RNSVG: ce9d996113475209013317e48b05c21ee988d42e
+  SDCycleScrollView: a0d74c3384caa72bdfc81470bdbc8c14b3e1fbcf
+  SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
+  share_plus: 056a1e8ac890df3e33cb503afffaf1e9b4fbae68
+  shared_preferences_ios: 548a61f8053b9b8a49ac19c1ffbc8b92c50d68ad
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+  SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
+  sqflite: 6d358c025f5b867b29ed92fc697fd34924e11904
+  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
+  StreamingKit: 70ca8608c206864b4d54a577eacb3c8bf7c72209
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
+  SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  TTGTagCollectionView: a2a8668c659b39e7a6ffd6590475ea53a7ae95f7
+  TYAlertController: c121090edb0bea7426f987da94cdddd81eef4231
+  TYPagerController: 262556ecef99986d26ed77fb1288a198ed42f4af
+  TZImagePickerController: e9909edbadf7381140efc5b5c9f5bdbfd630f7d4
+  "UIAlertController+Blocks": 80e28b92523fb58aba4d1bccec013d5a0b0bddb2
+  UICKeyChainStore: 85db518bb1d294366d15ec9b92a416c4e670518f
+  "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
+  UMAPM: e7674c15fd583c3d9bf2e469cf40002f61bf2b97
+  UMCommon: 37fe35f498e92cf57bbb06a086f02915fc35f211
+  UMDevice: 053478c4b4d7292f31f0a275c227d3c4007a5571
+  url_launcher_ios: fb12c43172927bb5cf75aeebd073f883801f1993
+  VCTransitionsLibrary: d61fd9b7b6721942f0d583bcc0e7f8c31ec9271b
+  WechatOpenSDK: 9b721089507c895d05f997408c30bb6e6f5f9b60
+  Yoga: 4bd86afe9883422a7c4028c00e34790f560923d6
+  YXYDashLayer: a28f8544f8ab29ef9a7b246026290c4144c612b6
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  ZFPlayer: 624c92de06eb34df322c3b53b4c9ce760f528f7a
+  zhPopupController: 4e6bd734062cb9c7ebe8113568550bade168bed7
+  ZJAnimationPopView: 7edb9b4c9f10dc2bba3b6738817726adc9abc08f
+  ZLCollectionViewFlowLayout: fdc09b2b57b510bf285b5c327375d82366927e27
+  ZSSRichTextEditor: f58c612e4e981bf10d3cf64980ac5c4b1f5138f4
+
+PODFILE CHECKSUM: d354a15d7ffec209a8ab8ec87f64cec067ed72a8
+
+COCOAPODS: 1.11.3

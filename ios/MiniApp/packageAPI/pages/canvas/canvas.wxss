@@ -1,0 +1,33 @@
+.canvas-element-wrapper {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.canvas-element {
+  width: 100%;
+  height: 200px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.canvas-buttons {
+  padding: 5px;
+  width: 100%;
+  height: 450px;
+  box-sizing: border-box;
+}
+
+.canvas-button-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.canvas-button {
+  flex: 0 1 45% !important;
+  width: 45% !important;
+  line-height: 2;
+  padding: 4rpx;
+  margin: 0 4rpx 4rpx 0 !important;
+  border: 1rpx solid #666;
+}

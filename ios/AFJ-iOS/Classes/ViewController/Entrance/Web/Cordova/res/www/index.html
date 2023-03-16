@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World</title>
+    <script charset="utf-8" src="cordova.js" type="text/javascript"></script>
+    <script charset="utf-8" type="text/javascript">
+        document.addEventListener("onBatteryStatus", onBatteryStatus, false);
+
+        function onBatteryStatus(status) {
+            console.log("Level: " + status.level + " isPlugged: " + status.isPlugged);
+        }
+
+        function onDeviceReady() {
+            console.log(navigator.camera);
+        }
+
+        function onDevice() {
+            console.log(device.cordova);
+        }
+
+        function customTest() {
+            Cordova.exec(successFunction, failFunction, "customPluginTest", "customSelName", ["paramas"]);
+
+        }
+
+        function successFunction() {
+            alert("successFunction");
+        }
+
+        function failFunction() {
+            alert("failFunction");
+        }
+
+
+    </script>
+    <style type="text/css">
+        button {
+            width: 200px;
+            height: 26px;
+            font-size: 20px;
+            padding: 1px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+<div><br/><br/>
+    <br/>
+    <button onclick="onDeviceReady()">onDeviceReady</button>
+    <br/>
+    <br/>
+    <button onclick="onBatteryStatus()">onBatteryStatus</button>
+    <br/>
+    <br/>
+    <button onclick="onDevice()">onDevice</button>
+    <br/>
+    <br/>
+    <button onclick="customTest()">customButton</button>
+    <br/>
+
+
+</div>
+</div>
+</body>
+</html>
+
