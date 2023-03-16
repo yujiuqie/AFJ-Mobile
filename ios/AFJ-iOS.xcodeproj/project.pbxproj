@@ -1264,6 +1264,8 @@
 		303C6B2229C301530092980E /* AFJReactNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303C6B2129C301530092980E /* AFJReactNativeViewController.m */; };
 		303C6B2729C304A60092980E /* AFJKittenTricksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303C6B2629C304A60092980E /* AFJKittenTricksViewController.m */; };
 		303C6B2C29C310480092980E /* AFJFlutterUnitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303C6B2B29C310480092980E /* AFJFlutterUnitViewController.m */; };
+		303C6B3029C346100092980E /* AFJReactNativeMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303C6B2F29C346100092980E /* AFJReactNativeMessageViewController.m */; };
+		303C6B3429C346420092980E /* AFJFlutterMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303C6B3329C346420092980E /* AFJFlutterMessageViewController.m */; };
 		303CE48928D3039900AD4A3E /* AFJEmptyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303CE48828D3039900AD4A3E /* AFJEmptyViewController.m */; };
 		303E4C9528E1767300738F5C /* AFJPMTweenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303E4C9428E1767300738F5C /* AFJPMTweenViewController.m */; };
 		303E4C9928E1775900738F5C /* AFJNotificationHubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303E4C9828E1775900738F5C /* AFJNotificationHubViewController.m */; };
@@ -4566,6 +4568,10 @@
 		303C6B2629C304A60092980E /* AFJKittenTricksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFJKittenTricksViewController.m; sourceTree = "<group>"; };
 		303C6B2A29C310480092980E /* AFJFlutterUnitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFJFlutterUnitViewController.h; sourceTree = "<group>"; };
 		303C6B2B29C310480092980E /* AFJFlutterUnitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFJFlutterUnitViewController.m; sourceTree = "<group>"; };
+		303C6B2E29C346100092980E /* AFJReactNativeMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFJReactNativeMessageViewController.h; sourceTree = "<group>"; };
+		303C6B2F29C346100092980E /* AFJReactNativeMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFJReactNativeMessageViewController.m; sourceTree = "<group>"; };
+		303C6B3229C346420092980E /* AFJFlutterMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFJFlutterMessageViewController.h; sourceTree = "<group>"; };
+		303C6B3329C346420092980E /* AFJFlutterMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFJFlutterMessageViewController.m; sourceTree = "<group>"; };
 		303CE48728D3039900AD4A3E /* AFJEmptyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFJEmptyViewController.h; sourceTree = "<group>"; };
 		303CE48828D3039900AD4A3E /* AFJEmptyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFJEmptyViewController.m; sourceTree = "<group>"; };
 		303E4C9328E1767300738F5C /* AFJPMTweenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFJPMTweenViewController.h; sourceTree = "<group>"; };
@@ -12041,6 +12047,7 @@
 		303C6B2329C303160092980E /* Samples */ = {
 			isa = PBXGroup;
 			children = (
+				303C6B2D29C345E10092980E /* Message */,
 				303C6B2429C304870092980E /* KittenTricks */,
 			);
 			path = Samples;
@@ -12059,6 +12066,7 @@
 		303C6B2829C3057C0092980E /* Samples */ = {
 			isa = PBXGroup;
 			children = (
+				303C6B3129C346290092980E /* Message */,
 				303C6B2929C310250092980E /* FlutterUnit */,
 			);
 			path = Samples;
@@ -12071,6 +12079,24 @@
 				303C6B2B29C310480092980E /* AFJFlutterUnitViewController.m */,
 			);
 			path = FlutterUnit;
+			sourceTree = "<group>";
+		};
+		303C6B2D29C345E10092980E /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				303C6B2E29C346100092980E /* AFJReactNativeMessageViewController.h */,
+				303C6B2F29C346100092980E /* AFJReactNativeMessageViewController.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		303C6B3129C346290092980E /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				303C6B3229C346420092980E /* AFJFlutterMessageViewController.h */,
+				303C6B3329C346420092980E /* AFJFlutterMessageViewController.m */,
+			);
+			path = Message;
 			sourceTree = "<group>";
 		};
 		303CE48628D3035F00AD4A3E /* Empty */ = {
@@ -17746,6 +17772,7 @@
 				30806D1A28D029A3006C0D30 /* M13ProgressViewLetterpress.m in Sources */,
 				30C90C1128D9E4020086BBFE /* IFWaldenFilter.m in Sources */,
 				300C80DB28DF06AE0046CE53 /* ExamplesScreen.swift in Sources */,
+				303C6B3029C346100092980E /* AFJReactNativeMessageViewController.m in Sources */,
 				3068A69928D5BD7F0000F947 /* DanmakuFilter.m in Sources */,
 				3068A65B28D5B3000000F947 /* DetailViewController.m in Sources */,
 				0942E71028C1B59100AFE2F9 /* FHXConfirmView.m in Sources */,
@@ -18131,6 +18158,7 @@
 				3094391828C88EB80063EAC7 /* AFJCDButtonViewController.m in Sources */,
 				093B0D6F28C22067005634FD /* BMKAnnotationMovingViewController.m in Sources */,
 				300C7FA028DEF1870046CE53 /* FeTenDot.m in Sources */,
+				303C6B3429C346420092980E /* AFJFlutterMessageViewController.m in Sources */,
 				093B0D7D28C22067005634FD /* BMKCustomMapController.m in Sources */,
 				30806D1B28D029A3006C0D30 /* M13ProgressViewRing.m in Sources */,
 				30163DA428D31188003D67EA /* PPNumberButtonViewController.m in Sources */,

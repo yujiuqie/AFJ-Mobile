@@ -2,7 +2,7 @@
 
 ## 1. 工程简介
 
-一个 iOS 示例 Demo，展示 iOS 开发中可能用到的一些技术。
+一个 iOS 示例 Demo，展示 iOS 开发中可能用到的一些技术，包括 ReactNative、Flutter、小程序、H5 混合开发示例。
 
 ## 2. 运行说明 
 

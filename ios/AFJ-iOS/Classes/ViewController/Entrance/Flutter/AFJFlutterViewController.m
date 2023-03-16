@@ -8,6 +8,7 @@
 #import "AFJFlutterViewController.h"
 #import <Flutter/Flutter.h>
 #import "AFJFlutterUnitViewController.h"
+#import "AFJFlutterMessageViewController.h"
 
 @interface AFJFlutterViewController ()
 
@@ -17,6 +18,19 @@
 
 - (void)initDataSource{
     NSMutableArray *dataArray = [NSMutableArray array];
+    
+    {
+        AFJCaseItemData *item = [AFJCaseItemData new];
+        item.title = @"Flutter、iOS 通信示例";
+        __weak __typeof(self) weakSelf = self;
+        item.didSelectAction = ^(AFJCaseItemData *product) {
+            __strong __typeof(weakSelf) strongSelf = weakSelf;
+            AFJFlutterMessageViewController *viewController = [[AFJFlutterMessageViewController alloc] init];
+            viewController.title = product.title;
+            [strongSelf.navigationController pushViewController:viewController animated:YES];
+        };
+        [dataArray addObject:item];
+    }
     
     {
         AFJCaseItemData *item = [AFJCaseItemData new];

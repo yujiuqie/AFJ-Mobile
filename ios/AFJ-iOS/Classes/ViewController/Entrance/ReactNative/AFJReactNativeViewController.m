@@ -7,6 +7,7 @@
 
 #import "AFJReactNativeViewController.h"
 #import "AFJKittenTricksViewController.h"
+#import "AFJReactNativeMessageViewController.h"
 
 @interface AFJReactNativeViewController ()
 
@@ -16,6 +17,19 @@
 
 - (void)initDataSource{
     NSMutableArray *dataArray = [NSMutableArray array];
+    
+    {
+        AFJCaseItemData *item = [AFJCaseItemData new];
+        item.title = @"React Native、iOS 通信示例";
+        __weak __typeof(self) weakSelf = self;
+        item.didSelectAction = ^(AFJCaseItemData *product) {
+            __strong __typeof(weakSelf) strongSelf = weakSelf;
+            AFJReactNativeMessageViewController *viewController = [[AFJReactNativeMessageViewController alloc] init];
+            viewController.title = product.title;
+            [strongSelf.navigationController pushViewController:viewController animated:YES];
+        };
+        [dataArray addObject:item];
+    }
     
     {
         AFJCaseItemData *item = [AFJCaseItemData new];
