@@ -42,6 +42,6 @@ rm -r ios
 echo "Step 5 : open Xcode"
 cd $rootPath
 cd ios
-xattr -w com.apple.xcode.CreatedByBuildSystem true $PWD/build
-xcodebuild clean
+# xattr -w com.apple.xcode.CreatedByBuildSystem true $PWD/build
+# xcodebuild clean
 open AFJ-iOS.xcworkspace

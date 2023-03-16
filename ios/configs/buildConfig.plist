@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>BUILD_TIME</key>
-	<string>2023-03-16T17:28:53+0800</string>
+	<string>2023-03-16T18:00:28+0800</string>
 	<key>GIT_SHA</key>
-	<string>60f3777</string>
+	<string>5ae00b2</string>
 	<key>TOTAL_CODE_NUM</key>
-	<string>1205042</string>
+	<string>1193536</string>
 	<key>TOTAL_FILE_NUM</key>
-	<string>54243</string>
+	<string>45945</string>
 	<key>TOTAL_IMAGE_NUM</key>
 	<string>3665</string>
 	<key>TOTAL_IMAGE_SIZE</key>
-	<string>231540</string>
+	<string>231539</string>
 	<key>{cpp}_CODE_NUM</key>
 	<string>8810</string>
 	<key>{cpp}_FILE_NUM</key>
@@ -23,9 +23,9 @@
 	<key>{c}_FILE_NUM</key>
 	<string>169</string>
 	<key>{h}_CODE_NUM</key>
-	<string>524580</string>
+	<string>513074</string>
 	<key>{h}_FILE_NUM</key>
-	<string>7103</string>
+	<string>7098</string>
 	<key>{java}_CODE_NUM</key>
 	<string>0</string>
 	<key>{java}_FILE_NUM</key>
@@ -49,6 +49,6 @@
 	<key>{swift}_CODE_NUM</key>
 	<string>37804</string>
 	<key>{swift}_FILE_NUM</key>
-	<string>207</string>
+	<string>202</string>
 </dict>
 </plist>

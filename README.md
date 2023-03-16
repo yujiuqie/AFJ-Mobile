@@ -1,6 +1,4 @@
-# AFJ-iOS 
-
-[![Xcode](https://github.com/yujiuqie/AFJ-iOS/actions/workflows/objective-c-xcode.yml/badge.svg)](https://github.com/yujiuqie/AFJ-iOS/actions/workflows/objective-c-xcode.yml/badge.svg)
+# AFJ-Mobile
 
 ## 1. 工程简介
 
@@ -23,7 +21,7 @@
 |        Dart        |    2.17.6     |       |
 |  react-native-cli  |     2.0.1     |       |
 |    react-native    |    0.66.2     |       |
-|        node        |    14.16.0    |       |
+|       nodejs       |    14.16.0    |       |
 |        npm         |    6.14.11    |       |
 |        ruby        |     2.7.4     |       |
 |     Cocoapods      |    1.11.3     |       |
@@ -31,36 +29,9 @@
 ### 2.2 初始化工程
 
 打开 Mac 终端，进入工程根目录并执行 setup.sh 脚本
+
+推荐安装 fvm、rvm、nvm，并确保使用 Flutter(3.0.5(stable))、nodejs(14.16.0)、ruby(2.7.4 ) 版本环境执行以下脚本
+
 ```shell
 sh setup.sh
 ```
-
-### 2.3 编译 Framework（可选）
-
-选择 UnityFramwork target 并编译
-
-### 2.4 运行主工程
-
-选择 AFJ-iOS target 并运行
-
-### 已知问题
-
-* Xocode 14 & iOS 16 崩溃
-
-## 示例功能
-
-### 待完善
-
-* Flutter、ReactNative 目录层级结构调整
-* 不同开发模式及示例介绍
-* 混合开发通信示例
-* Flutter、ReactNative 多工程示例
-* ReactNative 热更新示例
-* ReactNative 网络示例
-
-## 研发日志
-
-* 2022.10 - 完成主要功能
-* 2023.2 - 启动精简优化
-
-## 参考链接
