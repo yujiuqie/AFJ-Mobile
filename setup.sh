@@ -15,9 +15,9 @@ cd $rootPath
 
 echo "Step 2 : init and setup Flutter"
 cd ./Flutter/afjflutter
-flutter clean
-flutter pub get
-flutter build ios --release --no-codesign
+fvm flutter clean
+fvm flutter pub get
+fvm flutter build ios --release --no-codesign
 
 cd $rootPath
 
