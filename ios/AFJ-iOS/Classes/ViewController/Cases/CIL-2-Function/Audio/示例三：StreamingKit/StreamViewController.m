@@ -22,7 +22,7 @@
 // 通过 StreamingKit 框架播放网络音频文件
 - (IBAction)playButtonTapped:(id)sender {
     STKAudioPlayer *audioPlayer = [[STKAudioPlayer alloc] init];
-    [audioPlayer play:@"http://101.132.129.63:8081/usr/uploads/2022/09/20380515.mp3"];
+    [audioPlayer play:@"http://www.jhfs.fun:8081/usr/uploads/2022/09/20380515.mp3"];
 
 
 }

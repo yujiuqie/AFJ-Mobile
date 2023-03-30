@@ -34,7 +34,7 @@ web-build/
 dist
 
 # Bundle artifact
-*.jsbundle
+# *.jsbundle
 
 # native
 
@@ -120,7 +120,7 @@ buck-out
 .gradle
 local.properties
 *.iml
-/android/
+# /android/
 
 # Node
 node_modules

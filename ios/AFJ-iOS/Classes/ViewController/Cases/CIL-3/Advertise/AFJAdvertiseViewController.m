@@ -32,12 +32,12 @@
         item.title = @"启动广告倒计时示例";
         item.didSelectAction = ^(id data) {
             [AdvertiseCountDownNsObject initAdvertise:@[
-                    @"http://101.132.129.63:8081/usr/uploads/2022/08/67638669.jpg",
-                    @"http://101.132.129.63:8081/usr/uploads/2022/04/1672282573.jpeg",
-                    @"http://101.132.129.63:8081/usr/uploads/2022/04/2528611222.jpeg",
-                    @"http://101.132.129.63:8081/usr/uploads/2022/04/1069431224.jpeg",
-                    @"http://101.132.129.63:8081/usr/uploads/2022/04/497515783.jpeg",
-                    @"http://101.132.129.63:8081/usr/uploads/2022/08/67638669.jpg"
+                    @"http://www.jhfs.fun:8081/usr/uploads/2022/08/67638669.jpg",
+                    @"http://www.jhfs.fun:8081/usr/uploads/2022/04/1672282573.jpeg",
+                    @"http://www.jhfs.fun:8081/usr/uploads/2022/04/2528611222.jpeg",
+                    @"http://www.jhfs.fun:8081/usr/uploads/2022/04/1069431224.jpeg",
+                    @"http://www.jhfs.fun:8081/usr/uploads/2022/04/497515783.jpeg",
+                    @"http://www.jhfs.fun:8081/usr/uploads/2022/08/67638669.jpg"
             ]];
         };
         [dataArray addObject:item];
@@ -47,12 +47,12 @@
         item.title = @"启动广告渐变示例";
         item.didSelectAction = ^(id data) {
             [AdvertiseGradientNSObject initAdvertise:@[
-                    @"http://101.132.129.63:8081/usr/uploads/2022/08/67638669.jpg",
-                    @"http://101.132.129.63:8081/usr/uploads/2022/04/1672282573.jpeg",
-                    @"http://101.132.129.63:8081/usr/uploads/2022/04/2528611222.jpeg",
-                    @"http://101.132.129.63:8081/usr/uploads/2022/04/1069431224.jpeg",
-                    @"http://101.132.129.63:8081/usr/uploads/2022/04/497515783.jpeg",
-                    @"http://101.132.129.63:8081/usr/uploads/2022/08/67638669.jpg"
+                    @"http://www.jhfs.fun:8081/usr/uploads/2022/08/67638669.jpg",
+                    @"http://www.jhfs.fun:8081/usr/uploads/2022/04/1672282573.jpeg",
+                    @"http://www.jhfs.fun:8081/usr/uploads/2022/04/2528611222.jpeg",
+                    @"http://www.jhfs.fun:8081/usr/uploads/2022/04/1069431224.jpeg",
+                    @"http://www.jhfs.fun:8081/usr/uploads/2022/04/497515783.jpeg",
+                    @"http://www.jhfs.fun:8081/usr/uploads/2022/08/67638669.jpg"
             ]];
         };
         [dataArray addObject:item];

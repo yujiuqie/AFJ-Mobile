@@ -1,10 +1,11 @@
 source "https://github.com/CocoaPods/Specs.git"
 source "https://github.com/aliyun/aliyun-specs.git"
 
-require_relative '../ReactNative/node_modules/react-native/scripts/react_native_pods'
-require_relative '../ReactNative/node_modules/@react-native-community/cli-platform-ios/native_modules'
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 platform :ios, '13.0'
+prepare_react_native_project!
 
 flutter_application_path = '../Flutter/afjflutter'
 load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
@@ -24,35 +25,96 @@ def hawkeye
 #  pod 'MTAppenderFile', '~> 0.4.0'#, :configurations => ['Debug'], :inhibit_warnings => false
 end
 
+flipper_config = ENV['NO_FLIPPER'] == "1" ? FlipperConfiguration.disabled : FlipperConfiguration.enabled
+
+linkage = ENV['USE_FRAMEWORKS']
+if linkage != nil
+  Pod::UI.puts "Configuring Pod with #{linkage}ally linked Frameworks".green
+  use_frameworks! :linkage => linkage.to_sym
+end
+
 target 'AFJ-iOS' do
   use_frameworks!
   use_modular_headers!
-
-  # config = use_native_modules!
   
-  pod 'RNCAsyncStorage', :path => '../ReactNative/node_modules/@react-native-async-storage/async-storage'
-  pod 'RNCMaskedView', :path => '../ReactNative/node_modules/@react-native-community/masked-view'
-  pod 'RNDeviceInfo', :path => '../ReactNative/node_modules/react-native-device-info'
-  pod 'RNGestureHandler', :path => '../ReactNative/node_modules/react-native-gesture-handler'
-  pod 'RNReanimated', :path => '../ReactNative/node_modules/react-native-reanimated'
-  pod 'RNScreens', :path => '../ReactNative/node_modules/react-native-screens'
-  pod 'RNSVG', :path => '../ReactNative/node_modules/react-native-svg'
-
-  pod 'react-native-appearance', :path => '../ReactNative/node_modules/react-native-appearance'
-  pod 'react-native-safari-view', :path => '../ReactNative/node_modules/react-native-safari-view'
-  pod 'react-native-safe-area-context', :path => '../ReactNative/node_modules/react-native-safe-area-context'
+  flags = get_default_flags()
+  
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-async-storage/async-storage'
+  pod 'RNCMaskedView', :path => '../node_modules/@react-native-masked-view/masked-view'
+  pod 'RNDeviceInfo', :path => '../node_modules/react-native-device-info'
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+  pod 'RNImageCropPicker', :path => '../node_modules/react-native-image-crop-picker'
+  pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
+  pod 'RNScreens', :path => '../node_modules/react-native-screens'
+  pod 'react-native-netinfo', :path => '../node_modules/@react-native-community/netinfo'
+  pod 'react-native-safe-area-context', :path => '../node_modules/react-native-safe-area-context'
+  pod 'react-native-webview', :path => '../node_modules/react-native-webview'
   
   use_react_native!(
-    :path => '../ReactNative/node_modules/react-native',
+    :path => '../node_modules/react-native',
     :hermes_enabled => false,
+    :fabric_enabled => false,
+#    :flipper_configuration => flipper_config,
+#    :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
   
-#  setup_jsc!(
-#    :react_native_path => '../ReactNative/node_modules/react-native',
-#    :fabric_enabled => false,
-#  )
-  
   install_all_flutter_pods(flutter_application_path)
+  
+  $static_framework = [
+  'FBLazyVector',
+  'FBReactNativeSpec',
+  'RCTRequired',
+  'RCTTypeSafety',
+  'React',
+  'React-callinvoker',
+  'React-Codegen',
+  'React-Core',
+  'React-CoreModules',
+  'React-cxxreact',
+  'React-hermes',
+  'React-jsc',
+  'React-jsi',
+  'React-jsiexecutor',
+  'React-jsinspector',
+  'React-logger',
+  'React-perflogger',
+  'React-RCTActionSheet',
+  'React-RCTAnimation',
+  'React-RCTAppDelegate',
+  'React-RCTBlob',
+  'React-RCTImage',
+  'React-RCTLinking',
+  'React-RCTNetwork',
+  'React-RCTSettings',
+  'React-RCTText',
+  'React-RCTVibration',
+  'React-runtimeexecutor',
+  'ReactCommon',
+  'Yoga',
+  'RNCAsyncStorage',
+  'RNCMaskedView',
+  'RNDeviceInfo',
+  'RNGestureHandler',
+  'RNImageCropPicker',
+  'RNReanimated',
+  'RNScreens',
+  'TOCropViewController',
+  'react-native-netinfo',
+  'react-native-safe-area-context',
+  'react-native-webview'
+
+  ]
+  
+  pre_install do |installer|
+   Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
+   installer.pod_targets.each do |pod|
+     if $static_framework.include?(pod.name)
+       def pod.build_type
+         Pod::BuildType.static_library
+       end
+     end
+    end
+  end
   
   hawkeye
   
@@ -80,10 +142,10 @@ target 'AFJ-iOS' do
   pod 'FinAppletClipBoard'
 
 #  pod 'GPJDataDrivenTableView'
-  pod 'LBXScan/LBXNative','~> 2.5'
-  pod 'LBXScan/LBXZXing','~> 2.5'
-  pod 'LBXScan/UI','~> 2.5'
-  pod 'LBXZBarSDK','~> 1.3'
+#  pod 'LBXScan/LBXNative','~> 2.5'
+#  pod 'LBXScan/LBXZXing','~> 2.5'
+#  pod 'LBXScan/UI','~> 2.5'
+#  pod 'LBXZBarSDK','~> 1.3'
   pod 'Toast', '~> 4.0.0'
   pod 'OHHTTPStubs'
   pod 'ReactiveObjC'
@@ -294,25 +356,17 @@ target 'AFJ-iOS' do
   target 'AFJ-iOSUITests' do
     # Pods for testing
   end
-  
-  $static_framework = ['RNCAsyncStorage','RNCMaskedView','RNDeviceInfo','RNGestureHandler','RNReanimated','RNScreens','RNSVG','react-native-appearance','react-native-safari-view','react-native-safe-area-context']
-  
-  pre_install do |installer|
-   Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
-   installer.pod_targets.each do |pod|
-     if $static_framework.include?(pod.name)
-       def pod.build_type
-         Pod::BuildType.static_library
-       end
-     end
-    end
-  end
 
   post_install do |installer|
     
     flutter_post_install(installer) if defined?(flutter_post_install)
-#    react_native_post_install(installer)
-#    __apply_Xcode_12_5_M1_post_install_workaround(installer)
+    react_native_post_install(
+      installer,
+      # Set `mac_catalyst_enabled` to `true` in order to apply patches
+      # necessary for Mac Catalyst builds
+      :mac_catalyst_enabled => false
+    )
+    __apply_Xcode_12_5_M1_post_install_workaround(installer)
     
     ## Fix for iOS 16
     find_and_replace("Pods/MTHawkeye/MTHawkeye/UISkeleton/MTHawkeyeUIClient.m",

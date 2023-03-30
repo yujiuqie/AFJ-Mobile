@@ -57,7 +57,7 @@
             _tableView.backgroundColor = [UIColor whiteColor];
         }
         else {
-            background = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background.jpg"]];
+            background = [[UIImageView alloc] initWithImage:[UIImage imageNamed:DEFAULT_FULL_SCREEN_IMAGE]];
             background.frame = self.view.bounds;
             background.contentMode = UIViewContentModeScaleToFill;
             background.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;

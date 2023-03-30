@@ -25,7 +25,18 @@
     self.view.backgroundColor = [UIColor whiteColor];
 
 
-    self.imageArray = @[@"fjjwtx (270).jpg", @"fjjwtx (135).jpg", @"fjjwtx (28).jpg", @"fjjwtx (260).jpg", @"fjjwtx (22).jpg"];
+    self.imageArray = @[
+        ICON_300_300_1,
+        ICON_300_300_2,
+        ICON_300_300_3,
+        ICON_300_300_4,
+        ICON_300_300_5,
+        ICON_300_300_6,
+        ICON_300_300_7,
+        ICON_300_300_8,
+        ICON_300_300_9,
+        ICON_300_300_10,
+    ];
 
     FHXNewPagedFlowView *pageFlowView = [[FHXNewPagedFlowView alloc] initWithFrame:CGRectMake(0, 8, Phone_Width, Phone_Width * 9 / 16)];
     pageFlowView.delegate = self;
@@ -84,8 +95,7 @@
         bannerView.layer.masksToBounds = YES;
     }
     //在这里下载网络图片
-    //  [bannerView.mainImageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:hostUrlsImg,imageDict[@"img"]]] placeholderImage:[UIImage imageNamed:@""]];
-    bannerView.mainImageView.image = [UIImage imageNamed:self.imageArray[index]];
+      [bannerView.mainImageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/%@",AFJ_RESOURCES_PATH,self.imageArray[index]]] placeholderImage:[UIImage imageNamed:@"full-screen-sample-0.jpg"]];
 
     return bannerView;
 }

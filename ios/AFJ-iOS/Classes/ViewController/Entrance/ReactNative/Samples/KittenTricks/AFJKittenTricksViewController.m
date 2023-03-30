@@ -29,12 +29,12 @@
 //     jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios"]; //手动拼接jsCodeLocation用于开发环境 //jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"]; //release之后从包中读取名为main的静态js bundle
 
     //    TODO:: RN 发布 npm run build
-    jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"rn-kittentricks" withExtension:@"jsbundle"];
+    jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"rn-sample-1" withExtension:@"jsbundle"];
     //    TODO:: RN 调试 npm run start
 //    jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
 
     RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
-                                                        moduleName:@"KittenTricks"
+                                                        moduleName:@"RNSample1"
                                                  initialProperties:nil
                                                      launchOptions:nil];
     

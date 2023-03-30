@@ -126,7 +126,7 @@
 -(void) initWifiManHub
 {
     CGRect frame = CGRectMake(48, 12, kFe_WifiMan_Width, kFe_WifiMan_Height);
-    UIImage *imageColored = [UIImage imageNamed:@"WifiMan_Sign_1"];
+    UIImage *imageColored = [UIImage imageNamed:DEFAULT_300_300_IMAGE];
     
     /*
     // Colored

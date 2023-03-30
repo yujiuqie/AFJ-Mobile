@@ -68,7 +68,7 @@
         UILabel *testLabel = [[UILabel alloc] initWithFrame:CGRectMake((SCREENW - 200) / 2.0, 720, 200, 80)];
         testLabel.text = @"label 背景渐变示例";
         [self.view addSubview:testLabel];
-        [testLabel az_setGradientBackgroundWithColors:@[[UIColor colorWithHex:0xA3F6D3], [UIColor colorWithHex:0xF40047]] locations:nil startPoint:CGPointMake(0, 0) endPoint:CGPointMake(1, 0)];
+        [testLabel az_setGradientBackgroundWithColors:@[[UIColor colorWithHex:@"0xA3F6D3"], [UIColor colorWithHex:@"0xF40047"]] locations:nil startPoint:CGPointMake(0, 0) endPoint:CGPointMake(1, 0)];
         testLabel.textAlignment = NSTextAlignmentCenter;
         testLabel.textColor = [UIColor whiteColor];
     }

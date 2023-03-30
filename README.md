@@ -19,12 +19,13 @@
 |  JetBrains Rider   |   2022.1.2    |       |
 |      Flutter       | 3.0.5(stable) |       |
 |        Dart        |    2.17.6     |       |
-|  react-native-cli  |     2.0.1     |       |
-|    react-native    |    0.66.2     |       |
-|       nodejs       |    14.16.0    |       |
-|        npm         |    6.14.11    |       |
-|        ruby        |     2.7.4     |       |
-|     Cocoapods      |    1.11.3     |       |
+|  react-native-cli  |     9.5.0     |       |
+|       react        |     18.2.0    |       |
+|    react-native    |     0.71.4    |       |
+|       nodejs       |    18.15.0    |       |
+|        npm         |     9.5.0     |       |
+|        ruby        |     2.7.6     |       |
+|     Cocoapods      |    1.12.0     |       |
 
 ### 2.2 初始化工程
 
@@ -33,7 +34,7 @@
 推荐安装 fvm、rvm、nvm，并确保使用 Flutter(3.0.5(stable))、nodejs(14.16.0)、ruby(2.7.4 ) 版本环境执行以下脚本
 
 ```shell
-sh setup.sh
+sh script/setup.sh
 ```
 
 ## 3. 参考链接
