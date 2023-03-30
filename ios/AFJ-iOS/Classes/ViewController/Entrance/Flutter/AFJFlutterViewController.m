@@ -34,7 +34,20 @@
     
     {
         AFJCaseItemData *item = [AFJCaseItemData new];
-        item.title = @"FlutterUnit";
+        item.title = @"Flutter 官方示例";
+        __weak __typeof(self) weakSelf = self;
+        item.didSelectAction = ^(AFJCaseItemData *product) {
+            __strong __typeof(weakSelf) strongSelf = weakSelf;
+//            AFJFlutterMessageViewController *viewController = [[AFJFlutterMessageViewController alloc] init];
+//            viewController.title = product.title;
+//            [strongSelf.navigationController pushViewController:viewController animated:YES];
+        };
+        [dataArray addObject:item];
+    }
+    
+    {
+        AFJCaseItemData *item = [AFJCaseItemData new];
+        item.title = @"三方 - FlutterUnit";
         __weak __typeof(self) weakSelf = self;
         item.didSelectAction = ^(AFJCaseItemData *product) {
             __strong __typeof(weakSelf) strongSelf = weakSelf;

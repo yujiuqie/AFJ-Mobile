@@ -23,7 +23,7 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
 
-    YSCGifLoadImage *image = (YSCGifLoadImage *) [YSCGifLoadImage imageNamed:@"sw3.gif"];
+    YSCGifLoadImage *image = (YSCGifLoadImage *) [YSCGifLoadImage imageNamed:@"dog.gif"];
     [self.gifImageView setImage:image];
     [self.view addSubview:_gifImageView];
     [_gifImageView startGifAnimatingWithGifRepeatCount:INT32_MAX gifRepeatDelayOffset:0 animatingCompleteCallBack:^{

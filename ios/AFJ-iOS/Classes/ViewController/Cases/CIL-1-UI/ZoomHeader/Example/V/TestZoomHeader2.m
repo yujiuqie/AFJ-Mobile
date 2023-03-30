@@ -22,14 +22,14 @@
     CGFloat iconH = 80.0f;
     
     //设置背景图
-    self.backgroundImage = [UIImage imageNamed:@"test_backGround"];
+    self.backgroundImage = [UIImage imageNamed:DEFAULT_FULL_SCREEN_IMAGE];
     //设置背景图缩进
     self.backgroundImageInsets = UIEdgeInsetsMake(0, 0, iconH/2.0f, 0);
     
     
     //自定义内容
     UIImageView *icon = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, iconH, iconH)];
-    icon.image = [UIImage imageNamed:@"test_icon"];
+    icon.image = [UIImage imageNamed:DEFAULT_300_300_IMAGE];
     icon.center = CGPointMake(iconH/2.0f + 10, self.bounds.size.height - iconH/2.0f);
     icon.layer.cornerRadius = iconH/2.0f;
     icon.clipsToBounds = true;

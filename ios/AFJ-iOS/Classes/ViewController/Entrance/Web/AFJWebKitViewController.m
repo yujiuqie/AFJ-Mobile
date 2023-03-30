@@ -13,6 +13,7 @@
 #import "CustomViewController.h"
 #import "CustomTwoViewController.h"
 #import "MainH5WidgetViewController.h"
+#import "AFJHTMLSampleViewController.h"
 
 @interface AFJWebKitViewController ()
 
@@ -144,6 +145,16 @@
         [self.navigationController pushViewController:webVC animated:YES];
     };
     [dataArray addObject:model12];
+    
+    AFJCaseItemData *model13 = [[AFJCaseItemData alloc] init];
+    model13.title = @"HTML 示例";
+    model13.subtitle = @"";
+    model13.link = @"";
+    model13.didSelectAction = ^(AFJCaseItemData *model) {
+        AFJHTMLSampleViewController *webVC = [[AFJHTMLSampleViewController alloc] init];
+        [self.navigationController pushViewController:webVC animated:YES];
+    };
+    [dataArray addObject:model13];
     
     self.dataSource = dataArray;
 }

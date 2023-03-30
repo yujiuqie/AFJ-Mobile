@@ -27,7 +27,7 @@
     [self.view addSubview:_filterLabel];
   
     _imageView = [[UIImageView alloc] initWithFrame:CGRectMake((SCREENW - 400)/2.0, StatusBarAndNavigationBarHeight + 5 + 40 + 5, 400, 400)];
-    _imageView.image = [UIImage imageNamed:@"fjjwtx (252).jpg"];
+    _imageView.image = [UIImage imageNamed:@"300-300-sample-0.jpeg"];
     [self.view addSubview:_imageView];
     
     _nextBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -40,7 +40,7 @@
 
 - (void)showDemo{
     YBPasterImageVC *pasterVC = [[YBPasterImageVC alloc]init];
-    pasterVC.originalImage = [UIImage imageNamed:@"fjjwtx (252).jpg"];
+    pasterVC.originalImage = [UIImage imageNamed:@"300-300-sample-0.jpeg"];
     
     pasterVC.block = ^(UIImage *editedImage){
         self.imageView.image = editedImage;

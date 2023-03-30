@@ -41,7 +41,7 @@
     [_nextBtn addTarget:self action:@selector(changeFilter) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_nextBtn];
     
-    UIImage *inputImage = [UIImage imageNamed:@"fjjwtx (252).jpg"];
+    UIImage *inputImage = [UIImage imageNamed:@"300-300-sample-0.jpeg"];
     
     _filterIndex = 0;
     instagramFilters = [IFImageFilter allFilterClasses];

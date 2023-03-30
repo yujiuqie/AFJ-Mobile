@@ -103,7 +103,7 @@
 
 - (UIView *)tableViewHeader {
     if (nil == _tableViewHeader) {
-        UIImage *headerImage = [UIImage imageNamed:@"onepiece_kiudai"];
+        UIImage *headerImage = [UIImage imageNamed:DEFAULT_FULL_SCREEN_IMAGE];
         // swipe header
         self.tableViewHeader = [[STHeaderView alloc] init];
         _tableViewHeader.frame = CGRectMake(0, 0, SCREENW, SCREENW * (headerImage.size.height / headerImage.size.width));

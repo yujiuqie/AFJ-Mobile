@@ -44,7 +44,7 @@
 
     if (self != nil) {
         NSBundle *mainBundle = [NSBundle mainBundle];
-        NSArray *imageURLs = [mainBundle URLsForResourcesWithExtension:@"jpg" subdirectory:@"Demo Images"];
+        NSArray *imageURLs = [mainBundle URLsForResourcesWithExtension:@"jpg" subdirectory:@"DemoImages"];
 
         if ([imageURLs count] > 0) {
             NSMutableArray *photos = [[NSMutableArray alloc] init];

@@ -19,7 +19,7 @@
     [super viewDidLoad];
     
     UIView *contentView = [UIView new];
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"fjjwtx (290).jpg"]];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"300-300-sample-0.jpeg"]];
     [contentView addSubview:imageView];
     [_scrollView addSubview:contentView];
     _imageView = imageView;

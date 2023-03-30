@@ -80,7 +80,7 @@
 
         UIFont *font = [UIFont systemFontOfSize:16];
 
-        UIColor *color = [[UIColor colorWithHex:0x989898] colorWithAlphaComponent:0.2];
+        UIColor *color = [[UIColor colorWithHex:@"0x989898"] colorWithAlphaComponent:0.2];
 
         //原始image的宽高
         CGFloat viewWidth = frame.size.width;

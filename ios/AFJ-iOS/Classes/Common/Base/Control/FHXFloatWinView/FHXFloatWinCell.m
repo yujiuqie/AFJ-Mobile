@@ -41,7 +41,7 @@
 
 - (void)buildUI {
 //  self.backgroundColor = [Color textLine];
-    self.backgroundColor = [UIColor colorWithHex:0x40454A];
+    self.backgroundColor = [UIColor colorWithHex:@"0x40454A"];
     self.selectionStyle = UITableViewCellSelectionStyleNone;
 
     self.btn = [UIButton new];

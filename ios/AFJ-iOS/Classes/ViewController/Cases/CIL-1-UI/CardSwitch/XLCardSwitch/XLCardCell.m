@@ -47,7 +47,7 @@
 }
 
 - (void)setModel:(XLCardModel *)model {
-    self.imageView.image = [UIImage imageNamed:model.imageName];
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/full_screen_sample/%@",AFJ_RESOURCES_PATH,model.imageName]] placeholderImage:[UIImage imageNamed:DEFAULT_FULL_SCREEN_IMAGE]];
     self.textLabel.text = model.title;
 }
 

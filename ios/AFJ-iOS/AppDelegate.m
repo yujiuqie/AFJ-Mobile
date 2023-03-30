@@ -75,7 +75,7 @@ BMKLocationAuthDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    self.bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
+//    self.bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
     
     self.logVC = [[AFJLogViewController alloc] init];
     [AFJOSLogController withUpdateHandler:^(NSArray<AFJSystemLogMessage *> *newMessages) {
@@ -469,14 +469,14 @@ BMKLocationAuthDelegate
 }
 
 
-- (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
-{
-#if DEBUG
-  return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
-#else
-  return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
-#endif
-}
+//- (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
+//{
+//#if DEBUG
+//  return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
+//#else
+//  return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+//#endif
+//}
 
 #pragma mark - Core Data Saving support
 

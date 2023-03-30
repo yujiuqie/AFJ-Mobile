@@ -11,7 +11,7 @@
 
 // Framework
 #import "BMChineseSort.h"
-#import "ZYPinYinSearch.h"
+//#import "ZYPinYinSearch.h"
 
 // Controller
 #import "HQLCityPickerSearchResultController.h"
@@ -244,11 +244,11 @@ static NSString *const defaultCityCellReuseIdentifier = @"UITableViewCellStyleDe
 
     if (searchText.length > 0) {
         __weak __typeof(self) weakSelf = self;
-        [ZYPinYinSearch searchByPropertyName:@"pinyin" withOriginalArray:self.cities searchText:searchText success:^(NSArray *results) {
-            weakSelf.searchResultController.searchResultCities = results;
-        }                            failure:^(NSString *errorMessage) {
-            weakSelf.searchResultController.searchResultCities = nil;
-        }];
+//        [ZYPinYinSearch searchByPropertyName:@"pinyin" withOriginalArray:self.cities searchText:searchText success:^(NSArray *results) {
+//            weakSelf.searchResultController.searchResultCities = results;
+//        }                            failure:^(NSString *errorMessage) {
+//            weakSelf.searchResultController.searchResultCities = nil;
+//        }];
     }
 }
 

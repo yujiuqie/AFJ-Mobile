@@ -19,12 +19,12 @@
 
 - (void)buildUI {
     //设置背景图
-    self.backgroundImage = [UIImage imageNamed:@"test_backGround"];
+    self.backgroundImage = [UIImage imageNamed:DEFAULT_FULL_SCREEN_IMAGE];
     
     
     //自定义内容
     UIImageView *icon = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 90, 90)];
-    icon.image = [UIImage imageNamed:@"test_icon"];
+    icon.image = [UIImage imageNamed:DEFAULT_300_300_IMAGE];
     icon.center = CGPointMake(self.bounds.size.width/2.0f, self.bounds.size.height/2.0f);
     icon.layer.cornerRadius = icon.bounds.size.height/2.0f;
     icon.clipsToBounds = true;

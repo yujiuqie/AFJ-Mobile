@@ -125,7 +125,7 @@
 - (void)configImageViewOfIndex:(NSInteger)index {
     //更新背景图
     XLCardModel *model = self.models[index];
-    self.imageView.image = [UIImage imageNamed:model.imageName];
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/full_screen_sample/%@",AFJ_RESOURCES_PATH,model.imageName]]];
 }
 
 #pragma mark -

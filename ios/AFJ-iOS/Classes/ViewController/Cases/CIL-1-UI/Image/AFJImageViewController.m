@@ -32,7 +32,7 @@
         AFJCaseItemData *item = [AFJCaseItemData new];
         item.title = @"获取网络图片尺寸";
         item.didSelectAction = ^(id data) {
-            [weakSelf showInputAlert:@"获取网络图片尺寸" placeholder:@"http://101.132.129.63:8081/usr/uploads/2022/08/67638669.jpg" complete:^(NSString *_Nonnull info) {
+            [weakSelf showInputAlert:@"获取网络图片尺寸" placeholder:[NSString stringWithFormat:@"%@/home.jpeg",AFJ_RESOURCES_PATH] complete:^(NSString *_Nonnull info) {
                 if ([info length] > 0) {
                     CGSize gifSize = [[UIImageSize new] getImageSizeWithURL:info];
                     [weakSelf showToastWithMessage:[NSString stringWithFormat:@"图片尺寸 -  %@", NSStringFromCGSize(gifSize)]];
@@ -58,7 +58,7 @@
         AFJCaseItemData *item = [AFJCaseItemData new];
         item.title = @"显示圆形图片";
         item.didSelectAction = ^(id data) {
-            UIImage *image = [UIImage circleImage:@"fjjwtx (97).jpg"];
+            UIImage *image = [UIImage circleImage:@"300-300-sample-0.jpeg"];
             [weakSelf showAlertWithImage:image];
         };
         [dataArray addObject:item];
@@ -76,7 +76,7 @@
         AFJCaseItemData *item = [AFJCaseItemData new];
         item.title = @"图片水印";
         item.didSelectAction = ^(id data) {
-            UIImage *image = [[UIImage imageNamed:@"fjjwtx (8).jpg"] imageWaterMarkWithImage:[UIImage imageNamed:@"fjjwtx (102).jpg"] imageRect:CGRectMake(800, 800, 200, 200) alpha:0.8];
+            UIImage *image = [[UIImage imageNamed:@"300-300-sample-0.jpeg"] imageWaterMarkWithImage:[UIImage imageNamed:@"300-300-sample-11.png"] imageRect:CGRectMake(800, 800, 200, 200) alpha:0.8];
             [weakSelf showAlertWithImage:image];
         };
         [dataArray addObject:item];
@@ -88,7 +88,7 @@
 
             UIFont *font = [UIFont systemFontOfSize:40];
             NSDictionary *attri = @{NSFontAttributeName: font, NSForegroundColorAttributeName: [UIColor systemGroupedBackgroundColor]};
-            UIImage *image = [[UIImage imageNamed:@"fjjwtx (8).jpg"] imageWaterMarkWithString:@"示例文字水印效果，示例文字水印效果" rect:CGRectMake(700, 800, 300, 200) attribute:attri];
+            UIImage *image = [[UIImage imageNamed:@"300-300-sample-0.jpeg"] imageWaterMarkWithString:@"示例文字水印效果，示例文字水印效果" rect:CGRectMake(700, 800, 300, 200) attribute:attri];
             [weakSelf showAlertWithImage:image];
         };
         [dataArray addObject:item];
@@ -100,7 +100,7 @@
             UIFont *font = [UIFont systemFontOfSize:40];
             NSDictionary *attri = @{NSFontAttributeName: font, NSForegroundColorAttributeName: [UIColor systemGroupedBackgroundColor]};
 
-            UIImage *image = [[UIImage imageNamed:@"fjjwtx (8).jpg"] imageWaterMarkWithString:@"文字的相关属性，自行设置" rect:CGRectMake(500, 900, 300, 200) attribute:attri image:[UIImage imageNamed:@"fjjwtx (102).jpg"] imageRect:CGRectMake(800, 800, 200, 200) alpha:0.8];
+            UIImage *image = [[UIImage imageNamed:@"300-300-sample-0.jpeg"] imageWaterMarkWithString:@"文字的相关属性，自行设置" rect:CGRectMake(500, 900, 300, 200) attribute:attri image:[UIImage imageNamed:@"300-300-sample-11.png"] imageRect:CGRectMake(800, 800, 200, 200) alpha:0.8];
             [weakSelf showAlertWithImage:image];
         };
         [dataArray addObject:item];
