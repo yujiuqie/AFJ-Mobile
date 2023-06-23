@@ -31,7 +31,7 @@
 
 打开 Mac 终端，进入工程根目录并执行 setup.sh 脚本
 
-推荐安装 fvm、rvm、nvm，并确保使用 Flutter(3.0.5(stable))、nodejs(14.16.0)、ruby(2.7.4 ) 版本环境执行以下脚本
+推荐安装 fvm、rvm、nvm，并确保使用 Flutter(3.0.5(stable))、nodejs(18.15.0)、ruby(2.7.6) 版本环境执行以下脚本
 
 ```shell
 sh script/setup.sh

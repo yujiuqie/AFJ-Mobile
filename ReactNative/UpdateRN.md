@@ -1,3 +1,10 @@
+## 2023.6.23
+
+* 补充 patch-package 依赖
+
+npm install -g patch-package
+
+## 2023.3.30
 升级目标：
 nvm 升级 node 至 18.15.0
 rvm 升级 ruby 至 2.7.6

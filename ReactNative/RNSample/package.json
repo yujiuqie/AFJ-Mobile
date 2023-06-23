@@ -12,6 +12,7 @@
     "postinstall": "patch-package"
   },
   "dependencies": {
+    "patch-package": "^6.4.7",
     "react": "18.2.0",
     "react-native": "0.71.4",
     "react-native-debug-tool": "^1.1.6",
