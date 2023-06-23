@@ -17,7 +17,7 @@
 | Visual Studio Code |    1.70.2     |       |
 |       Unity        | 2021.3.6f1c1  |       |
 |  JetBrains Rider   |   2022.1.2    |       |
-|      Flutter       | 3.0.5(stable) |       |
+|      Flutter       | 3.10.1(stable) |       |
 |        Dart        |    2.17.6     |       |
 |  react-native-cli  |     9.5.0     |       |
 |       react        |     18.2.0    |       |
@@ -31,7 +31,7 @@
 
 打开 Mac 终端，进入工程根目录并执行 setup.sh 脚本
 
-推荐安装 fvm、rvm、nvm，并确保使用 Flutter(3.0.5(stable))、nodejs(18.15.0)、ruby(2.7.6) 版本环境执行以下脚本
+推荐安装 fvm、rvm、nvm，并确保使用 Flutter(3.10.1(stable))、nodejs(18.15.0)、ruby(2.7.6) 版本环境执行以下脚本
 
 ```shell
 sh script/setup.sh
