@@ -15681,16 +15681,16 @@
 			buildConfigurationList = 0908709A28A50C3E00CBEEA8 /* Build configuration list for PBXNativeTarget "AFJ-iOS" */;
 			buildPhases = (
 				A1DB1187D67ABA9766E61E1C /* [CP] Check Pods Manifest.lock */,
-				97DDAFCCDD96461686971C74 /* [CP-User] Run Flutter Build afjflutter Script */,
+				C041117D6728AD8F7A93225E /* [CP-User] Run Flutter Build flutter_unit Script */,
 				0908706428A50C3C00CBEEA8 /* Sources */,
 				0908706528A50C3C00CBEEA8 /* Frameworks */,
 				0908706628A50C3C00CBEEA8 /* Resources */,
 				9BF026D2AB2FC75EA24F9003 /* [CP] Embed Pods Frameworks */,
 				8E698A5847079EEA71796672 /* [CP] Copy Pods Resources */,
-				99144108C8E57E745BF748B8 /* [CP-User] Embed Flutter Build afjflutter Script */,
 				30556A1128E2FB5900EA8C5C /* Build Config */,
 				30CACC4B29C1607800FD8CE2 /* Start Packager */,
 				30CACC4C29C160D100FD8CE2 /* Bundle React Native code and images */,
+				F00ED94A795BDA599E236003 /* [CP-User] Embed Flutter Build flutter_unit Script */,
 			);
 			buildRules = (
 			);
@@ -16490,26 +16490,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AFJ-iOS/Pods-AFJ-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		97DDAFCCDD96461686971C74 /* [CP-User] Run Flutter Build afjflutter Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "[CP-User] Run Flutter Build afjflutter Script";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../Flutter/afjflutter/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
-		};
-		99144108C8E57E745BF748B8 /* [CP-User] Embed Flutter Build afjflutter Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "[CP-User] Embed Flutter Build afjflutter Script";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../Flutter/afjflutter/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
-		};
 		9BF026D2AB2FC75EA24F9003 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -16610,6 +16590,16 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AFJ-iOS-AFJ-iOSUITests/Pods-AFJ-iOS-AFJ-iOSUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C041117D6728AD8F7A93225E /* [CP-User] Run Flutter Build flutter_unit Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Run Flutter Build flutter_unit Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../Flutter/FlutterUnit/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
 		C3F42CC96B7B25F8B6AB184A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -16626,6 +16616,16 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AFJ-iOS-AFJ-iOSUITests/Pods-AFJ-iOS-AFJ-iOSUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		F00ED94A795BDA599E236003 /* [CP-User] Embed Flutter Build flutter_unit Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Embed Flutter Build flutter_unit Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../Flutter/FlutterUnit/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
 		};
 /* End PBXShellScriptBuildPhase section */
 

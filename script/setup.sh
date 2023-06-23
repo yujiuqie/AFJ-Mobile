@@ -3,7 +3,7 @@
 nodeVersion=`node -v`
 
 if [ $nodeVersion != 'v18.15.0' ]; then
-	echo "Node version Error, should be v18.15.0. Please install nvm and run 'nvm 18.15.0' to use the correct version"
+	echo "Node version Error, should be v18.15.0. Please install nvm and run 'nvm alias default 18.15.0' to use the correct version"
 	echo $nodeVersion
 	exit 0
 fi
@@ -11,7 +11,7 @@ fi
 rubyVersion=`ruby -v`
 
 if [[ $rubyVersion != "ruby 2.7.6"* ]]; then
-	echo "Ruby version Error, should be v2.7.6. Please install rvm and run 'rvm 2.7.6' to use the correct version"
+	echo "Ruby version Error, should be v2.7.6. Please install rvm and run 'rvm use 2.7.6 --default' to use the correct version"
 	echo $rubyVersion
 	exit 0
 fi
@@ -31,8 +31,8 @@ cp -rf node_modules $rootPath
 cd $rootPath
 
 echo "Step 2 : init and setup Flutter"
-cd ./Flutter/afjflutter
-fvm use 3.0.5
+cd ./Flutter/FlutterUnit
+fvm use 3.10.1
 fvm flutter channel stable
 fvm flutter clean
 fvm flutter pub get

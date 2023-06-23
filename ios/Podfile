@@ -7,7 +7,7 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 platform :ios, '13.0'
 prepare_react_native_project!
 
-flutter_application_path = '../Flutter/afjflutter'
+flutter_application_path = '../Flutter/FlutterUnit'
 load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
 
 def hawkeye
