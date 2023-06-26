@@ -22,7 +22,7 @@ rm -rf node_modules
 
 echo "Step 1 : init React Native"
 
-cd ReactNative/RNSample/
+cd ./ReactNative/RNSample/
 
 rm -rf node_modules
 npm install
@@ -50,6 +50,7 @@ cd $rootPath
 cd ios
 xattr -w com.apple.xcode.CreatedByBuildSystem true $PWD/build
 xcodebuild clean
+xcodebuild -workspace AFJ-iOS.xcworkspace -scheme AFJ-iOS-Debug -configuration Debug -destination 'platform=iOS Simulator,OS=16.4,name=iPhone 14'
 
 echo "Step 5 : open Xcode"
 
