@@ -24,39 +24,45 @@
 - (void)initDataSource{
     NSMutableArray *dataArray = [NSMutableArray array];
 
-    AFJCaseItemData *model1 = [[AFJCaseItemData alloc] init];
-    model1.title = @"百度";
-    model1.subtitle = @"https://www.baidu.com";
-    model1.link = @"https://www.baidu.com";
-    model1.didSelectAction = ^(AFJCaseItemData *model) {
-        TestWebViewController *webVC = [[TestWebViewController alloc] initWithURLString:model.link];
-        [self.navigationController pushViewController:webVC animated:YES];
-    };
-    [dataArray addObject:model1];
+    {
+        AFJCaseItemData *model1 = [[AFJCaseItemData alloc] init];
+        model1.title = @"GitHub - Trending";
+        model1.subtitle = @"https://github.com/trending";
+        model1.link = @"https://github.com/trending";
+        model1.didSelectAction = ^(AFJCaseItemData *model) {
+            TestWebViewController *webVC = [[TestWebViewController alloc] initWithURLString:model.link];
+            [self.navigationController pushViewController:webVC animated:YES];
+        };
+        [dataArray addObject:model1];
+    }
 
-    AFJCaseItemData *model2 = [[AFJCaseItemData alloc] init];
-    model2.title = @"post请求";
-    model2.subtitle = @"body={username=zhangsan&password=123456}";
-    model2.link = @"http://www.mocky.io/v2/5adef15a3300002500e4d6bb";
-    model2.didSelectAction = ^(AFJCaseItemData *model) {
-        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:model.link]];
-        request.HTTPMethod = @"POST";
-        NSString *str = @"username=jxb&password=123456";
-        request.HTTPBody = [str dataUsingEncoding:NSUTF8StringEncoding];
+    {
+        AFJCaseItemData *model2 = [[AFJCaseItemData alloc] init];
+        model2.title = @"post请求";
+        model2.subtitle = @"body={username=zhangsan&password=123456}";
+        model2.link = @"http://www.mocky.io/v2/5adef15a3300002500e4d6bb";
+        model2.didSelectAction = ^(AFJCaseItemData *model) {
+            NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:model.link]];
+            request.HTTPMethod = @"POST";
+            NSString *str = @"username=jxb&password=123456";
+            request.HTTPBody = [str dataUsingEncoding:NSUTF8StringEncoding];
+            
+            JXBWebViewController *webVC = [[JXBWebViewController alloc] initWithURLRequest:request];
+        };
+        [dataArray addObject:model2];
+    }
 
-        JXBWebViewController *webVC = [[JXBWebViewController alloc] initWithURLRequest:request];
-    };
-    [dataArray addObject:model2];
-
-    AFJCaseItemData *model3 = [[AFJCaseItemData alloc] init];
-    model3.title = @"交互测试";
-    model3.subtitle = @"使用的本地h5.html文件";
-    model3.link = [NSString stringWithFormat:@"file://%@", [[NSBundle mainBundle] pathForResource:@"h5" ofType:@"html"]];
-    model3.didSelectAction = ^(AFJCaseItemData *model) {
-        JXBWebViewController *webVC = [[JXBWebViewController alloc] initWithURLString:model.link];
-        [self.navigationController pushViewController:webVC animated:YES];
-    };
-    [dataArray addObject:model3];
+    {
+        AFJCaseItemData *model3 = [[AFJCaseItemData alloc] init];
+        model3.title = @"交互测试";
+        model3.subtitle = @"使用的本地h5.html文件";
+        model3.link = [NSString stringWithFormat:@"file://%@", [[NSBundle mainBundle] pathForResource:@"h5" ofType:@"html"]];
+        model3.didSelectAction = ^(AFJCaseItemData *model) {
+            JXBWebViewController *webVC = [[JXBWebViewController alloc] initWithURLString:model.link];
+            [self.navigationController pushViewController:webVC animated:YES];
+        };
+        [dataArray addObject:model3];
+    }
 
 //    AFJCaseItemData *model4 = [[AFJCaseItemData alloc] init];
 //    model4.title = @"请求带cookie";
@@ -69,92 +75,74 @@
 //    };
 //    [dataArray addObject:model4];
 
-    AFJCaseItemData *model5 = [[AFJCaseItemData alloc] init];
-    model5.title = @"H5秒开优化方案1 - 模板渲染";
-    model5.subtitle = @"服务端下发html模板和数据，客户端负责渲染，适合类似新闻详情页等业务场景";
-    model5.didSelectAction = ^(AFJCaseItemData *model) {
-        HybridViewController *webVC = [[HybridViewController alloc] init];
-        [self.navigationController pushViewController:webVC animated:YES];
-    };
-    [dataArray addObject:model5];
+    {
+        AFJCaseItemData *model5 = [[AFJCaseItemData alloc] init];
+        model5.title = @"H5秒开优化方案1 - 模板渲染";
+        model5.subtitle = @"服务端下发html模板和数据，客户端负责渲染，适合类似新闻详情页等业务场景";
+        model5.didSelectAction = ^(AFJCaseItemData *model) {
+            HybridViewController *webVC = [[HybridViewController alloc] init];
+            [self.navigationController pushViewController:webVC animated:YES];
+        };
+        [dataArray addObject:model5];
+    }
 
-    AFJCaseItemData *model6 = [[AFJCaseItemData alloc] init];
-    model6.title = @"H5秒开优化方案2 - 离线包";
-    model6.subtitle = @"将html、css、js等静态资源分离，资源可以做到增量更新，适合所有业务场景";
-    model6.didSelectAction = ^(AFJCaseItemData *model) {
-        [self requestOfflinePkg];
-    };
-    [dataArray addObject:model6];
+    {
+        AFJCaseItemData *model6 = [[AFJCaseItemData alloc] init];
+        model6.title = @"H5秒开优化方案2 - 离线包";
+        model6.subtitle = @"将html、css、js等静态资源分离，资源可以做到增量更新，适合所有业务场景";
+        model6.didSelectAction = ^(AFJCaseItemData *model) {
+            [self requestOfflinePkg];
+        };
+        [dataArray addObject:model6];
+    }
 
-    AFJCaseItemData *model7 = [[AFJCaseItemData alloc] init];
-    model7.title = @"新浪网";
-    model7.subtitle = @"https://www.sina.com.cn";
-    model7.link = @"https://www.sina.com.cn";
-    model7.didSelectAction = ^(AFJCaseItemData *model) {
-        TestWebViewController *webVC = [[TestWebViewController alloc] initWithURLString:model.link];
-        [self.navigationController pushViewController:webVC animated:YES];
-    };
-    [dataArray addObject:model7];
+    {
+        AFJCaseItemData *model10 = [[AFJCaseItemData alloc] init];
+        model10.title = @"测试启动时间";
+        model10.subtitle = @"";
+        model10.link = @"";
+        model10.didSelectAction = ^(AFJCaseItemData *model) {
+            CustomViewController *webVC = [[CustomViewController alloc] init];
+            [self.navigationController pushViewController:webVC animated:YES];
+        };
+        [dataArray addObject:model10];
+    }
 
-    AFJCaseItemData *model8 = [[AFJCaseItemData alloc] init];
-    model8.title = @"搜狐网";
-    model8.subtitle = @"http://www.sohu.com";
-    model8.link = @"http://www.sohu.com";
-    model8.didSelectAction = ^(AFJCaseItemData *model) {
-        TestWebViewController *webVC = [[TestWebViewController alloc] initWithURLString:model.link];
-        [self.navigationController pushViewController:webVC animated:YES];
-    };
-    [dataArray addObject:model8];
-
-    AFJCaseItemData *model9 = [[AFJCaseItemData alloc] init];
-    model9.title = @"爱奇艺";
-    model9.subtitle = @"https://v.qq.com";
-    model9.link = @"https://v.qq.com";
-    model9.didSelectAction = ^(AFJCaseItemData *model) {
-        TestWebViewController *webVC = [[TestWebViewController alloc] initWithURLString:model.link];
-        [self.navigationController pushViewController:webVC animated:YES];
-    };
-    [dataArray addObject:model9];
-
-    AFJCaseItemData *model10 = [[AFJCaseItemData alloc] init];
-    model10.title = @"测试启动时间";
-    model10.subtitle = @"";
-    model10.link = @"";
-    model10.didSelectAction = ^(AFJCaseItemData *model) {
-        CustomViewController *webVC = [[CustomViewController alloc] init];
-        [self.navigationController pushViewController:webVC animated:YES];
-    };
-    [dataArray addObject:model10];
-
-    AFJCaseItemData *model11 = [[AFJCaseItemData alloc] init];
-    model11.title = @"测试启动时间2";
-    model11.subtitle = @"";
-    model11.link = @"";
-    model11.didSelectAction = ^(AFJCaseItemData *model) {
-        CustomTwoViewController *webVC = [[CustomTwoViewController alloc] init];
-        [self.navigationController pushViewController:webVC animated:YES];
-    };
-    [dataArray addObject:model11];
+    {
+        AFJCaseItemData *model11 = [[AFJCaseItemData alloc] init];
+        model11.title = @"测试启动时间2";
+        model11.subtitle = @"";
+        model11.link = @"";
+        model11.didSelectAction = ^(AFJCaseItemData *model) {
+            CustomTwoViewController *webVC = [[CustomTwoViewController alloc] init];
+            [self.navigationController pushViewController:webVC animated:YES];
+        };
+        [dataArray addObject:model11];
+    }
     
-    AFJCaseItemData *model12 = [[AFJCaseItemData alloc] init];
-    model12.title = @"Cordova 示例";
-    model12.subtitle = @"";
-    model12.link = @"";
-    model12.didSelectAction = ^(AFJCaseItemData *model) {
-        MainH5WidgetViewController *webVC = [[MainH5WidgetViewController alloc] init];
-        [self.navigationController pushViewController:webVC animated:YES];
-    };
-    [dataArray addObject:model12];
+    {
+        AFJCaseItemData *model12 = [[AFJCaseItemData alloc] init];
+        model12.title = @"Cordova 示例";
+        model12.subtitle = @"";
+        model12.link = @"";
+        model12.didSelectAction = ^(AFJCaseItemData *model) {
+            MainH5WidgetViewController *webVC = [[MainH5WidgetViewController alloc] init];
+            [self.navigationController pushViewController:webVC animated:YES];
+        };
+        [dataArray addObject:model12];
+    }
     
-    AFJCaseItemData *model13 = [[AFJCaseItemData alloc] init];
-    model13.title = @"HTML 示例";
-    model13.subtitle = @"";
-    model13.link = @"";
-    model13.didSelectAction = ^(AFJCaseItemData *model) {
-        AFJHTMLSampleViewController *webVC = [[AFJHTMLSampleViewController alloc] init];
-        [self.navigationController pushViewController:webVC animated:YES];
-    };
-    [dataArray addObject:model13];
+    {
+        AFJCaseItemData *model13 = [[AFJCaseItemData alloc] init];
+        model13.title = @"HTML 示例";
+        model13.subtitle = @"";
+        model13.link = @"";
+        model13.didSelectAction = ^(AFJCaseItemData *model) {
+            AFJHTMLSampleViewController *webVC = [[AFJHTMLSampleViewController alloc] init];
+            [self.navigationController pushViewController:webVC animated:YES];
+        };
+        [dataArray addObject:model13];
+    }
     
     self.dataSource = dataArray;
 }
