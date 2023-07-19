@@ -50,6 +50,8 @@
 #import <Flutter/Flutter.h>
 #import <FlutterPluginRegistrant-umbrella.h>
 
+#import "QiCallTrace.h"
+
 @interface AppDelegate ()
 <
 BMKGeneralDelegate,
@@ -75,7 +77,11 @@ BMKLocationAuthDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-//    self.bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
+    //    self.bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
+    
+    //    if (@available(iOS 13.0, *)) {
+    
+    [QiCallTrace start];
     
     self.logVC = [[AFJLogViewController alloc] init];
     [AFJOSLogController withUpdateHandler:^(NSArray<AFJSystemLogMessage *> *newMessages) {
@@ -128,7 +134,7 @@ BMKLocationAuthDelegate
             // 2. 如果没有命中1，说明此时系统是 Light，则返回 App 在 Light 下的主题即可，这里不直接返回 Default，而是先做一些复杂判断，是因为 QMUI Demo 非深色模式的主题有好几个，而我们希望不管之前选择的是 Default、Grapefruit 还是 PinkRose，只要从 Dark 切换为非 Dark，都强制改为 Default。
             
             // 换句话说，如果业务项目只有 Light/Dark 两套主题，则按下方被注释掉的代码一样直接返回 Light 下的主题即可。
-//                return QDThemeIdentifierDefault;
+            //                return QDThemeIdentifierDefault;
             
             if ([QMUIThemeManagerCenter.defaultThemeManager.currentThemeIdentifier isEqual:QDThemeIdentifierDark]) {
                 return QDThemeIdentifierDefault;
@@ -154,7 +160,11 @@ BMKLocationAuthDelegate
     self.window = [[UIWindow alloc] init];
     [self didInitWindow];
 #endif
-
+    
+    [QiCallTrace stop];
+    [QiCallTrace save];
+    //    }
+    
     return YES;
 }
 
@@ -162,48 +172,48 @@ BMKLocationAuthDelegate
 
 - (void)startCustomHawkeye {
     // Background is not include in `MTHawkeye` by default, you need to add it explicitly.
-//    MTHBackgroundTaskTraceAdaptor *backgroundTrace = [MTHBackgroundTaskTraceAdaptor new];
-//    MTHBackgroundTaskTraceHawkeyeUI *backgroundTraceUI = [MTHBackgroundTaskTraceHawkeyeUI new];
-//
-//    [[MTHawkeyeClient shared]
-//        setPluginsSetupHandler:^(NSMutableArray<id<MTHawkeyePlugin>> *_Nonnull plugins) {
-//            [MTHawkeyeDefaultPlugins addDefaultClientPluginsInto:plugins];
-//
-//            // add your additional plugins here.
-//            [plugins addObject:backgroundTrace];
-//        }
-//        pluginsCleanHandler:^(NSMutableArray<id<MTHawkeyePlugin>> *_Nonnull plugins) {
-//            // if you don't want to free plugins memory, remove this line.
-//            [MTHawkeyeDefaultPlugins cleanDefaultClientPluginsFrom:plugins];
-//
-//            // clean your additional plugins if need.
-//            [plugins removeObject:backgroundTrace];
-//        }];
-//
-//    [[MTHawkeyeClient shared] startServer];
-//
-//    [[MTHawkeyeUIClient shared]
-//        setPluginsSetupHandler:^(NSMutableArray<id<MTHawkeyeMainPanelPlugin>> *_Nonnull mainPanelPlugins, NSMutableArray<id<MTHawkeyeFloatingWidgetPlugin>> *_Nonnull floatingWidgetPlugins, NSMutableArray<id<MTHawkeyeSettingUIPlugin>> *_Nonnull defaultSettingUIPluginsInto) {
-//            [MTHawkeyeDefaultPlugins addDefaultUIClientMainPanelPluginsInto:mainPanelPlugins
-//                                          defaultFloatingWidgetsPluginsInto:floatingWidgetPlugins
-//                                                defaultSettingUIPluginsInto:defaultSettingUIPluginsInto];
-//
-//            // add your additional plugins here.
-//            [defaultSettingUIPluginsInto addObject:backgroundTraceUI];
-//        }
-//        pluginsCleanHandler:^(NSMutableArray<id<MTHawkeyeMainPanelPlugin>> *_Nonnull mainPanelPlugins, NSMutableArray<id<MTHawkeyeFloatingWidgetPlugin>> *_Nonnull floatingWidgetPlugins, NSMutableArray<id<MTHawkeyeSettingUIPlugin>> *_Nonnull defaultSettingUIPluginsInto) {
-//            // if you don't want to free plugins memory, remove this line.
-//            [MTHawkeyeDefaultPlugins cleanDefaultUIClientMainPanelPluginsFrom:mainPanelPlugins
-//                                            defaultFloatingWidgetsPluginsFrom:floatingWidgetPlugins
-//                                                  defaultSettingUIPluginsFrom:defaultSettingUIPluginsInto];
-//
-//            // clean your additional plugins if need.
-//            [defaultSettingUIPluginsInto addObject:backgroundTraceUI];
-//        }];
-//
-//    dispatch_async(dispatch_get_main_queue(), ^(void) {
-//        [[MTHawkeyeUIClient shared] startServer];
-//    });
+    //    MTHBackgroundTaskTraceAdaptor *backgroundTrace = [MTHBackgroundTaskTraceAdaptor new];
+    //    MTHBackgroundTaskTraceHawkeyeUI *backgroundTraceUI = [MTHBackgroundTaskTraceHawkeyeUI new];
+    //
+    //    [[MTHawkeyeClient shared]
+    //        setPluginsSetupHandler:^(NSMutableArray<id<MTHawkeyePlugin>> *_Nonnull plugins) {
+    //            [MTHawkeyeDefaultPlugins addDefaultClientPluginsInto:plugins];
+    //
+    //            // add your additional plugins here.
+    //            [plugins addObject:backgroundTrace];
+    //        }
+    //        pluginsCleanHandler:^(NSMutableArray<id<MTHawkeyePlugin>> *_Nonnull plugins) {
+    //            // if you don't want to free plugins memory, remove this line.
+    //            [MTHawkeyeDefaultPlugins cleanDefaultClientPluginsFrom:plugins];
+    //
+    //            // clean your additional plugins if need.
+    //            [plugins removeObject:backgroundTrace];
+    //        }];
+    //
+    //    [[MTHawkeyeClient shared] startServer];
+    //
+    //    [[MTHawkeyeUIClient shared]
+    //        setPluginsSetupHandler:^(NSMutableArray<id<MTHawkeyeMainPanelPlugin>> *_Nonnull mainPanelPlugins, NSMutableArray<id<MTHawkeyeFloatingWidgetPlugin>> *_Nonnull floatingWidgetPlugins, NSMutableArray<id<MTHawkeyeSettingUIPlugin>> *_Nonnull defaultSettingUIPluginsInto) {
+    //            [MTHawkeyeDefaultPlugins addDefaultUIClientMainPanelPluginsInto:mainPanelPlugins
+    //                                          defaultFloatingWidgetsPluginsInto:floatingWidgetPlugins
+    //                                                defaultSettingUIPluginsInto:defaultSettingUIPluginsInto];
+    //
+    //            // add your additional plugins here.
+    //            [defaultSettingUIPluginsInto addObject:backgroundTraceUI];
+    //        }
+    //        pluginsCleanHandler:^(NSMutableArray<id<MTHawkeyeMainPanelPlugin>> *_Nonnull mainPanelPlugins, NSMutableArray<id<MTHawkeyeFloatingWidgetPlugin>> *_Nonnull floatingWidgetPlugins, NSMutableArray<id<MTHawkeyeSettingUIPlugin>> *_Nonnull defaultSettingUIPluginsInto) {
+    //            // if you don't want to free plugins memory, remove this line.
+    //            [MTHawkeyeDefaultPlugins cleanDefaultUIClientMainPanelPluginsFrom:mainPanelPlugins
+    //                                            defaultFloatingWidgetsPluginsFrom:floatingWidgetPlugins
+    //                                                  defaultSettingUIPluginsFrom:defaultSettingUIPluginsInto];
+    //
+    //            // clean your additional plugins if need.
+    //            [defaultSettingUIPluginsInto addObject:backgroundTraceUI];
+    //        }];
+    //
+    //    dispatch_async(dispatch_get_main_queue(), ^(void) {
+    //        [[MTHawkeyeUIClient shared] startServer];
+    //    });
 }
 
 #pragma mark - QMUI
@@ -211,8 +221,8 @@ BMKLocationAuthDelegate
 - (void)didInitWindow {
     self.window.rootViewController = [self generateWindowRootViewController];
     [self.window makeKeyAndVisible];
-//    TODO::启动动画异常
-//    [self startLaunchingAnimation];
+    //    TODO::启动动画异常
+    //    [self startLaunchingAnimation];
 }
 
 - (UIViewController *)generateWindowRootViewController {
@@ -330,7 +340,7 @@ BMKLocationAuthDelegate
 
 /**
  联网结果回调
-
+ 
  @param iError 联网结果错误码信息，0代表联网成功
  */
 - (void)onGetNetworkState:(int)iError {
@@ -352,7 +362,7 @@ BMKLocationAuthDelegate
 
 /**
  鉴权结果回调
-
+ 
  @param iError 鉴权结果错误码信息，0代表鉴权成功
  */
 - (void)onGetPermissionState:(int)iError {
@@ -366,18 +376,18 @@ BMKLocationAuthDelegate
 #pragma mark - Ali
 
 - (void)initAli{
-//    NSString *appVersion = @"1.0.0"; //配置项：App版本
-//    NSString *channel = @"develop"; //配置项：渠道标记
-//    NSString *nick = @"alfred"; //配置项：用户昵称
-//    [[AlicloudTlogProvider alloc] autoInitWithAppVersion:appVersion channel:channel nick:nick];
-//    [AlicloudHAProvider start];
-//    [TRDManagerService updateLogLevel:TLogLevelDebug]; //配置项：控制台可拉取的日志级别
-//
-//    [[AlicloudAPMProvider alloc] autoInitWithAppVersion:appVersion channel:channel nick:nick];
-//    [AlicloudHAProvider start];
-//
-//    [[AlicloudCrashProvider alloc] autoInitWithAppVersion:appVersion channel:channel nick:nick];
-//    [AlicloudHAProvider start];
+    //    NSString *appVersion = @"1.0.0"; //配置项：App版本
+    //    NSString *channel = @"develop"; //配置项：渠道标记
+    //    NSString *nick = @"alfred"; //配置项：用户昵称
+    //    [[AlicloudTlogProvider alloc] autoInitWithAppVersion:appVersion channel:channel nick:nick];
+    //    [AlicloudHAProvider start];
+    //    [TRDManagerService updateLogLevel:TLogLevelDebug]; //配置项：控制台可拉取的日志级别
+    //
+    //    [[AlicloudAPMProvider alloc] autoInitWithAppVersion:appVersion channel:channel nick:nick];
+    //    [AlicloudHAProvider start];
+    //
+    //    [[AlicloudCrashProvider alloc] autoInitWithAppVersion:appVersion channel:channel nick:nick];
+    //    [AlicloudHAProvider start];
 }
 
 #pragma mark - Mini App
@@ -388,7 +398,7 @@ BMKLocationAuthDelegate
     storeConfig.sdkSecret = @"3497069ed3d6117a";
     storeConfig.apiServer = @"https://api.finclip.com";
     FATConfig *config = [FATConfig configWithStoreConfigs:@[storeConfig]];
-
+    
     [[FATClient sharedClient] initWithConfig:config error:nil];
 }
 
@@ -430,7 +440,7 @@ BMKLocationAuthDelegate
                      * The device is out of space.
                      * The store could not be migrated to the current model version.
                      Check the error message to determine what the actual problem was.
-                    */
+                     */
                     NSLog(@"Unresolved error %@, %@", error, error.userInfo);
                     abort();
                 }
@@ -460,7 +470,7 @@ BMKLocationAuthDelegate
 /**
  NSURLSession HQLDemo8ViewController 示例代码
  开启后台下载任务时，即使关闭了应用程序，这个下载任务依然在后台运行。
-
+ 
  当这个下载任务完成后，iOS 将会重新启动 app 来让任务知道，对这个我们不必放在心上。为了达到这个目的，我们可以在 app 的代理中调用下面的代码:
  */
 - (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)(void))completionHandler

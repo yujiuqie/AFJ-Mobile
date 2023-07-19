@@ -34,7 +34,7 @@ if linkage != nil
 end
 
 target 'AFJ-iOS' do
-  use_frameworks!
+  use_frameworks! :linkage => :static
   use_modular_headers!
   
   flags = get_default_flags()
@@ -172,6 +172,7 @@ target 'AFJ-iOS' do
   
   # 数据库
   pod 'FMDB'
+  pod 'ReactiveCocoa'
   
   pod 'ZJAnimationPopView'
   pod 'JLRoutes','2.1'

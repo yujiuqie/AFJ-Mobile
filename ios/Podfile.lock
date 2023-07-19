@@ -936,7 +936,10 @@ PODS:
     - React-jsi (= 0.71.4)
     - React-logger (= 0.71.4)
     - React-perflogger (= 0.71.4)
+  - ReactiveCocoa (12.0.0):
+    - ReactiveSwift (~> 7.0)
   - ReactiveObjC (3.1.1)
+  - ReactiveSwift (7.1.1)
   - REFormattedNumberField (1.1.6)
   - RegexKitLite (4.0)
   - RETableViewManager (1.7):
@@ -1158,6 +1161,7 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - ReactiveCocoa
   - ReactiveObjC
   - RegexKitLite
   - RETableViewManager
@@ -1288,7 +1292,9 @@ SPEC REPOS:
     - PYSearch
     - QMUIKit
     - QTEventBus
+    - ReactiveCocoa
     - ReactiveObjC
+    - ReactiveSwift
     - REFormattedNumberField
     - RegexKitLite
     - RETableViewManager
@@ -1576,7 +1582,9 @@ SPEC CHECKSUMS:
   React-RCTVibration: ad17efcfb2fa8f6bfd8ac0cf48d96668b8b28e0b
   React-runtimeexecutor: 8fa50b38df6b992c76537993a2b0553d3b088004
   ReactCommon: ace261620fa7f40b8a61a971d525afa303d853bc
+  ReactiveCocoa: 5d10386f0ce09f922006efbf784881c5fade27c5
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  ReactiveSwift: 477d3f5bc2eb3cbbba1c1636505752b83bef93b1
   REFormattedNumberField: 70fc5fb1218ebd5ee9983820defd12806d5c6ec6
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
   RETableViewManager: 0f24d796c42c0890d38c79cc9aeb3871e186726e
@@ -1626,6 +1634,6 @@ SPEC CHECKSUMS:
   ZLCollectionViewFlowLayout: fdc09b2b57b510bf285b5c327375d82366927e27
   ZSSRichTextEditor: f58c612e4e981bf10d3cf64980ac5c4b1f5138f4
 
-PODFILE CHECKSUM: 8fc53e1d7adb9075740ad90a57620816f109bcda
+PODFILE CHECKSUM: 2479058d3c2c5bd8f4186fb775d2a998aeb7e884
 
 COCOAPODS: 1.12.0
