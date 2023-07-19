@@ -50,8 +50,6 @@
 #import <Flutter/Flutter.h>
 #import <FlutterPluginRegistrant-umbrella.h>
 
-#import "QiCallTrace.h"
-
 @interface AppDelegate ()
 <
 BMKGeneralDelegate,
@@ -80,8 +78,6 @@ BMKLocationAuthDelegate
     //    self.bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
     
     //    if (@available(iOS 13.0, *)) {
-    
-    [QiCallTrace start];
     
     self.logVC = [[AFJLogViewController alloc] init];
     [AFJOSLogController withUpdateHandler:^(NSArray<AFJSystemLogMessage *> *newMessages) {
@@ -158,11 +154,9 @@ BMKLocationAuthDelegate
 #ifndef UIWindowScene_Enabled
     // 界面
     self.window = [[UIWindow alloc] init];
+    
     [self didInitWindow];
 #endif
-    
-    [QiCallTrace stop];
-    [QiCallTrace save];
     //    }
     
     return YES;

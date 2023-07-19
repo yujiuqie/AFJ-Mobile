@@ -199,14 +199,6 @@
 		06CB116128AA0904009BD8D9 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CB115828AA0904009BD8D9 /* NSData+Base64.m */; };
 		06CB116228AA0904009BD8D9 /* SYAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CB115928AA0904009BD8D9 /* SYAES.m */; };
 		06D1BF4F29D3321F001CF84F /* AFJHTMLSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D1BF4E29D3321F001CF84F /* AFJHTMLSampleViewController.m */; };
-		06EA37532A677C9000D3C1D5 /* QiCallStackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EA37432A677C8F00D3C1D5 /* QiCallStackModel.m */; };
-		06EA37542A677C9000D3C1D5 /* QiLagDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EA37442A677C8F00D3C1D5 /* QiLagDB.m */; };
-		06EA37552A677C9000D3C1D5 /* QiCPUMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EA37472A677C8F00D3C1D5 /* QiCPUMonitor.m */; };
-		06EA37562A677C9000D3C1D5 /* QiCallTraceCore.c in Sources */ = {isa = PBXBuildFile; fileRef = 06EA37482A677C8F00D3C1D5 /* QiCallTraceCore.c */; };
-		06EA37572A677C9000D3C1D5 /* QiCallTraceTimeCostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EA374C2A677C8F00D3C1D5 /* QiCallTraceTimeCostModel.m */; };
-		06EA37582A677C9000D3C1D5 /* QiCallTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EA37502A677C8F00D3C1D5 /* QiCallTrace.m */; };
-		06EA37592A677C9000D3C1D5 /* QiLagMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EA37512A677C8F00D3C1D5 /* QiLagMonitor.m */; };
-		06EA375A2A677C9000D3C1D5 /* QiCallStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EA37522A677C8F00D3C1D5 /* QiCallStack.m */; };
 		06EA775E28CC31F500EF8551 /* AFJSocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EA775D28CC31F500EF8551 /* AFJSocketViewController.m */; };
 		09045E6B28BCBA5900A04E41 /* AFJMiniAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09045E6A28BCBA5900A04E41 /* AFJMiniAppViewController.m */; };
 		0908706D28A50C3C00CBEEA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0908706C28A50C3C00CBEEA8 /* AppDelegate.m */; };
@@ -2500,23 +2492,6 @@
 		06CB115928AA0904009BD8D9 /* SYAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYAES.m; sourceTree = "<group>"; };
 		06D1BF4D29D3321F001CF84F /* AFJHTMLSampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFJHTMLSampleViewController.h; sourceTree = "<group>"; };
 		06D1BF4E29D3321F001CF84F /* AFJHTMLSampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFJHTMLSampleViewController.m; sourceTree = "<group>"; };
-		06EA37422A677C8F00D3C1D5 /* QiCallTraceTimeCostModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiCallTraceTimeCostModel.h; sourceTree = "<group>"; };
-		06EA37432A677C8F00D3C1D5 /* QiCallStackModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiCallStackModel.m; sourceTree = "<group>"; };
-		06EA37442A677C8F00D3C1D5 /* QiLagDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiLagDB.m; sourceTree = "<group>"; };
-		06EA37452A677C8F00D3C1D5 /* QiCallLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiCallLib.h; sourceTree = "<group>"; };
-		06EA37462A677C8F00D3C1D5 /* QiCallTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiCallTrace.h; sourceTree = "<group>"; };
-		06EA37472A677C8F00D3C1D5 /* QiCPUMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiCPUMonitor.m; sourceTree = "<group>"; };
-		06EA37482A677C8F00D3C1D5 /* QiCallTraceCore.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QiCallTraceCore.c; sourceTree = "<group>"; };
-		06EA37492A677C8F00D3C1D5 /* QiCallStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiCallStack.h; sourceTree = "<group>"; };
-		06EA374A2A677C8F00D3C1D5 /* QiLagMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiLagMonitor.h; sourceTree = "<group>"; };
-		06EA374B2A677C8F00D3C1D5 /* QiCallStackModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiCallStackModel.h; sourceTree = "<group>"; };
-		06EA374C2A677C8F00D3C1D5 /* QiCallTraceTimeCostModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiCallTraceTimeCostModel.m; sourceTree = "<group>"; };
-		06EA374D2A677C8F00D3C1D5 /* QiLagDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiLagDB.h; sourceTree = "<group>"; };
-		06EA374E2A677C8F00D3C1D5 /* QiCPUMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiCPUMonitor.h; sourceTree = "<group>"; };
-		06EA374F2A677C8F00D3C1D5 /* QiCallTraceCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiCallTraceCore.h; sourceTree = "<group>"; };
-		06EA37502A677C8F00D3C1D5 /* QiCallTrace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiCallTrace.m; sourceTree = "<group>"; };
-		06EA37512A677C8F00D3C1D5 /* QiLagMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiLagMonitor.m; sourceTree = "<group>"; };
-		06EA37522A677C8F00D3C1D5 /* QiCallStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiCallStack.m; sourceTree = "<group>"; };
 		06EA775C28CC31F500EF8551 /* AFJSocketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFJSocketViewController.h; sourceTree = "<group>"; };
 		06EA775D28CC31F500EF8551 /* AFJSocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFJSocketViewController.m; sourceTree = "<group>"; };
 		06EA77F828D206E100EF8551 /* pem2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem2.h; sourceTree = "<group>"; };
@@ -6813,33 +6788,8 @@
 		06EA37402A677C7F00D3C1D5 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				06EA37412A677C8F00D3C1D5 /* QiLagMonitor */,
 			);
 			path = Tools;
-			sourceTree = "<group>";
-		};
-		06EA37412A677C8F00D3C1D5 /* QiLagMonitor */ = {
-			isa = PBXGroup;
-			children = (
-				06EA37452A677C8F00D3C1D5 /* QiCallLib.h */,
-				06EA37492A677C8F00D3C1D5 /* QiCallStack.h */,
-				06EA37522A677C8F00D3C1D5 /* QiCallStack.m */,
-				06EA374B2A677C8F00D3C1D5 /* QiCallStackModel.h */,
-				06EA37432A677C8F00D3C1D5 /* QiCallStackModel.m */,
-				06EA37462A677C8F00D3C1D5 /* QiCallTrace.h */,
-				06EA37502A677C8F00D3C1D5 /* QiCallTrace.m */,
-				06EA37482A677C8F00D3C1D5 /* QiCallTraceCore.c */,
-				06EA374F2A677C8F00D3C1D5 /* QiCallTraceCore.h */,
-				06EA37422A677C8F00D3C1D5 /* QiCallTraceTimeCostModel.h */,
-				06EA374C2A677C8F00D3C1D5 /* QiCallTraceTimeCostModel.m */,
-				06EA374E2A677C8F00D3C1D5 /* QiCPUMonitor.h */,
-				06EA37472A677C8F00D3C1D5 /* QiCPUMonitor.m */,
-				06EA374D2A677C8F00D3C1D5 /* QiLagDB.h */,
-				06EA37442A677C8F00D3C1D5 /* QiLagDB.m */,
-				06EA374A2A677C8F00D3C1D5 /* QiLagMonitor.h */,
-				06EA37512A677C8F00D3C1D5 /* QiLagMonitor.m */,
-			);
-			path = QiLagMonitor;
 			sourceTree = "<group>";
 		};
 		06EA775B28CC31E600EF8551 /* Socket */ = {
@@ -17152,7 +17102,6 @@
 				300C80DA28DF06AE0046CE53 /* StyleEditorScreen.swift in Sources */,
 				30806D1628D029A3006C0D30 /* UINavigationController+M13ProgressViewBar.m in Sources */,
 				3068A59928D4AB910000F947 /* PayService.m in Sources */,
-				06EA37542A677C9000D3C1D5 /* QiLagDB.m in Sources */,
 				300AEC5929A496AD00206C6D /* QMUIInteractiveDebugPanelItem.m in Sources */,
 				093B0D6928C22067005634FD /* BMKRoutePlanSearchView.m in Sources */,
 				09FB783828ACF43B00B31F8F /* UIImageView+Tranform3D.m in Sources */,
@@ -17203,7 +17152,6 @@
 				0942E6CC28C1B59100AFE2F9 /* ScreenObject.m in Sources */,
 				06CB115B28AA0904009BD8D9 /* SYDES3.m in Sources */,
 				091A8E3728B3500200B854CC /* AFJNetDiagnoServiceViewController.m in Sources */,
-				06EA37572A677C9000D3C1D5 /* QiCallTraceTimeCostModel.m in Sources */,
 				30623BB728D320BE006300DE /* UITextField+JKShake.m in Sources */,
 				094D8F8028B9BE8700B15609 /* MessageQoSEventImpl.m in Sources */,
 				300AEC4829A496AD00206C6D /* QDUIViewLayoutViewController.m in Sources */,
@@ -17485,7 +17433,6 @@
 				094D8F6228B9BE7500B15609 /* Utils.m in Sources */,
 				303B166828D32F16009F878B /* PresentingAnimationController.m in Sources */,
 				309936C728C8C9E000C704D0 /* GroupAnimationController.m in Sources */,
-				06EA375A2A677C9000D3C1D5 /* QiCallStack.m in Sources */,
 				094D8F8128B9BE8700B15609 /* ChatBaseEventImpl.m in Sources */,
 				30623BDB28D320BE006300DE /* NSString+JKNormalRegex.m in Sources */,
 				30623B9128D320BD006300DE /* UIView+JKFind.m in Sources */,
@@ -17645,7 +17592,6 @@
 				300C809528DEFA550046CE53 /* LSTMutiPopView.m in Sources */,
 				30092E5F28F26BA80058DFDD /* MASExampleViewController.m in Sources */,
 				3068A5A128D56C280000F947 /* AspectsViewController.m in Sources */,
-				06EA37552A677C9000D3C1D5 /* QiCPUMonitor.m in Sources */,
 				30623B3F28D320BD006300DE /* UIButton+SUP.m in Sources */,
 				300C7F9928DEF1870046CE53 /* Feasd.m in Sources */,
 				0996D5AA28C5FD2F00680425 /* JSDAppearNotNeedLogInVC.m in Sources */,
@@ -17944,7 +17890,6 @@
 				0942E6C128C1B59100AFE2F9 /* GetVC.m in Sources */,
 				30806CAD28CEBFF8006C0D30 /* AFJLogManager.m in Sources */,
 				06040E4828DE125D00863329 /* MapDirectionsViewController.m in Sources */,
-				06EA37592A677C9000D3C1D5 /* QiLagMonitor.m in Sources */,
 				300C81A228E14F0B0046CE53 /* ATCAnimatedTransitioningFloat.m in Sources */,
 				30623BC628D320BE006300DE /* NSException+JKTrace.m in Sources */,
 				303C6B2229C301530092980E /* AFJReactNativeViewController.m in Sources */,
@@ -18000,7 +17945,6 @@
 				30623B6128D320BD006300DE /* UIImage+JKBetterFace.m in Sources */,
 				305C5EE628E182B600BA908A /* TableViewExampleVC.m in Sources */,
 				091A8E7228B35C2100B854CC /* LDNetTimer.m in Sources */,
-				06EA37582A677C9000D3C1D5 /* QiCallTrace.m in Sources */,
 				30B0F74C28E1512E0059605D /* TTMDetailViewController.m in Sources */,
 				093B0D6728C22067005634FD /* BMKWalkRouteDetailModel.m in Sources */,
 				30454F0E28F3B37400717CCE /* MASConstraintMaker.m in Sources */,
@@ -18020,7 +17964,6 @@
 				303B166928D32F16009F878B /* CustomVCTransitionViewController.m in Sources */,
 				308E9E4228D08F3800A423A6 /* FirstViewController.m in Sources */,
 				0908712828A63F9C00CBEEA8 /* APLProductCell.m in Sources */,
-				06EA37532A677C9000D3C1D5 /* QiCallStackModel.m in Sources */,
 				303B166A28D32F16009F878B /* CustomModalViewController.m in Sources */,
 				30C90C5928D9EBCF0086BBFE /* UIImage+RoundedCorner.m in Sources */,
 				30623C0228D320BE006300DE /* NSObject+JKBlocks.m in Sources */,
@@ -18272,7 +18215,6 @@
 				301F5A7228C8B4B500F865A4 /* ZFSmallPlayViewController.m in Sources */,
 				300C807C28DEFA550046CE53 /* LSTPopViewQQView.m in Sources */,
 				300C807E28DEFA550046CE53 /* LSTPopViewqqtopView.m in Sources */,
-				06EA37562A677C9000D3C1D5 /* QiCallTraceCore.c in Sources */,
 				309936C828C8C9E000C704D0 /* AffineTransformController.m in Sources */,
 				3099368828C8C9E000C704D0 /* YSCCarouselTitleViewController.m in Sources */,
 				0996D5A728C5FD2F00680425 /* JSDHomeVC.m in Sources */,
