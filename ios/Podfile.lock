@@ -34,7 +34,6 @@ PODS:
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
   - boost (1.76.0)
-  - Bugly (2.5.93)
   - ChameleonFramework (2.1.0):
     - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
@@ -206,16 +205,6 @@ PODS:
   - KWTransition (0.0.4)
   - LCZoomTransition (1.0.0)
   - LSAnimator (2.1.5)
-  - LSSafeProtector (2.1.4):
-    - LSSafeProtector/Core (= 2.1.4)
-    - LSSafeProtector/Foundation (= 2.1.4)
-    - LSSafeProtector/MRC (= 2.1.4)
-  - LSSafeProtector/Core (2.1.4)
-  - LSSafeProtector/Foundation (2.1.4):
-    - LSSafeProtector/Core
-  - LSSafeProtector/MRC (2.1.4):
-    - LSSafeProtector/Core
-    - LSSafeProtector/Foundation
   - LSTCategory (0.3.2):
     - LSTCategory/Code (= 0.3.2)
     - YYModel
@@ -975,10 +964,6 @@ PODS:
   - "UIAlertController+Blocks (0.9.2)"
   - UICKeyChainStore (2.1.2)
   - "UITableView+FDTemplateLayoutCell (1.6)"
-  - UMAPM (1.7.0)
-  - UMCommon (7.3.7):
-    - UMDevice
-  - UMDevice (2.2.1)
   - url_launcher_ios (0.0.1):
     - Flutter
   - VCTransitionsLibrary (1.5.0)
@@ -1009,7 +994,6 @@ DEPENDENCIES:
   - BEMCheckBox
   - BlocksKit (~> 2.2.5)
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
-  - Bugly
   - ChameleonFramework
   - Charts (~> 4.1.0)
   - CLImageEditor/AllTools
@@ -1067,7 +1051,6 @@ DEPENDENCIES:
   - KWTransition
   - LCZoomTransition
   - LSAnimator (~> 2.1.5)
-  - LSSafeProtector
   - LSTCategory
   - LSTPopView (from `https://github.com/LoSenTrad/LSTPopView`)
   - MagicalRecord (~> 2.3.0)
@@ -1156,9 +1139,6 @@ DEPENDENCIES:
   - TZImagePickerController
   - "UIAlertController+Blocks"
   - "UITableView+FDTemplateLayoutCell"
-  - UMAPM
-  - UMCommon
-  - UMDevice
   - url_launcher_ios (from `../Flutter/FlutterUnit/.ios/.symlinks/plugins/url_launcher_ios/ios`)
   - VCTransitionsLibrary
   - WechatOpenSDK (= 1.8.4)
@@ -1181,7 +1161,6 @@ SPEC REPOS:
     - BabyBluetooth
     - BEMCheckBox
     - BlocksKit
-    - Bugly
     - ChameleonFramework
     - Charts
     - CLImageEditor
@@ -1224,7 +1203,6 @@ SPEC REPOS:
     - KWTransition
     - LCZoomTransition
     - LSAnimator
-    - LSSafeProtector
     - LSTCategory
     - LSTTimer
     - MagicalRecord
@@ -1276,9 +1254,6 @@ SPEC REPOS:
     - "UIAlertController+Blocks"
     - UICKeyChainStore
     - "UITableView+FDTemplateLayoutCell"
-    - UMAPM
-    - UMCommon
-    - UMDevice
     - VCTransitionsLibrary
     - WechatOpenSDK
     - YXYDashLayer
@@ -1421,7 +1396,6 @@ SPEC CHECKSUMS:
   BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
   BlocksKit: 8639b2848dd51c35c957af4d9fbdc7a769a1fc12
   boost: 57d2868c099736d80fcd648bf211b4431e51a558
-  Bugly: b8715e6ec4004b7f7fbffab0643ba80545aee3da
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Charts: ce0768268078eee0336f122c3c4ca248e4e204c5
   CLImageEditor: dc3e5358f641368da3a76fc1c744a4c2ceb270ad
@@ -1471,7 +1445,6 @@ SPEC CHECKSUMS:
   KWTransition: 72d59eef35ddb67769eb99a41317fa75c0444e1b
   LCZoomTransition: 9d444751c10556ee6dbf1fd18c292e1add9530e2
   LSAnimator: f24d46b5f9b1ecedba14dc76a18e8fe2bbf681ea
-  LSSafeProtector: b2e6c263079d365967cc4d19817b38291b5fcbe6
   LSTCategory: e7dbe02572cedd738dd7f700ab71c5c94721a140
   LSTPopView: 9379f00f6ce7d1fc620b50ab00ed3ef97b2d4d52
   LSTTimer: caf8f02ff366ca175cf4c1778d26c166183c1b6f
@@ -1568,9 +1541,6 @@ SPEC CHECKSUMS:
   "UIAlertController+Blocks": 80e28b92523fb58aba4d1bccec013d5a0b0bddb2
   UICKeyChainStore: 85db518bb1d294366d15ec9b92a416c4e670518f
   "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
-  UMAPM: e7674c15fd583c3d9bf2e469cf40002f61bf2b97
-  UMCommon: 37fe35f498e92cf57bbb06a086f02915fc35f211
-  UMDevice: 053478c4b4d7292f31f0a275c227d3c4007a5571
   url_launcher_ios: 08a3dfac5fb39e8759aeb0abbd5d9480f30fc8b4
   VCTransitionsLibrary: d61fd9b7b6721942f0d583bcc0e7f8c31ec9271b
   WechatOpenSDK: 9b721089507c895d05f997408c30bb6e6f5f9b60
@@ -1583,6 +1553,6 @@ SPEC CHECKSUMS:
   ZLCollectionViewFlowLayout: fdc09b2b57b510bf285b5c327375d82366927e27
   ZSSRichTextEditor: f58c612e4e981bf10d3cf64980ac5c4b1f5138f4
 
-PODFILE CHECKSUM: d6b2bc743ff77b8ea793b2067dbf9cd31942481c
+PODFILE CHECKSUM: b36994d30dfdc5ba54662c386842c90ef348642d
 
 COCOAPODS: 1.12.0

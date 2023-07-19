@@ -682,7 +682,6 @@
 		3001E86E28DC90D8005157E6 /* DIYCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3001E86428DC90D8005157E6 /* DIYCalendarCell.m */; };
 		3001E86F28DC90D9005157E6 /* DIYExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3001E86628DC90D8005157E6 /* DIYExampleViewController.m */; };
 		3001E87028DC90D9005157E6 /* RangePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3001E86728DC90D8005157E6 /* RangePickerCell.m */; };
-		3002B97828E427940056076C /* AFJAliLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3002B97728E427940056076C /* AFJAliLogViewController.m */; };
 		3008B69328D2CE3E005709A6 /* AFJColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3008B69228D2CE3E005709A6 /* AFJColorViewController.m */; };
 		3008B6A928D2CFDA005709A6 /* Palette.m in Sources */ = {isa = PBXBuildFile; fileRef = 3008B69728D2CFDA005709A6 /* Palette.m */; };
 		3008B6AB28D2CFDA005709A6 /* colors.json in Resources */ = {isa = PBXBuildFile; fileRef = 3008B69C28D2CFDA005709A6 /* colors.json */; };
@@ -1030,7 +1029,6 @@
 		3010C84828D0827C00E4CE69 /* HQLHotCityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3010C83028D0827C00E4CE69 /* HQLHotCityTableViewCell.m */; };
 		3010C84928D0827C00E4CE69 /* BMChineseSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 3010C83428D0827C00E4CE69 /* BMChineseSort.m */; };
 		3010C84C28D082FC00E4CE69 /* AFJMapCityPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3010C84B28D082FC00E4CE69 /* AFJMapCityPickerViewController.m */; };
-		301185BC28E4339200DDF8E2 /* AFJAliCrashLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 301185BB28E4339200DDF8E2 /* AFJAliCrashLogViewController.m */; };
 		30163D6428D30E8F003D67EA /* FZLSJW.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30163D6328D30E8F003D67EA /* FZLSJW.ttf */; };
 		30163D7D28D30ED9003D67EA /* LabelBasicUsageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30163D6828D30ED9003D67EA /* LabelBasicUsageViewController.m */; };
 		30163D7E28D30ED9003D67EA /* HQLSystemFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30163D6928D30ED9003D67EA /* HQLSystemFontViewController.m */; };
@@ -1553,10 +1551,6 @@
 		3075ADE028D2DB5500B011C3 /* AFJCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3075ADDE28D2DB5500B011C3 /* AFJCollectionViewController.m */; };
 		3075ADE128D2DB5500B011C3 /* AFJCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3075ADDF28D2DB5500B011C3 /* AFJCollectionViewController.xib */; };
 		3075ADE528D2FA2E00B011C3 /* AFJColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3075ADE428D2FA2E00B011C3 /* AFJColorManager.m */; };
-		3078830728DAA7A200E0C99E /* AFJSafeProtectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3078830628DAA7A200E0C99E /* AFJSafeProtectorViewController.m */; };
-		3078830E28DAEDA200E0C99E /* NSNotificationTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3078830828DAEDA200E0C99E /* NSNotificationTestObject.m */; };
-		3078830F28DAEDA200E0C99E /* LSViewTestKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 3078830C28DAEDA200E0C99E /* LSViewTestKVO.m */; };
-		3078831028DAEDA200E0C99E /* LSViewTestKVOSuper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3078830D28DAEDA200E0C99E /* LSViewTestKVOSuper.m */; };
 		3078831528DB0B2E00E0C99E /* AFJIAPStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3078831428DB0B2D00E0C99E /* AFJIAPStoreViewController.m */; };
 		3078831928DB0B9800E0C99E /* AFJApplePayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3078831828DB0B9800E0C99E /* AFJApplePayViewController.m */; };
 		3078832128DB171200E0C99E /* AFJQMUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3078832028DB171200E0C99E /* AFJQMUIViewController.m */; };
@@ -3376,8 +3370,6 @@
 		3001E86528DC90D8005157E6 /* DIYExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYExampleViewController.h; sourceTree = "<group>"; };
 		3001E86628DC90D8005157E6 /* DIYExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYExampleViewController.m; sourceTree = "<group>"; };
 		3001E86728DC90D8005157E6 /* RangePickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RangePickerCell.m; sourceTree = "<group>"; };
-		3002B97628E427940056076C /* AFJAliLogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFJAliLogViewController.h; sourceTree = "<group>"; };
-		3002B97728E427940056076C /* AFJAliLogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFJAliLogViewController.m; sourceTree = "<group>"; };
 		3008B69128D2CE3E005709A6 /* AFJColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFJColorViewController.h; sourceTree = "<group>"; };
 		3008B69228D2CE3E005709A6 /* AFJColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFJColorViewController.m; sourceTree = "<group>"; };
 		3008B69728D2CFDA005709A6 /* Palette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Palette.m; sourceTree = "<group>"; };
@@ -4015,8 +4007,6 @@
 		3010C83428D0827C00E4CE69 /* BMChineseSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMChineseSort.m; sourceTree = "<group>"; };
 		3010C84A28D082FC00E4CE69 /* AFJMapCityPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFJMapCityPickerViewController.h; sourceTree = "<group>"; };
 		3010C84B28D082FC00E4CE69 /* AFJMapCityPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFJMapCityPickerViewController.m; sourceTree = "<group>"; };
-		301185BA28E4339200DDF8E2 /* AFJAliCrashLogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFJAliCrashLogViewController.h; sourceTree = "<group>"; };
-		301185BB28E4339200DDF8E2 /* AFJAliCrashLogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFJAliCrashLogViewController.m; sourceTree = "<group>"; };
 		30163D6328D30E8F003D67EA /* FZLSJW.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZLSJW.ttf; sourceTree = "<group>"; };
 		30163D6628D30ED9003D67EA /* HQLSystemFontWeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQLSystemFontWeightViewController.h; sourceTree = "<group>"; };
 		30163D6728D30ED9003D67EA /* NewUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewUILabel.h; sourceTree = "<group>"; };
@@ -5018,14 +5008,6 @@
 		3075ADDF28D2DB5500B011C3 /* AFJCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AFJCollectionViewController.xib; sourceTree = "<group>"; };
 		3075ADE328D2FA2E00B011C3 /* AFJColorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFJColorManager.h; sourceTree = "<group>"; };
 		3075ADE428D2FA2E00B011C3 /* AFJColorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFJColorManager.m; sourceTree = "<group>"; };
-		3078830528DAA7A200E0C99E /* AFJSafeProtectorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFJSafeProtectorViewController.h; sourceTree = "<group>"; };
-		3078830628DAA7A200E0C99E /* AFJSafeProtectorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFJSafeProtectorViewController.m; sourceTree = "<group>"; };
-		3078830828DAEDA200E0C99E /* NSNotificationTestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSNotificationTestObject.m; sourceTree = "<group>"; };
-		3078830928DAEDA200E0C99E /* NSNotificationTestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNotificationTestObject.h; sourceTree = "<group>"; };
-		3078830A28DAEDA200E0C99E /* LSViewTestKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSViewTestKVO.h; sourceTree = "<group>"; };
-		3078830B28DAEDA200E0C99E /* LSViewTestKVOSuper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSViewTestKVOSuper.h; sourceTree = "<group>"; };
-		3078830C28DAEDA200E0C99E /* LSViewTestKVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSViewTestKVO.m; sourceTree = "<group>"; };
-		3078830D28DAEDA200E0C99E /* LSViewTestKVOSuper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSViewTestKVOSuper.m; sourceTree = "<group>"; };
 		3078831328DB0B2D00E0C99E /* AFJIAPStoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFJIAPStoreViewController.h; sourceTree = "<group>"; };
 		3078831428DB0B2D00E0C99E /* AFJIAPStoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFJIAPStoreViewController.m; sourceTree = "<group>"; };
 		3078831728DB0B9800E0C99E /* AFJApplePayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFJApplePayViewController.h; sourceTree = "<group>"; };
@@ -6940,14 +6922,11 @@
 			isa = PBXGroup;
 			children = (
 				302428F728F410BD00FA034B /* Permission */,
-				3002B97928E432D00056076C /* AliCrash */,
-				3002B97528E427890056076C /* AliLog */,
 				0604104C28DF3F1C00863329 /* PinYin */,
 				300C80B028DF009F0046CE53 /* DateTools */,
 				30E3BB6228DEC0CF00E4C601 /* CoreData */,
 				30C3A82E28DD9C0200603600 /* Bluetooth */,
 				307CE38428DC9E5900687F63 /* Connection */,
-				3078830428DAA78700E0C99E /* SafeProtector */,
 				30C90BD828D9E1FF0086BBFE /* Filter */,
 				30C90BAD28D9C5E30086BBFE /* PDF */,
 				3068A5E328D5AD950000F947 /* Video */,
@@ -9413,24 +9392,6 @@
 				307CE37228DC938300687F63 /* RangePickerViewController.m */,
 			);
 			path = Calendar;
-			sourceTree = "<group>";
-		};
-		3002B97528E427890056076C /* AliLog */ = {
-			isa = PBXGroup;
-			children = (
-				3002B97628E427940056076C /* AFJAliLogViewController.h */,
-				3002B97728E427940056076C /* AFJAliLogViewController.m */,
-			);
-			path = AliLog;
-			sourceTree = "<group>";
-		};
-		3002B97928E432D00056076C /* AliCrash */ = {
-			isa = PBXGroup;
-			children = (
-				301185BA28E4339200DDF8E2 /* AFJAliCrashLogViewController.h */,
-				301185BB28E4339200DDF8E2 /* AFJAliCrashLogViewController.m */,
-			);
-			path = AliCrash;
 			sourceTree = "<group>";
 		};
 		3008B69028D2CE33005709A6 /* Color */ = {
@@ -12919,21 +12880,6 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
-		3078830428DAA78700E0C99E /* SafeProtector */ = {
-			isa = PBXGroup;
-			children = (
-				3078830528DAA7A200E0C99E /* AFJSafeProtectorViewController.h */,
-				3078830628DAA7A200E0C99E /* AFJSafeProtectorViewController.m */,
-				3078830A28DAEDA200E0C99E /* LSViewTestKVO.h */,
-				3078830C28DAEDA200E0C99E /* LSViewTestKVO.m */,
-				3078830B28DAEDA200E0C99E /* LSViewTestKVOSuper.h */,
-				3078830D28DAEDA200E0C99E /* LSViewTestKVOSuper.m */,
-				3078830928DAEDA200E0C99E /* NSNotificationTestObject.h */,
-				3078830828DAEDA200E0C99E /* NSNotificationTestObject.m */,
-			);
-			path = SafeProtector;
-			sourceTree = "<group>";
-		};
 		3078831228DB0AEC00E0C99E /* 内购(IAP) */ = {
 			isa = PBXGroup;
 			children = (
@@ -16170,7 +16116,6 @@
 				306237AA28D31B0C006300DE /* HQLImageCompressViewController.m in Sources */,
 				30806D1928D029A3006C0D30 /* M13ProgressViewBar.m in Sources */,
 				0941AD2C28ADEA0F00382C70 /* MSJSONURLRequestActiveConfigDownloader.m in Sources */,
-				3078831028DAEDA200E0C99E /* LSViewTestKVOSuper.m in Sources */,
 				06040F0328DE134900863329 /* TTMQRCodeReader.m in Sources */,
 				30623B6A28D320BD006300DE /* UILabel+JKAdjustableLabel.m in Sources */,
 				0942E6D028C1B59100AFE2F9 /* NSString+FHXExtension.m in Sources */,
@@ -17046,7 +16991,6 @@
 				094D8FDF28B9C36400B15609 /* PKeepAliveResponse.m in Sources */,
 				091A8E1528AF984B00B854CC /* MTTest.m in Sources */,
 				3001E86B28DC90D8005157E6 /* ButtonsViewController.m in Sources */,
-				301185BC28E4339200DDF8E2 /* AFJAliCrashLogViewController.m in Sources */,
 				0604104828DF3D1700863329 /* ZSSDemoViewController.m in Sources */,
 				301F5A7F28C8B4B500F865A4 /* ZFADControlView.m in Sources */,
 				300C81A628E14F0B0046CE53 /* HFAnimator.m in Sources */,
@@ -17179,7 +17123,6 @@
 				307FF92A28DC4A7600D6C951 /* StackedBarChartViewController.m in Sources */,
 				0942E70B28C1B59100AFE2F9 /* FHXDatePickerView.m in Sources */,
 				091A8E2828B32A9200B854CC /* AFJLogTableViewController.m in Sources */,
-				3078830F28DAEDA200E0C99E /* LSViewTestKVO.m in Sources */,
 				301F5A7628C8B4B500F865A4 /* ZFWChatViewController.m in Sources */,
 				0942E6D628C1B59100AFE2F9 /* FHXSaveImage.m in Sources */,
 				30806D2328D029A3006C0D30 /* M13ProgressViewStripedBar.m in Sources */,
@@ -17301,7 +17244,6 @@
 				06A82E6728C4420B00D94AB8 /* UIWebViewCutter.m in Sources */,
 				300C80DD28DF06AE0046CE53 /* FontPickerView.swift in Sources */,
 				30806BFB28CDD4DD006C0D30 /* ZJVc2Controller.m in Sources */,
-				3078830728DAA7A200E0C99E /* AFJSafeProtectorViewController.m in Sources */,
 				094D8A6328B8755C00B15609 /* AFJLoginSampleViewController.m in Sources */,
 				300AEC4C29A496AD00206C6D /* QDFontViewController.m in Sources */,
 				06040E5D28DE125D00863329 /* QRCodeReaderViewController.m in Sources */,
@@ -17370,7 +17312,6 @@
 				303C6B2229C301530092980E /* AFJReactNativeViewController.m in Sources */,
 				30C90C1028D9E4020086BBFE /* IF1977Filter.m in Sources */,
 				301F5A7828C8B4B500F865A4 /* ZFTableData.m in Sources */,
-				3078830E28DAEDA200E0C99E /* NSNotificationTestObject.m in Sources */,
 				30623BA228D320BD006300DE /* UIBezierPath+JKSymbol.m in Sources */,
 				308E9E3A28D08F3800A423A6 /* HQLRecorderManager.m in Sources */,
 				300C7F4B28DEEAF40046CE53 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */,
@@ -17515,7 +17456,6 @@
 				300AECA629A496AE00206C6D /* QDCommonTableViewController.m in Sources */,
 				30623C0B28D320BE006300DE /* NSDate+JKReporting.m in Sources */,
 				300C807828DEFA550046CE53 /* LSTPopViewListCell.m in Sources */,
-				3002B97828E427940056076C /* AFJAliLogViewController.m in Sources */,
 				30092E6F28F26BA90058DFDD /* MASExampleArrayView.m in Sources */,
 				30B0F74D28E1512E0059605D /* KWTransitionHelper.m in Sources */,
 				09045E6B28BCBA5900A04E41 /* AFJMiniAppViewController.m in Sources */,

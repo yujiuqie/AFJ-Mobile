@@ -19,20 +19,13 @@
 #import "QMUIConfigurationTemplatePinkRose.h"
 #import "QMUIConfigurationTemplateDark.h"
 
-//#import "FLEX.h"
 #import "AFJOSLogController.h"
 #import "AFJMoreViewController.h"
 #import "AFJNavigationController.h"
 #import "MagicalRecord.h"
-//#import <AlicloudAPM/AlicloudAPMProvider.h>
-//#import <AlicloudHAUtil/AlicloudHAProvider.h>
 #import <FinApplet/FinApplet.h>
-//#import "BMKCataloguePage.h"
-//#import <BMKLocationKit/BMKLocationComponent.h>
-#import <UMCommon/UMCommon.h>
 #import "QDNetServerDownLoadTool.h"
 #import "AFJLogManager.h"
-#import <Bugly/Bugly.h>
 #import "QMUIConfigurationTemplateGrapefruit.h"
 #import "QMUIConfigurationTemplateGrass.h"
 #import "QMUIConfigurationTemplatePinkRose.h"
@@ -51,10 +44,6 @@
 #import <FlutterPluginRegistrant-umbrella.h>
 
 @interface AppDelegate ()
-//<
-//BMKGeneralDelegate,
-//BMKLocationAuthDelegate
-//>
 
 @end
 
@@ -75,10 +64,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    //    self.bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
-    
-    //    if (@available(iOS 13.0, *)) {
-    
     self.logVC = [[AFJLogViewController alloc] init];
     [AFJOSLogController withUpdateHandler:^(NSArray<AFJSystemLogMessage *> *newMessages) {
         [[AFJLogManager sharedInstance] updateLogs:newMessages];
@@ -87,15 +72,10 @@
     
     [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreAtURL:[NSURL fileURLWithPath:[NSHomeDirectory() stringByAppendingPathComponent:@"Documents/TMagicalRecord.sqlite"]]];
     [MagicalRecord setLoggingLevel:MagicalRecordLoggingLevelOff];
-    
-    [Bugly startWithAppId:@"95f2a26f27"];
-    
-    [UMConfigure initWithAppkey:@"631877e788ccdf4b7e266918" channel:@"App Store"];
-    
+
     //测试断点续传和后台下载需要开启这个
     [QDNetServerDownLoadTool sharedTool];//先把遗留信息处理一下
-    
-//    [self initBaidu];
+
     [self initFlutter];
     
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
@@ -160,54 +140,6 @@
     //    }
     
     return YES;
-}
-
-#pragma mark -
-
-- (void)startCustomHawkeye {
-    // Background is not include in `MTHawkeye` by default, you need to add it explicitly.
-    //    MTHBackgroundTaskTraceAdaptor *backgroundTrace = [MTHBackgroundTaskTraceAdaptor new];
-    //    MTHBackgroundTaskTraceHawkeyeUI *backgroundTraceUI = [MTHBackgroundTaskTraceHawkeyeUI new];
-    //
-    //    [[MTHawkeyeClient shared]
-    //        setPluginsSetupHandler:^(NSMutableArray<id<MTHawkeyePlugin>> *_Nonnull plugins) {
-    //            [MTHawkeyeDefaultPlugins addDefaultClientPluginsInto:plugins];
-    //
-    //            // add your additional plugins here.
-    //            [plugins addObject:backgroundTrace];
-    //        }
-    //        pluginsCleanHandler:^(NSMutableArray<id<MTHawkeyePlugin>> *_Nonnull plugins) {
-    //            // if you don't want to free plugins memory, remove this line.
-    //            [MTHawkeyeDefaultPlugins cleanDefaultClientPluginsFrom:plugins];
-    //
-    //            // clean your additional plugins if need.
-    //            [plugins removeObject:backgroundTrace];
-    //        }];
-    //
-    //    [[MTHawkeyeClient shared] startServer];
-    //
-    //    [[MTHawkeyeUIClient shared]
-    //        setPluginsSetupHandler:^(NSMutableArray<id<MTHawkeyeMainPanelPlugin>> *_Nonnull mainPanelPlugins, NSMutableArray<id<MTHawkeyeFloatingWidgetPlugin>> *_Nonnull floatingWidgetPlugins, NSMutableArray<id<MTHawkeyeSettingUIPlugin>> *_Nonnull defaultSettingUIPluginsInto) {
-    //            [MTHawkeyeDefaultPlugins addDefaultUIClientMainPanelPluginsInto:mainPanelPlugins
-    //                                          defaultFloatingWidgetsPluginsInto:floatingWidgetPlugins
-    //                                                defaultSettingUIPluginsInto:defaultSettingUIPluginsInto];
-    //
-    //            // add your additional plugins here.
-    //            [defaultSettingUIPluginsInto addObject:backgroundTraceUI];
-    //        }
-    //        pluginsCleanHandler:^(NSMutableArray<id<MTHawkeyeMainPanelPlugin>> *_Nonnull mainPanelPlugins, NSMutableArray<id<MTHawkeyeFloatingWidgetPlugin>> *_Nonnull floatingWidgetPlugins, NSMutableArray<id<MTHawkeyeSettingUIPlugin>> *_Nonnull defaultSettingUIPluginsInto) {
-    //            // if you don't want to free plugins memory, remove this line.
-    //            [MTHawkeyeDefaultPlugins cleanDefaultUIClientMainPanelPluginsFrom:mainPanelPlugins
-    //                                            defaultFloatingWidgetsPluginsFrom:floatingWidgetPlugins
-    //                                                  defaultSettingUIPluginsFrom:defaultSettingUIPluginsInto];
-    //
-    //            // clean your additional plugins if need.
-    //            [defaultSettingUIPluginsInto addObject:backgroundTraceUI];
-    //        }];
-    //
-    //    dispatch_async(dispatch_get_main_queue(), ^(void) {
-    //        [[MTHawkeyeUIClient shared] startServer];
-    //    });
 }
 
 #pragma mark - QMUI
@@ -314,76 +246,6 @@
     }
 }
 
-
-#pragma mark - Baidu
-
-//- (void)initBaidu{
-//    [[BMKLocationAuth sharedInstance] setAgreePrivacy:YES];
-//
-//    // 初始化定位SDK
-//    [[BMKLocationAuth sharedInstance] checkPermisionWithKey:kBMKKey authDelegate:self];
-//
-//    // 要使用百度地图，先创建BMKMapManager
-//    BMKMapManager *mapMgr = [[BMKMapManager alloc] init];
-//    // 启动引擎并设置AK和delegate
-//    BOOL result = [mapMgr start:kBMKKey generalDelegate:self];
-//    if (!result) {
-//        NSLog(@"Baidu Map 启动引擎失败");
-//    }
-//}
-
-/**
- 联网结果回调
- 
- @param iError 联网结果错误码信息，0代表联网成功
- */
-//- (void)onGetNetworkState:(int)iError {
-//    if (0 == iError) {
-//        NSLog(@"Baidu Map 联网成功");
-//    } else {
-//        NSLog(@"Baidu Map 联网失败：%d", iError);
-//    }
-//}
-//
-//- (void)onCheckPermissionState:(BMKLocationAuthErrorCode)iError {
-//    if (iError == 0) {
-//        NSLog(@"定位鉴权成功");
-//    } else {
-//        NSLog(@"定位鉴权失败%zd", iError);
-//    }
-//}
-//
-//
-///**
-// 鉴权结果回调
-//
-// @param iError 鉴权结果错误码信息，0代表鉴权成功
-// */
-//- (void)onGetPermissionState:(int)iError {
-//    if (0 == iError) {
-//        NSLog(@"Baidu Map 授权成功");
-//    } else {
-//        NSLog(@"Baidu Map 授权失败：%d", iError);
-//    }
-//}
-
-#pragma mark - Ali
-
-- (void)initAli{
-    //    NSString *appVersion = @"1.0.0"; //配置项：App版本
-    //    NSString *channel = @"develop"; //配置项：渠道标记
-    //    NSString *nick = @"alfred"; //配置项：用户昵称
-    //    [[AlicloudTlogProvider alloc] autoInitWithAppVersion:appVersion channel:channel nick:nick];
-    //    [AlicloudHAProvider start];
-    //    [TRDManagerService updateLogLevel:TLogLevelDebug]; //配置项：控制台可拉取的日志级别
-    //
-    //    [[AlicloudAPMProvider alloc] autoInitWithAppVersion:appVersion channel:channel nick:nick];
-    //    [AlicloudHAProvider start];
-    //
-    //    [[AlicloudCrashProvider alloc] autoInitWithAppVersion:appVersion channel:channel nick:nick];
-    //    [AlicloudHAProvider start];
-}
-
 #pragma mark - Mini App
 
 - (void)initMiniApp{
@@ -471,16 +333,6 @@
 {
     self.backgroundURLSessionCompletionHandler = completionHandler;
 }
-
-
-//- (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
-//{
-//#if DEBUG
-//  return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
-//#else
-//  return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
-//#endif
-//}
 
 #pragma mark - Core Data Saving support
 

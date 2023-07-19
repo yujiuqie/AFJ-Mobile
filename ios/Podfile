@@ -118,236 +118,117 @@ target 'AFJ-iOS' do
   
   hawkeye
   
+  pod 'ADTransitionController'
+  pod 'AFNetworking'
+  pod 'Aspects'
+  pod 'BabyBluetooth'
+  pod 'BEMCheckBox'
+  pod 'BlocksKit', '~> 2.2.5'
+  pod 'ChameleonFramework'            # 颜色
+  pod 'Charts', '~> 4.1.0'
+  pod 'CLImageEditor/AllTools'
   pod 'Cordova', '5.1.1'
   pod 'cordova-plugin-wkwebview-engine'
-  
   pod 'CRToast'
-  
-#  pod 'AlicloudTLog', '1.0.1.1'
-#  pod 'AlicloudAPM', '1.1.1'
-#  pod 'AlicloudCrash' , '1.2.0'
-  
-  pod 'BlocksKit', '~> 2.2.5'
-  pod 'NBSwipePageView', :git => 'https://github.com/xuzhe/NBSwipePageView.git'
-  
-  pod 'CLImageEditor/AllTools'
-
-  pod 'FinApplet'
-  pod 'FinAppletExt'
-#  pod 'FinAppletBDMap'
-#  pod 'FinAppletGDMap'
-  pod 'FinAppletWebRTC'
-  pod 'FinAppletBLE'
-  pod 'FinAppletContact'
-  pod 'FinAppletClipBoard'
-
-#  pod 'GPJDataDrivenTableView'
-#  pod 'LBXScan/LBXNative','~> 2.5'
-#  pod 'LBXScan/LBXZXing','~> 2.5'
-#  pod 'LBXScan/UI','~> 2.5'
-#  pod 'LBXZBarSDK','~> 1.3'
-  pod 'Toast', '~> 4.0.0'
-  pod 'OHHTTPStubs'
-  pod 'ReactiveObjC'
-  pod 'dsBridge'
-  pod 'SSZipArchive'
-  pod 'JXBWebKit', '~> 1.3.0'
-  
-#  pod 'YYKit'
-  
-  pod 'Bugly'
-  pod 'LSSafeProtector'
-  
-  pod 'SwiftyStoreKit'
-  
-  pod 'MGSwipeTableCell'
-  
-  pod 'QMUIKit', '~> 4.6.3'
-  
-  pod 'Charts', '~> 4.1.0'
-  
-  pod 'YXYDashLayer'
-  
-  pod 'RETableViewManager'
-  
-  # 数据库
-  pod 'FMDB'
-  pod 'ReactiveCocoa'
-  
-  pod 'ZJAnimationPopView'
-  pod 'JLRoutes','2.1'
-  
-#  pod 'MMDrawerController'
-  
-  pod 'AFNetworking'
-  # 一款非常简单的展示工具。提示框，加载框，空白页提示，alert弹出框。一行代码搞定所有操作。
-  pod 'EasyShowView','~>2.1'
-  # 键盘管理
-  pod 'IQKeyboardManager'
-  # AutoLayout
-#  pod 'Masonry'Masonry
-  # An easy way to use pull-to-refresh.
-  pod 'MJRefresh'
-  # 转换速度快、使用简单方便的字典转模型框架
-  pod 'MJExtension'
-  # iOS中一款高度可定制性商品计数按钮(京东/淘宝/饿了么/美团外卖/百度外卖样式)
-  pod 'PPNumberButton'
-  # Autoscroll Banner. 无限循环图片、文字轮播器。
-  pod 'SDCycleScrollView'
-  # 图片缓存
-  pod 'SDWebImage'
-  # HUD
-  pod 'SVProgressHUD'
-  # 强大,易用,完全自定义的提醒视图，弹出视图
-  pod 'TYAlertController'
-  # 简单，强大，高度定制，页面控制器
-  pod 'TYPagerController'
-  # Template auto layout cell for automatically UITableViewCell height calculating
-  pod 'UITableView+FDTemplateLayoutCell'
-  # 超简单！！！ 一行代码设置状态栏、导航栏按钮、标题、颜色、透明度，移动等
-#  pod 'WRNavigationBar','~>1.2.0'
-  # YYKit
-#  pod 'YYText'
-  # Popup your custom view is easy, support custom mask style, transition effects and gesture to drag.
-  pod 'zhPopupController', '~> 1.0.2'
-  
-  pod 'MBProgressHUD'
-  
-  pod 'MQTTClient'
-  
-  pod 'NerdyUI'
-  
-  pod 'SocketRocket'
-  
-  pod 'TZImagePickerController'
-  
-  pod 'MJRefresh'
-  
-  pod 'GVUserDefaults'
-  
-  pod 'FLAnimatedImage'
-  
-  pod 'JXCategoryView'
-  
-  pod 'GBDeviceInfo', '~> 6.0'
-  
-  pod 'FCUUID'
-  
-#  pod 'CYLTabBarController/Lottie', '~> 1.29.0'  # 依赖Lottie库
-  
-#  pod 'BaiduMapKit/Map'
-#  pod 'BaiduMapKit/Search'
-#  pod 'BaiduMapKit/Base'
-#  pod 'BaiduMapKit/Utils'
-#  pod 'BaiduMapKit/Cloud'
-#  pod 'BMKLocationKit'
-  
-  pod 'UMCommon'
-  pod 'UMDevice'
-  pod 'UMAPM'
-  
-  pod 'MGSwipeTableCell'
-  
-#  pod 'FDFullscreenPopGesture'
-  pod 'ZFPlayer', '~> 4.0'
-  pod 'ZFPlayer/ControlView', '~> 4.0'
-  pod 'ZFPlayer/AVPlayer', '~> 4.0'
-  pod 'ZFPlayer/ijkplayer', '~> 4.0'
-  
-  pod 'MOFSPickerManager'
-  pod 'INTULocationManager' # 位置服务模块
-  pod 'DZNEmptyDataSet'
-  
-  pod 'BEMCheckBox'
-  pod 'JVFloatLabeledTextField'
-  pod 'TTGTagCollectionView'    # Tag 标签
-  
-  pod 'PINRemoteImage', '~> 3.0.3'
-  pod 'SDCycleScrollView'       # 图片轮播器
-  pod 'GPUImage'
-  
-  pod 'Mantle'              # JSON 模型转换框架
-  pod 'ChameleonFramework'            # 颜色
-  pod 'RegexKitLite'                  # 正则表达式
-  
-#  pod  'SandBoxPreviewTool'
-  
-  # 服务模块
-  pod 'WechatOpenSDK', '1.8.4'
-  
-  pod 'UIAlertController+Blocks'
-
-  # 网络音频播放器
-  pod 'StreamingKit'
-  
-  pod 'QTEventBus'
-  pod 'QTEventBus/AppModule'
-  
-  pod 'Aspects'
-  
-  pod 'pop', '~> 1.0.12'
-  
-#  pod 'MLeaksFinder'
-  
-  pod 'HJDanmaku'
-  
-#  pod 'Sandboxer'
-  
-  pod 'FXBlurView'
-  
-  pod 'FSCalendar'
-  
-  pod 'BabyBluetooth'
-  
-  pod 'Onboard'
-  
-  pod 'PYSearch'
-  
-  pod 'MotionBlur'
-  
-  pod 'ZLCollectionViewFlowLayout'
-  
-  pod 'MagicalRecord','~> 2.3.0'
-  
-  pod 'LSAnimator', '~> 2.1.5'
-  
-  pod 'LSTPopView', :git => 'https://github.com/LoSenTrad/LSTPopView'
-  
-  pod 'LSTCategory'
-  
-  pod 'JDStatusBarNotification', '~> 2.0.6'
-  
   pod 'DateTools'
-  
-  pod 'Shimmer'
-  
-  pod 'PMTween'
-  
-  pod 'RKNotificationHub'
-  
-  pod 'ZSSRichTextEditor', :git => 'https://github.com/nnhubbard/ZSSRichTextEditor'
-  
-  pod 'PinYin4Objc'
-
-  pod 'KWTransition'
-  pod 'ADTransitionController'
-  pod 'VCTransitionsLibrary'
-  pod 'LCZoomTransition'
-  
-  pod 'ISHPermissionKit/Motion'
+  pod 'dsBridge'
+  pod 'DZNEmptyDataSet'
+  pod 'EasyShowView','~>2.1'
+  pod 'FCUUID'
+  pod 'FinApplet'
+  pod 'FinAppletBLE'
+  pod 'FinAppletClipBoard'
+  pod 'FinAppletContact'
+  pod 'FinAppletExt'
+  pod 'FinAppletWebRTC'
+  pod 'FLAnimatedImage'
+  pod 'FMDB'
+  pod 'FSCalendar'
+  pod 'FXBlurView'
+  pod 'GBDeviceInfo', '~> 6.0'
+  pod 'GPUImage'
+  pod 'GVUserDefaults'
+  pod 'HJDanmaku'
+  pod 'INTULocationManager' # 位置服务模块
+  pod 'IQKeyboardManager'
+  pod 'ISHPermissionKit/Calendar'
+  pod 'ISHPermissionKit/Camera'
+  pod 'ISHPermissionKit/Contacts'
   pod 'ISHPermissionKit/Health'
   pod 'ISHPermissionKit/Location'
   pod 'ISHPermissionKit/Microphone'
-  pod 'ISHPermissionKit/PhotoLibrary'
-  pod 'ISHPermissionKit/Camera'
+  pod 'ISHPermissionKit/Motion'
+  pod 'ISHPermissionKit/MusicLibrary'
   pod 'ISHPermissionKit/Notifications'
-  pod 'ISHPermissionKit/SocialAccounts'
-  pod 'ISHPermissionKit/Contacts'
-  pod 'ISHPermissionKit/Calendar'
+  pod 'ISHPermissionKit/PhotoLibrary'
   pod 'ISHPermissionKit/Reminders'
   pod 'ISHPermissionKit/Siri'
+  pod 'ISHPermissionKit/SocialAccounts'
   pod 'ISHPermissionKit/Speech'
-  pod 'ISHPermissionKit/MusicLibrary'
+  pod 'JDStatusBarNotification', '~> 2.0.6'
+  pod 'JLRoutes','2.1'
+  pod 'JVFloatLabeledTextField'
+  pod 'JXBWebKit', '~> 1.3.0'
+  pod 'JXCategoryView'
+  pod 'KWTransition'
+  pod 'LCZoomTransition'
+  pod 'LSAnimator', '~> 2.1.5'
+  pod 'LSTCategory'
+  pod 'LSTPopView', :git => 'https://github.com/LoSenTrad/LSTPopView'
+  pod 'MagicalRecord','~> 2.3.0'
+  pod 'Mantle'              # JSON 模型转换框架
+  pod 'MBProgressHUD'
+  pod 'MGSwipeTableCell'
+  pod 'MJExtension'
+  pod 'MJRefresh'
+  pod 'MJRefresh'
+  pod 'MOFSPickerManager'
+  pod 'MotionBlur'
+  pod 'MQTTClient'
+  pod 'NBSwipePageView', :git => 'https://github.com/xuzhe/NBSwipePageView.git'
+  pod 'NerdyUI'
+  pod 'OHHTTPStubs'
+  pod 'Onboard'
+  pod 'PINRemoteImage', '~> 3.0.3'
+  pod 'PinYin4Objc'
+  pod 'PMTween'
+  pod 'pop', '~> 1.0.12'
+  pod 'PPNumberButton'
+  pod 'PYSearch'
+  pod 'QMUIKit', '~> 4.6.3'
+  pod 'QTEventBus'
+  pod 'QTEventBus/AppModule'
+  pod 'ReactiveCocoa'
+  pod 'ReactiveObjC'
+  pod 'RegexKitLite'                  # 正则表达式
+  pod 'RETableViewManager'
+  pod 'RKNotificationHub'
+  pod 'SDCycleScrollView'
+  pod 'SDWebImage'
+  pod 'Shimmer'
+  pod 'SocketRocket'
+  pod 'SSZipArchive'
+  pod 'StreamingKit'
+  pod 'SVProgressHUD'
+  pod 'SwiftyStoreKit'
+  pod 'Toast', '~> 4.0.0'
+  pod 'TTGTagCollectionView'    # Tag 标签
+  pod 'TYAlertController'
+  pod 'TYPagerController'
+  pod 'TZImagePickerController'
+  pod 'UIAlertController+Blocks'
+  pod 'UITableView+FDTemplateLayoutCell'
+  pod 'VCTransitionsLibrary'
+  pod 'WechatOpenSDK', '1.8.4'
+  pod 'YXYDashLayer'
+  pod 'ZFPlayer', '~> 4.0'
+  pod 'ZFPlayer/AVPlayer', '~> 4.0'
+  pod 'ZFPlayer/ControlView', '~> 4.0'
+  pod 'ZFPlayer/ijkplayer', '~> 4.0'
+  pod 'zhPopupController', '~> 1.0.2'
+  pod 'ZJAnimationPopView'
+  pod 'ZLCollectionViewFlowLayout'
+  pod 'ZSSRichTextEditor', :git => 'https://github.com/nnhubbard/ZSSRichTextEditor'
 
   target 'AFJ-iOSTests' do
     inherit! :search_paths
