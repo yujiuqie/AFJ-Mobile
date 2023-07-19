@@ -15,20 +15,8 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - AMap3DMap-NO-IDFA (9.4.0):
-    - AMapFoundation-NO-IDFA (>= 1.7.0)
-  - AMapFoundation-NO-IDFA (1.7.0)
-  - AMapLocation-NO-IDFA (2.9.0):
-    - AMapFoundation-NO-IDFA (>= 1.7.0)
-  - AMapSearch-NO-IDFA (9.4.0):
-    - AMapFoundation-NO-IDFA (>= 1.7.0)
   - Aspects (1.4.1)
   - BabyBluetooth (0.7.0)
-  - BaiduMapKit/Base (6.3.0)
-  - BaiduMapKit/Map (6.3.0):
-    - BaiduMapKit/Base
-  - BaiduMapKit/Search (6.3.0):
-    - BaiduMapKit/Base
   - BEMCheckBox (1.4.1)
   - BlocksKit (2.2.5):
     - BlocksKit/All (= 2.2.5)
@@ -45,7 +33,6 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
-  - BMKLocationKit (2.0.7)
   - boost (1.76.0)
   - Bugly (2.5.93)
   - ChameleonFramework (2.1.0):
@@ -141,11 +128,6 @@ PODS:
     - DKImagePickerController/PhotoGallery
     - Flutter
   - FinApplet (2.37.13)
-  - FinAppletBDMap (2.37.13):
-    - BaiduMapKit/Map (= 6.3.0)
-    - BaiduMapKit/Search
-    - BMKLocationKit
-    - FinAppletExt (= 2.37.13)
   - FinAppletBLE (2.37.13):
     - FinAppletExt (= 2.37.13)
   - FinAppletClipBoard (2.37.13):
@@ -154,11 +136,6 @@ PODS:
     - FinApplet (= 2.37.13)
   - FinAppletExt (2.37.13):
     - FinApplet (= 2.37.13)
-  - FinAppletGDMap (2.37.13):
-    - AMap3DMap-NO-IDFA
-    - AMapLocation-NO-IDFA
-    - AMapSearch-NO-IDFA
-    - FinAppletExt (= 2.37.13)
   - FinAppletWebRTC (2.37.13):
     - FinApplet (= 2.37.13)
     - GoogleWebRTC (= 1.1.26989)
@@ -1049,12 +1026,10 @@ DEPENDENCIES:
   - FCUUID
   - file_picker (from `../Flutter/FlutterUnit/.ios/.symlinks/plugins/file_picker/ios`)
   - FinApplet
-  - FinAppletBDMap
   - FinAppletBLE
   - FinAppletClipBoard
   - FinAppletContact
   - FinAppletExt
-  - FinAppletGDMap
   - FinAppletWebRTC
   - fishhook
   - FLAnimatedImage
@@ -1202,16 +1177,10 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - ADTransitionController
     - AFNetworking
-    - AMap3DMap-NO-IDFA
-    - AMapFoundation-NO-IDFA
-    - AMapLocation-NO-IDFA
-    - AMapSearch-NO-IDFA
     - Aspects
     - BabyBluetooth
-    - BaiduMapKit
     - BEMCheckBox
     - BlocksKit
-    - BMKLocationKit
     - Bugly
     - ChameleonFramework
     - Charts
@@ -1227,12 +1196,10 @@ SPEC REPOS:
     - EasyShowView
     - FCUUID
     - FinApplet
-    - FinAppletBDMap
     - FinAppletBLE
     - FinAppletClipBoard
     - FinAppletContact
     - FinAppletExt
-    - FinAppletGDMap
     - FinAppletWebRTC
     - fishhook
     - FLAnimatedImage
@@ -1449,16 +1416,10 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   ADTransitionController: bc4014244111edefb98d0974343d61b7c5ab80e4
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
-  AMap3DMap-NO-IDFA: ad6e60e43f5c7a1a214516e8a0fa8a45790dfafa
-  AMapFoundation-NO-IDFA: e191e554859b375f463e52eb6c994e440ebf7126
-  AMapLocation-NO-IDFA: 6839d1543b3138ae594ddd36ab72741dc87df66f
-  AMapSearch-NO-IDFA: 935289770e93a740599707f9b4cb3946ed87860d
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   BabyBluetooth: d50758aecf24d4a0ab9271d69f0f116d6bee51c9
-  BaiduMapKit: 48fc90c7dd7f3c10aed8745c22584ede8003221f
   BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
   BlocksKit: 8639b2848dd51c35c957af4d9fbdc7a769a1fc12
-  BMKLocationKit: a68845e2771bb3028feb638186d96124f4f142cd
   boost: 57d2868c099736d80fcd648bf211b4431e51a558
   Bugly: b8715e6ec4004b7f7fbffab0643ba80545aee3da
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
@@ -1479,12 +1440,10 @@ SPEC CHECKSUMS:
   FCUUID: bb054fc90cd7cd99320f9f6ff8e130fe607fba05
   file_picker: ce3938a0df3cc1ef404671531facef740d03f920
   FinApplet: 0d15ce766782741ddeb0b655a16bdbab7ff3f509
-  FinAppletBDMap: 86d005a3f093819343d942681dd3576b47bac4de
   FinAppletBLE: 00262d4a7ee76e499553ce96d7651e9cf08e6f68
   FinAppletClipBoard: 95dc1a2f59680616afa11f1e4c9387ab2d77e5e0
   FinAppletContact: ea899c56519dc52480e76541b3e004963827b586
   FinAppletExt: 9ae1945ca06d3d7605037f81c193fcd1512ec897
-  FinAppletGDMap: eb89a849c0a92b827c3b5f1905bfbd390f6f4dcd
   FinAppletWebRTC: 27e5dbe10c63063e8b248b9515200bb51d54fa71
   fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
   FLAnimatedImage: bbf914596368867157cc71b38a8ec834b3eeb32b
@@ -1624,6 +1583,6 @@ SPEC CHECKSUMS:
   ZLCollectionViewFlowLayout: fdc09b2b57b510bf285b5c327375d82366927e27
   ZSSRichTextEditor: f58c612e4e981bf10d3cf64980ac5c4b1f5138f4
 
-PODFILE CHECKSUM: 810084d9a0bc6c6d54c30158cafbdd1503c1fbb7
+PODFILE CHECKSUM: d6b2bc743ff77b8ea793b2067dbf9cd31942481c
 
 COCOAPODS: 1.12.0

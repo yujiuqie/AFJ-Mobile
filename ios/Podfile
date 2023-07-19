@@ -134,8 +134,8 @@ target 'AFJ-iOS' do
 
   pod 'FinApplet'
   pod 'FinAppletExt'
-  pod 'FinAppletBDMap'
-  pod 'FinAppletGDMap'
+#  pod 'FinAppletBDMap'
+#  pod 'FinAppletGDMap'
   pod 'FinAppletWebRTC'
   pod 'FinAppletBLE'
   pod 'FinAppletContact'

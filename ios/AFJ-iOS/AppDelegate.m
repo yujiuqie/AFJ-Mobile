@@ -28,7 +28,7 @@
 //#import <AlicloudHAUtil/AlicloudHAProvider.h>
 #import <FinApplet/FinApplet.h>
 //#import "BMKCataloguePage.h"
-#import <BMKLocationKit/BMKLocationComponent.h>
+//#import <BMKLocationKit/BMKLocationComponent.h>
 #import <UMCommon/UMCommon.h>
 #import "QDNetServerDownLoadTool.h"
 #import "AFJLogManager.h"
