@@ -27,7 +27,7 @@
 //#import <AlicloudAPM/AlicloudAPMProvider.h>
 //#import <AlicloudHAUtil/AlicloudHAProvider.h>
 #import <FinApplet/FinApplet.h>
-#import "BMKCataloguePage.h"
+//#import "BMKCataloguePage.h"
 #import <BMKLocationKit/BMKLocationComponent.h>
 #import <UMCommon/UMCommon.h>
 #import "QDNetServerDownLoadTool.h"
@@ -51,10 +51,10 @@
 #import <FlutterPluginRegistrant-umbrella.h>
 
 @interface AppDelegate ()
-<
-BMKGeneralDelegate,
-BMKLocationAuthDelegate
->
+//<
+//BMKGeneralDelegate,
+//BMKLocationAuthDelegate
+//>
 
 @end
 
@@ -95,7 +95,7 @@ BMKLocationAuthDelegate
     //测试断点续传和后台下载需要开启这个
     [QDNetServerDownLoadTool sharedTool];//先把遗留信息处理一下
     
-    [self initBaidu];
+//    [self initBaidu];
     [self initFlutter];
     
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
@@ -317,55 +317,55 @@ BMKLocationAuthDelegate
 
 #pragma mark - Baidu
 
-- (void)initBaidu{
-    [[BMKLocationAuth sharedInstance] setAgreePrivacy:YES];
-    
-    // 初始化定位SDK
-    [[BMKLocationAuth sharedInstance] checkPermisionWithKey:kBMKKey authDelegate:self];
-    
-    // 要使用百度地图，先创建BMKMapManager
-    BMKMapManager *mapMgr = [[BMKMapManager alloc] init];
-    // 启动引擎并设置AK和delegate
-    BOOL result = [mapMgr start:kBMKKey generalDelegate:self];
-    if (!result) {
-        NSLog(@"Baidu Map 启动引擎失败");
-    }
-}
+//- (void)initBaidu{
+//    [[BMKLocationAuth sharedInstance] setAgreePrivacy:YES];
+//
+//    // 初始化定位SDK
+//    [[BMKLocationAuth sharedInstance] checkPermisionWithKey:kBMKKey authDelegate:self];
+//
+//    // 要使用百度地图，先创建BMKMapManager
+//    BMKMapManager *mapMgr = [[BMKMapManager alloc] init];
+//    // 启动引擎并设置AK和delegate
+//    BOOL result = [mapMgr start:kBMKKey generalDelegate:self];
+//    if (!result) {
+//        NSLog(@"Baidu Map 启动引擎失败");
+//    }
+//}
 
 /**
  联网结果回调
  
  @param iError 联网结果错误码信息，0代表联网成功
  */
-- (void)onGetNetworkState:(int)iError {
-    if (0 == iError) {
-        NSLog(@"Baidu Map 联网成功");
-    } else {
-        NSLog(@"Baidu Map 联网失败：%d", iError);
-    }
-}
-
-- (void)onCheckPermissionState:(BMKLocationAuthErrorCode)iError {
-    if (iError == 0) {
-        NSLog(@"定位鉴权成功");
-    } else {
-        NSLog(@"定位鉴权失败%zd", iError);
-    }
-}
-
-
-/**
- 鉴权结果回调
- 
- @param iError 鉴权结果错误码信息，0代表鉴权成功
- */
-- (void)onGetPermissionState:(int)iError {
-    if (0 == iError) {
-        NSLog(@"Baidu Map 授权成功");
-    } else {
-        NSLog(@"Baidu Map 授权失败：%d", iError);
-    }
-}
+//- (void)onGetNetworkState:(int)iError {
+//    if (0 == iError) {
+//        NSLog(@"Baidu Map 联网成功");
+//    } else {
+//        NSLog(@"Baidu Map 联网失败：%d", iError);
+//    }
+//}
+//
+//- (void)onCheckPermissionState:(BMKLocationAuthErrorCode)iError {
+//    if (iError == 0) {
+//        NSLog(@"定位鉴权成功");
+//    } else {
+//        NSLog(@"定位鉴权失败%zd", iError);
+//    }
+//}
+//
+//
+///**
+// 鉴权结果回调
+//
+// @param iError 鉴权结果错误码信息，0代表鉴权成功
+// */
+//- (void)onGetPermissionState:(int)iError {
+//    if (0 == iError) {
+//        NSLog(@"Baidu Map 授权成功");
+//    } else {
+//        NSLog(@"Baidu Map 授权失败：%d", iError);
+//    }
+//}
 
 #pragma mark - Ali
 

@@ -280,70 +280,6 @@
 		091A92AD28B4C70200B854CC /* Service_setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 091A929C28B4C70100B854CC /* Service_setting.m */; };
 		091A92AE28B4C70200B854CC /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 091A929E28B4C70200B854CC /* CustomViewController.m */; };
 		091A92B128B4C75500B854CC /* AFJWebKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 091A92B028B4C75500B854CC /* AFJWebKitViewController.m */; };
-		093B0D4928C22066005634FD /* BMKClusterQuadtree.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0CD128C22064005634FD /* BMKClusterQuadtree.m */; };
-		093B0D4A28C22066005634FD /* BMKCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0CD228C22064005634FD /* BMKCluster.m */; };
-		093B0D4B28C22066005634FD /* BMKClusterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0CD428C22064005634FD /* BMKClusterManager.m */; };
-		093B0D4C28C22066005634FD /* BMKClusterAnnotationPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0CD728C22064005634FD /* BMKClusterAnnotationPage.m */; };
-		093B0D4D28C22066005634FD /* BMKShotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0CDA28C22064005634FD /* BMKShotView.m */; };
-		093B0D4E28C22066005634FD /* sport_path_shot.json in Resources */ = {isa = PBXBuildFile; fileRef = 093B0CDB28C22064005634FD /* sport_path_shot.json */; };
-		093B0D4F28C22067005634FD /* BMKMapScreenshotController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 093B0CDD28C22064005634FD /* BMKMapScreenshotController.mm */; };
-		093B0D5028C22067005634FD /* BMKSmoothMovingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0CDF28C22064005634FD /* BMKSmoothMovingViewController.m */; };
-		093B0D5128C22067005634FD /* sport_path.json in Resources */ = {isa = PBXBuildFile; fileRef = 093B0CE028C22064005634FD /* sport_path.json */; };
-		093B0D5228C22067005634FD /* BMKAnnotationScaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0CE328C22064005634FD /* BMKAnnotationScaleViewController.m */; };
-		093B0D5328C22067005634FD /* BMKPinAnnotationScaleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0CE428C22064005634FD /* BMKPinAnnotationScaleView.m */; };
-		093B0D5428C22067005634FD /* BMKMultiPaopaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0CE928C22064005634FD /* BMKMultiPaopaoViewController.m */; };
-		093B0D5528C22067005634FD /* poiInfo_multi.json in Resources */ = {isa = PBXBuildFile; fileRef = 093B0CEA28C22064005634FD /* poiInfo_multi.json */; };
-		093B0D5628C22067005634FD /* BMKPoiAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0CED28C22064005634FD /* BMKPoiAnnotation.m */; };
-		093B0D5728C22067005634FD /* BMKSug+POICitySearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0CEF28C22064005634FD /* BMKSug+POICitySearchViewController.m */; };
-		093B0D5828C22067005634FD /* BMKSugInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0CF028C22064005634FD /* BMKSugInfoCell.m */; };
-		093B0D5928C22067005634FD /* UIImage+BMKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0CF128C22064005634FD /* UIImage+BMKImage.m */; };
-		093B0D5A28C22067005634FD /* BMKTransitRouteLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0CF728C22064005634FD /* BMKTransitRouteLineModel.m */; };
-		093B0D5B28C22067005634FD /* BMKTransitRouteLineDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0CF928C22064005634FD /* BMKTransitRouteLineDetailModel.m */; };
-		093B0D5C28C22067005634FD /* BMKTransitRoutePlanViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 093B0CFC28C22064005634FD /* BMKTransitRoutePlanViewController.mm */; };
-		093B0D5D28C22067005634FD /* BMKTransitRouteLineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0CFD28C22064005634FD /* BMKTransitRouteLineTableViewCell.m */; };
-		093B0D5E28C22067005634FD /* BMKTransitRouteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0CFF28C22064005634FD /* BMKTransitRouteTableViewCell.m */; };
-		093B0D5F28C22067005634FD /* BMKTransitRouteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D0128C22064005634FD /* BMKTransitRouteDetailViewController.m */; };
-		093B0D6028C22067005634FD /* BMKCustomSelectedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D0428C22064005634FD /* BMKCustomSelectedButton.m */; };
-		093B0D6128C22067005634FD /* BMKBikeRouteLineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D0528C22064005634FD /* BMKBikeRouteLineTableViewCell.m */; };
-		093B0D6228C22067005634FD /* BMKBikeRouteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D0628C22064005634FD /* BMKBikeRouteDetailViewController.m */; };
-		093B0D6328C22067005634FD /* BMKBikeRouteDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D0828C22064005634FD /* BMKBikeRouteDetailModel.m */; };
-		093B0D6428C22067005634FD /* BMKBikeRoutePlanViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D0928C22064005634FD /* BMKBikeRoutePlanViewController.mm */; };
-		093B0D6528C22067005634FD /* BMKWalkRouteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D1028C22064005634FD /* BMKWalkRouteDetailViewController.m */; };
-		093B0D6628C22067005634FD /* BMKWalkRoutePlanViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D1228C22064005634FD /* BMKWalkRoutePlanViewController.mm */; };
-		093B0D6728C22067005634FD /* BMKWalkRouteDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D1328C22064005634FD /* BMKWalkRouteDetailModel.m */; };
-		093B0D6828C22067005634FD /* BMKWalkRouteLineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D1428C22064005634FD /* BMKWalkRouteLineTableViewCell.m */; };
-		093B0D6928C22067005634FD /* BMKRoutePlanSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D1928C22064005634FD /* BMKRoutePlanSearchView.m */; };
-		093B0D6A28C22067005634FD /* BMKFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D1A28C22064005634FD /* BMKFootView.m */; };
-		093B0D6B28C22067005634FD /* BMKTabsSwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D1D28C22065005634FD /* BMKTabsSwitchViewController.m */; };
-		093B0D6C28C22067005634FD /* BMKPickUpPointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D2128C22065005634FD /* BMKPickUpPointsViewController.m */; };
-		093B0D6D28C22067005634FD /* BMKPoiInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D2228C22065005634FD /* BMKPoiInfoCell.m */; };
-		093B0D6E28C22067005634FD /* BMKJumpingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D2428C22065005634FD /* BMKJumpingView.m */; };
-		093B0D6F28C22067005634FD /* BMKAnnotationMovingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D2728C22065005634FD /* BMKAnnotationMovingViewController.m */; };
-		093B0D7028C22067005634FD /* BMKCustomAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D2928C22065005634FD /* BMKCustomAnnotationView.m */; };
-		093B0D7128C22067005634FD /* BMKCustomAnnotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D2A28C22065005634FD /* BMKCustomAnnotationViewController.m */; };
-		093B0D7228C22067005634FD /* poiInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 093B0D2F28C22065005634FD /* poiInfo.json */; };
-		093B0D7328C22067005634FD /* BMKAnnotationViewFitMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D3028C22065005634FD /* BMKAnnotationViewFitMapViewController.m */; };
-		093B0D7428C22067005634FD /* chatian.sty in Resources */ = {isa = PBXBuildFile; fileRef = 093B0D3228C22066005634FD /* chatian.sty */; };
-		093B0D7528C22067005634FD /* BMKOverlayClickedViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D3328C22066005634FD /* BMKOverlayClickedViewController.mm */; };
-		093B0D7628C22067005634FD /* haidian.json in Resources */ = {isa = PBXBuildFile; fileRef = 093B0D3428C22066005634FD /* haidian.json */; };
-		093B0D7728C22067005634FD /* BMKSecondaryCataloguePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D3728C22066005634FD /* BMKSecondaryCataloguePage.m */; };
-		093B0D7828C22067005634FD /* BMKCatalogueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D3A28C22066005634FD /* BMKCatalogueTableViewCell.m */; };
-		093B0D7928C22067005634FD /* BMKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D3C28C22066005634FD /* BMKNavigationController.m */; };
-		093B0D7A28C22067005634FD /* BMKCataloguePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D3E28C22066005634FD /* BMKCataloguePage.m */; };
-		093B0D7B28C22067005634FD /* chuxing.sty in Resources */ = {isa = PBXBuildFile; fileRef = 093B0D4128C22066005634FD /* chuxing.sty */; };
-		093B0D7C28C22067005634FD /* BMKSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D4328C22066005634FD /* BMKSegmentView.m */; };
-		093B0D7D28C22067005634FD /* BMKCustomMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D4428C22066005634FD /* BMKCustomMapController.m */; };
-		093B0D7E28C22067005634FD /* yanmou.sty in Resources */ = {isa = PBXBuildFile; fileRef = 093B0D4528C22066005634FD /* yanmou.sty */; };
-		093B0D7F28C22067005634FD /* BMKShowOutsideMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D4728C22066005634FD /* BMKShowOutsideMapViewController.m */; };
-		093B0D8728C223C9005634FD /* bmk_interaction.png in Resources */ = {isa = PBXBuildFile; fileRef = 093B0D8128C223C9005634FD /* bmk_interaction.png */; };
-		093B0D8828C223C9005634FD /* bmk_search.png in Resources */ = {isa = PBXBuildFile; fileRef = 093B0D8228C223C9005634FD /* bmk_search.png */; };
-		093B0D8928C223C9005634FD /* bmk_mapdraw.png in Resources */ = {isa = PBXBuildFile; fileRef = 093B0D8328C223C9005634FD /* bmk_mapdraw.png */; };
-		093B0D8A28C223C9005634FD /* bmk_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 093B0D8428C223C9005634FD /* bmk_map.png */; };
-		093B0D8B28C223C9005634FD /* bmk_routeplan.png in Resources */ = {isa = PBXBuildFile; fileRef = 093B0D8528C223C9005634FD /* bmk_routeplan.png */; };
-		093B0D8C28C223C9005634FD /* bmk_trajectory.png in Resources */ = {isa = PBXBuildFile; fileRef = 093B0D8628C223C9005634FD /* bmk_trajectory.png */; };
-		093B0D9128C22B2A005634FD /* BMKGlobalLocController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D9028C22B2A005634FD /* BMKGlobalLocController.m */; };
-		093B0D9528C22C31005634FD /* BMKGlobalLocInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D9228C22C31005634FD /* BMKGlobalLocInfoView.m */; };
-		093B0D9628C22C31005634FD /* BMKGlobalLocTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D9428C22C31005634FD /* BMKGlobalLocTabView.m */; };
 		093B0D9B28C2F738005634FD /* AFJPlaceholderTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D9A28C2F738005634FD /* AFJPlaceholderTextViewController.m */; };
 		093B0D9F28C2FE39005634FD /* AFJHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B0D9E28C2FE39005634FD /* AFJHelpViewController.m */; };
 		0941AD1328ADE9E800382C70 /* AFJActiveConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0941AD1228ADE9E800382C70 /* AFJActiveConfigViewController.m */; };
@@ -2727,120 +2663,6 @@
 		091A929E28B4C70200B854CC /* CustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 		091A92AF28B4C75500B854CC /* AFJWebKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFJWebKitViewController.h; sourceTree = "<group>"; };
 		091A92B028B4C75500B854CC /* AFJWebKitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFJWebKitViewController.m; sourceTree = "<group>"; };
-		093B0CD028C22064005634FD /* BMKClusterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterManager.h; sourceTree = "<group>"; };
-		093B0CD128C22064005634FD /* BMKClusterQuadtree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterQuadtree.m; sourceTree = "<group>"; };
-		093B0CD228C22064005634FD /* BMKCluster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKCluster.m; sourceTree = "<group>"; };
-		093B0CD328C22064005634FD /* BMKClusterAnnotationPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterAnnotationPage.h; sourceTree = "<group>"; };
-		093B0CD428C22064005634FD /* BMKClusterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterManager.m; sourceTree = "<group>"; };
-		093B0CD528C22064005634FD /* BMKCluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKCluster.h; sourceTree = "<group>"; };
-		093B0CD628C22064005634FD /* BMKClusterQuadtree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterQuadtree.h; sourceTree = "<group>"; };
-		093B0CD728C22064005634FD /* BMKClusterAnnotationPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterAnnotationPage.m; sourceTree = "<group>"; };
-		093B0CD928C22064005634FD /* BMKMapScreenshotController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKMapScreenshotController.h; sourceTree = "<group>"; };
-		093B0CDA28C22064005634FD /* BMKShotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKShotView.m; sourceTree = "<group>"; };
-		093B0CDB28C22064005634FD /* sport_path_shot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sport_path_shot.json; sourceTree = "<group>"; };
-		093B0CDC28C22064005634FD /* BMKShotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKShotView.h; sourceTree = "<group>"; };
-		093B0CDD28C22064005634FD /* BMKMapScreenshotController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMKMapScreenshotController.mm; sourceTree = "<group>"; };
-		093B0CDF28C22064005634FD /* BMKSmoothMovingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKSmoothMovingViewController.m; sourceTree = "<group>"; };
-		093B0CE028C22064005634FD /* sport_path.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sport_path.json; sourceTree = "<group>"; };
-		093B0CE128C22064005634FD /* BMKSmoothMovingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKSmoothMovingViewController.h; sourceTree = "<group>"; };
-		093B0CE328C22064005634FD /* BMKAnnotationScaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKAnnotationScaleViewController.m; sourceTree = "<group>"; };
-		093B0CE428C22064005634FD /* BMKPinAnnotationScaleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKPinAnnotationScaleView.m; sourceTree = "<group>"; };
-		093B0CE528C22064005634FD /* BMKAnnotationScaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKAnnotationScaleViewController.h; sourceTree = "<group>"; };
-		093B0CE628C22064005634FD /* BMKPinAnnotationScaleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPinAnnotationScaleView.h; sourceTree = "<group>"; };
-		093B0CE828C22064005634FD /* BMKMultiPaopaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKMultiPaopaoViewController.h; sourceTree = "<group>"; };
-		093B0CE928C22064005634FD /* BMKMultiPaopaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKMultiPaopaoViewController.m; sourceTree = "<group>"; };
-		093B0CEA28C22064005634FD /* poiInfo_multi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = poiInfo_multi.json; sourceTree = "<group>"; };
-		093B0CEC28C22064005634FD /* BMKSugInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKSugInfoCell.h; sourceTree = "<group>"; };
-		093B0CED28C22064005634FD /* BMKPoiAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKPoiAnnotation.m; sourceTree = "<group>"; };
-		093B0CEE28C22064005634FD /* UIImage+BMKImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BMKImage.h"; sourceTree = "<group>"; };
-		093B0CEF28C22064005634FD /* BMKSug+POICitySearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BMKSug+POICitySearchViewController.m"; sourceTree = "<group>"; };
-		093B0CF028C22064005634FD /* BMKSugInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKSugInfoCell.m; sourceTree = "<group>"; };
-		093B0CF128C22064005634FD /* UIImage+BMKImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BMKImage.m"; sourceTree = "<group>"; };
-		093B0CF228C22064005634FD /* BMKPoiAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPoiAnnotation.h; sourceTree = "<group>"; };
-		093B0CF328C22064005634FD /* BMKSug+POICitySearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BMKSug+POICitySearchViewController.h"; sourceTree = "<group>"; };
-		093B0CF628C22064005634FD /* BMKTransitRoutePlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKTransitRoutePlanViewController.h; sourceTree = "<group>"; };
-		093B0CF728C22064005634FD /* BMKTransitRouteLineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKTransitRouteLineModel.m; sourceTree = "<group>"; };
-		093B0CF828C22064005634FD /* BMKTransitRouteLineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKTransitRouteLineTableViewCell.h; sourceTree = "<group>"; };
-		093B0CF928C22064005634FD /* BMKTransitRouteLineDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKTransitRouteLineDetailModel.m; sourceTree = "<group>"; };
-		093B0CFA28C22064005634FD /* BMKTransitRouteTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKTransitRouteTableViewCell.h; sourceTree = "<group>"; };
-		093B0CFB28C22064005634FD /* BMKTransitRouteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKTransitRouteDetailViewController.h; sourceTree = "<group>"; };
-		093B0CFC28C22064005634FD /* BMKTransitRoutePlanViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMKTransitRoutePlanViewController.mm; sourceTree = "<group>"; };
-		093B0CFD28C22064005634FD /* BMKTransitRouteLineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKTransitRouteLineTableViewCell.m; sourceTree = "<group>"; };
-		093B0CFE28C22064005634FD /* BMKTransitRouteLineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKTransitRouteLineModel.h; sourceTree = "<group>"; };
-		093B0CFF28C22064005634FD /* BMKTransitRouteTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKTransitRouteTableViewCell.m; sourceTree = "<group>"; };
-		093B0D0028C22064005634FD /* BMKTransitRouteLineDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKTransitRouteLineDetailModel.h; sourceTree = "<group>"; };
-		093B0D0128C22064005634FD /* BMKTransitRouteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKTransitRouteDetailViewController.m; sourceTree = "<group>"; };
-		093B0D0328C22064005634FD /* BMKBikeRouteDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKBikeRouteDetailModel.h; sourceTree = "<group>"; };
-		093B0D0428C22064005634FD /* BMKCustomSelectedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKCustomSelectedButton.m; sourceTree = "<group>"; };
-		093B0D0528C22064005634FD /* BMKBikeRouteLineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKBikeRouteLineTableViewCell.m; sourceTree = "<group>"; };
-		093B0D0628C22064005634FD /* BMKBikeRouteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKBikeRouteDetailViewController.m; sourceTree = "<group>"; };
-		093B0D0728C22064005634FD /* BMKCustomSelectedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKCustomSelectedButton.h; sourceTree = "<group>"; };
-		093B0D0828C22064005634FD /* BMKBikeRouteDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKBikeRouteDetailModel.m; sourceTree = "<group>"; };
-		093B0D0928C22064005634FD /* BMKBikeRoutePlanViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMKBikeRoutePlanViewController.mm; sourceTree = "<group>"; };
-		093B0D0A28C22064005634FD /* BMKBikeRoutePlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKBikeRoutePlanViewController.h; sourceTree = "<group>"; };
-		093B0D0B28C22064005634FD /* BMKBikeRouteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKBikeRouteDetailViewController.h; sourceTree = "<group>"; };
-		093B0D0C28C22064005634FD /* BMKBikeRouteLineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKBikeRouteLineTableViewCell.h; sourceTree = "<group>"; };
-		093B0D0E28C22064005634FD /* BMKWalkRoutePlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKWalkRoutePlanViewController.h; sourceTree = "<group>"; };
-		093B0D0F28C22064005634FD /* BMKWalkRouteDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKWalkRouteDetailModel.h; sourceTree = "<group>"; };
-		093B0D1028C22064005634FD /* BMKWalkRouteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKWalkRouteDetailViewController.m; sourceTree = "<group>"; };
-		093B0D1128C22064005634FD /* BMKWalkRouteLineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKWalkRouteLineTableViewCell.h; sourceTree = "<group>"; };
-		093B0D1228C22064005634FD /* BMKWalkRoutePlanViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMKWalkRoutePlanViewController.mm; sourceTree = "<group>"; };
-		093B0D1328C22064005634FD /* BMKWalkRouteDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKWalkRouteDetailModel.m; sourceTree = "<group>"; };
-		093B0D1428C22064005634FD /* BMKWalkRouteLineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKWalkRouteLineTableViewCell.m; sourceTree = "<group>"; };
-		093B0D1528C22064005634FD /* BMKWalkRouteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKWalkRouteDetailViewController.h; sourceTree = "<group>"; };
-		093B0D1728C22064005634FD /* BMKRoutePlanSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKRoutePlanSearchView.h; sourceTree = "<group>"; };
-		093B0D1828C22064005634FD /* BMKFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKFootView.h; sourceTree = "<group>"; };
-		093B0D1928C22064005634FD /* BMKRoutePlanSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKRoutePlanSearchView.m; sourceTree = "<group>"; };
-		093B0D1A28C22064005634FD /* BMKFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKFootView.m; sourceTree = "<group>"; };
-		093B0D1C28C22065005634FD /* BMKTabsSwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKTabsSwitchViewController.h; sourceTree = "<group>"; };
-		093B0D1D28C22065005634FD /* BMKTabsSwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKTabsSwitchViewController.m; sourceTree = "<group>"; };
-		093B0D1F28C22065005634FD /* BMKPoiInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPoiInfoCell.h; sourceTree = "<group>"; };
-		093B0D2028C22065005634FD /* BMKJumpingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKJumpingView.h; sourceTree = "<group>"; };
-		093B0D2128C22065005634FD /* BMKPickUpPointsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKPickUpPointsViewController.m; sourceTree = "<group>"; };
-		093B0D2228C22065005634FD /* BMKPoiInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKPoiInfoCell.m; sourceTree = "<group>"; };
-		093B0D2328C22065005634FD /* BMKPickUpPointsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPickUpPointsViewController.h; sourceTree = "<group>"; };
-		093B0D2428C22065005634FD /* BMKJumpingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKJumpingView.m; sourceTree = "<group>"; };
-		093B0D2628C22065005634FD /* BMKAnnotationMovingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKAnnotationMovingViewController.h; sourceTree = "<group>"; };
-		093B0D2728C22065005634FD /* BMKAnnotationMovingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKAnnotationMovingViewController.m; sourceTree = "<group>"; };
-		093B0D2928C22065005634FD /* BMKCustomAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKCustomAnnotationView.m; sourceTree = "<group>"; };
-		093B0D2A28C22065005634FD /* BMKCustomAnnotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKCustomAnnotationViewController.m; sourceTree = "<group>"; };
-		093B0D2B28C22065005634FD /* BMKCustomAnnotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKCustomAnnotationViewController.h; sourceTree = "<group>"; };
-		093B0D2C28C22065005634FD /* BMKCustomAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKCustomAnnotationView.h; sourceTree = "<group>"; };
-		093B0D2E28C22065005634FD /* BMKAnnotationViewFitMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKAnnotationViewFitMapViewController.h; sourceTree = "<group>"; };
-		093B0D2F28C22065005634FD /* poiInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = poiInfo.json; sourceTree = "<group>"; };
-		093B0D3028C22065005634FD /* BMKAnnotationViewFitMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKAnnotationViewFitMapViewController.m; sourceTree = "<group>"; };
-		093B0D3228C22066005634FD /* chatian.sty */ = {isa = PBXFileReference; lastKnownFileType = file; path = chatian.sty; sourceTree = "<group>"; };
-		093B0D3328C22066005634FD /* BMKOverlayClickedViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BMKOverlayClickedViewController.mm; sourceTree = "<group>"; };
-		093B0D3428C22066005634FD /* haidian.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = haidian.json; sourceTree = "<group>"; };
-		093B0D3528C22066005634FD /* BMKOverlayClickedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKOverlayClickedViewController.h; sourceTree = "<group>"; };
-		093B0D3728C22066005634FD /* BMKSecondaryCataloguePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKSecondaryCataloguePage.m; sourceTree = "<group>"; };
-		093B0D3828C22066005634FD /* BMKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKNavigationController.h; sourceTree = "<group>"; };
-		093B0D3928C22066005634FD /* BMKCataloguePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKCataloguePage.h; sourceTree = "<group>"; };
-		093B0D3A28C22066005634FD /* BMKCatalogueTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKCatalogueTableViewCell.m; sourceTree = "<group>"; };
-		093B0D3B28C22066005634FD /* BMKSecondaryCataloguePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKSecondaryCataloguePage.h; sourceTree = "<group>"; };
-		093B0D3C28C22066005634FD /* BMKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKNavigationController.m; sourceTree = "<group>"; };
-		093B0D3D28C22066005634FD /* BMKCatalogueTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKCatalogueTableViewCell.h; sourceTree = "<group>"; };
-		093B0D3E28C22066005634FD /* BMKCataloguePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKCataloguePage.m; sourceTree = "<group>"; };
-		093B0D4028C22066005634FD /* BMKSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKSegmentView.h; sourceTree = "<group>"; };
-		093B0D4128C22066005634FD /* chuxing.sty */ = {isa = PBXFileReference; lastKnownFileType = file; path = chuxing.sty; sourceTree = "<group>"; };
-		093B0D4228C22066005634FD /* BMKCustomMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKCustomMapController.h; sourceTree = "<group>"; };
-		093B0D4328C22066005634FD /* BMKSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKSegmentView.m; sourceTree = "<group>"; };
-		093B0D4428C22066005634FD /* BMKCustomMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKCustomMapController.m; sourceTree = "<group>"; };
-		093B0D4528C22066005634FD /* yanmou.sty */ = {isa = PBXFileReference; lastKnownFileType = file; path = yanmou.sty; sourceTree = "<group>"; };
-		093B0D4728C22066005634FD /* BMKShowOutsideMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKShowOutsideMapViewController.m; sourceTree = "<group>"; };
-		093B0D4828C22066005634FD /* BMKShowOutsideMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKShowOutsideMapViewController.h; sourceTree = "<group>"; };
-		093B0D8128C223C9005634FD /* bmk_interaction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bmk_interaction.png; sourceTree = "<group>"; };
-		093B0D8228C223C9005634FD /* bmk_search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bmk_search.png; sourceTree = "<group>"; };
-		093B0D8328C223C9005634FD /* bmk_mapdraw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bmk_mapdraw.png; sourceTree = "<group>"; };
-		093B0D8428C223C9005634FD /* bmk_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bmk_map.png; sourceTree = "<group>"; };
-		093B0D8528C223C9005634FD /* bmk_routeplan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bmk_routeplan.png; sourceTree = "<group>"; };
-		093B0D8628C223C9005634FD /* bmk_trajectory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bmk_trajectory.png; sourceTree = "<group>"; };
-		093B0D8E28C22B29005634FD /* BMKGlobalLocInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKGlobalLocInfoView.h; sourceTree = "<group>"; };
-		093B0D8F28C22B29005634FD /* BMKGlobalLocController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKGlobalLocController.h; sourceTree = "<group>"; };
-		093B0D9028C22B2A005634FD /* BMKGlobalLocController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKGlobalLocController.m; sourceTree = "<group>"; };
-		093B0D9228C22C31005634FD /* BMKGlobalLocInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKGlobalLocInfoView.m; sourceTree = "<group>"; };
-		093B0D9328C22C31005634FD /* BMKGlobalLocTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKGlobalLocTabView.h; sourceTree = "<group>"; };
-		093B0D9428C22C31005634FD /* BMKGlobalLocTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKGlobalLocTabView.m; sourceTree = "<group>"; };
 		093B0D9928C2F738005634FD /* AFJPlaceholderTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFJPlaceholderTextViewController.h; sourceTree = "<group>"; };
 		093B0D9A28C2F738005634FD /* AFJPlaceholderTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFJPlaceholderTextViewController.m; sourceTree = "<group>"; };
 		093B0D9D28C2FE39005634FD /* AFJHelpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFJHelpViewController.h; sourceTree = "<group>"; };
@@ -7152,7 +6974,6 @@
 				0996D57228C5FCE800680425 /* Router */,
 				06A82E4E28C441E200D94AB8 /* Cutter */,
 				093B0D9C28C2FDEC005634FD /* Help */,
-				0942E74028C20C5200AFE2F9 /* Baidu_Map */,
 				093B0D8D28C22945005634FD /* GlobalLocation */,
 				0942E72228C1DD7200AFE2F9 /* Information */,
 				0942E53A28C1A41C00AFE2F9 /* CheckAppInstall */,
@@ -7508,275 +7329,10 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
-		093B0CCF28C22064005634FD /* BMKPointCluster */ = {
-			isa = PBXGroup;
-			children = (
-				093B0CD528C22064005634FD /* BMKCluster.h */,
-				093B0CD228C22064005634FD /* BMKCluster.m */,
-				093B0CD328C22064005634FD /* BMKClusterAnnotationPage.h */,
-				093B0CD728C22064005634FD /* BMKClusterAnnotationPage.m */,
-				093B0CD028C22064005634FD /* BMKClusterManager.h */,
-				093B0CD428C22064005634FD /* BMKClusterManager.m */,
-				093B0CD628C22064005634FD /* BMKClusterQuadtree.h */,
-				093B0CD128C22064005634FD /* BMKClusterQuadtree.m */,
-			);
-			path = BMKPointCluster;
-			sourceTree = "<group>";
-		};
-		093B0CD828C22064005634FD /* BMKMapScreenshot */ = {
-			isa = PBXGroup;
-			children = (
-				093B0CD928C22064005634FD /* BMKMapScreenshotController.h */,
-				093B0CDD28C22064005634FD /* BMKMapScreenshotController.mm */,
-				093B0CDC28C22064005634FD /* BMKShotView.h */,
-				093B0CDA28C22064005634FD /* BMKShotView.m */,
-				093B0CDB28C22064005634FD /* sport_path_shot.json */,
-			);
-			path = BMKMapScreenshot;
-			sourceTree = "<group>";
-		};
-		093B0CDE28C22064005634FD /* SmoothMoving */ = {
-			isa = PBXGroup;
-			children = (
-				093B0CE128C22064005634FD /* BMKSmoothMovingViewController.h */,
-				093B0CDF28C22064005634FD /* BMKSmoothMovingViewController.m */,
-				093B0CE028C22064005634FD /* sport_path.json */,
-			);
-			path = SmoothMoving;
-			sourceTree = "<group>";
-		};
-		093B0CE228C22064005634FD /* AnnotationViewScale */ = {
-			isa = PBXGroup;
-			children = (
-				093B0CE528C22064005634FD /* BMKAnnotationScaleViewController.h */,
-				093B0CE328C22064005634FD /* BMKAnnotationScaleViewController.m */,
-				093B0CE628C22064005634FD /* BMKPinAnnotationScaleView.h */,
-				093B0CE428C22064005634FD /* BMKPinAnnotationScaleView.m */,
-			);
-			path = AnnotationViewScale;
-			sourceTree = "<group>";
-		};
-		093B0CE728C22064005634FD /* BMKMultiPaopao */ = {
-			isa = PBXGroup;
-			children = (
-				093B0CE828C22064005634FD /* BMKMultiPaopaoViewController.h */,
-				093B0CE928C22064005634FD /* BMKMultiPaopaoViewController.m */,
-				093B0CEA28C22064005634FD /* poiInfo_multi.json */,
-			);
-			path = BMKMultiPaopao;
-			sourceTree = "<group>";
-		};
-		093B0CEB28C22064005634FD /* BMKPlaceSearch */ = {
-			isa = PBXGroup;
-			children = (
-				093B0CF228C22064005634FD /* BMKPoiAnnotation.h */,
-				093B0CED28C22064005634FD /* BMKPoiAnnotation.m */,
-				093B0CF328C22064005634FD /* BMKSug+POICitySearchViewController.h */,
-				093B0CEF28C22064005634FD /* BMKSug+POICitySearchViewController.m */,
-				093B0CEC28C22064005634FD /* BMKSugInfoCell.h */,
-				093B0CF028C22064005634FD /* BMKSugInfoCell.m */,
-				093B0CEE28C22064005634FD /* UIImage+BMKImage.h */,
-				093B0CF128C22064005634FD /* UIImage+BMKImage.m */,
-			);
-			path = BMKPlaceSearch;
-			sourceTree = "<group>";
-		};
-		093B0CF428C22064005634FD /* RoutePlan */ = {
-			isa = PBXGroup;
-			children = (
-				093B0D0228C22064005634FD /* BikePlan */,
-				093B0D1628C22064005634FD /* Common */,
-				093B0CF528C22064005634FD /* TransitPlan */,
-				093B0D0D28C22064005634FD /* WalkPlan */,
-			);
-			path = RoutePlan;
-			sourceTree = "<group>";
-		};
-		093B0CF528C22064005634FD /* TransitPlan */ = {
-			isa = PBXGroup;
-			children = (
-				093B0CFB28C22064005634FD /* BMKTransitRouteDetailViewController.h */,
-				093B0D0128C22064005634FD /* BMKTransitRouteDetailViewController.m */,
-				093B0D0028C22064005634FD /* BMKTransitRouteLineDetailModel.h */,
-				093B0CF928C22064005634FD /* BMKTransitRouteLineDetailModel.m */,
-				093B0CFE28C22064005634FD /* BMKTransitRouteLineModel.h */,
-				093B0CF728C22064005634FD /* BMKTransitRouteLineModel.m */,
-				093B0CF828C22064005634FD /* BMKTransitRouteLineTableViewCell.h */,
-				093B0CFD28C22064005634FD /* BMKTransitRouteLineTableViewCell.m */,
-				093B0CF628C22064005634FD /* BMKTransitRoutePlanViewController.h */,
-				093B0CFC28C22064005634FD /* BMKTransitRoutePlanViewController.mm */,
-				093B0CFA28C22064005634FD /* BMKTransitRouteTableViewCell.h */,
-				093B0CFF28C22064005634FD /* BMKTransitRouteTableViewCell.m */,
-			);
-			path = TransitPlan;
-			sourceTree = "<group>";
-		};
-		093B0D0228C22064005634FD /* BikePlan */ = {
-			isa = PBXGroup;
-			children = (
-				093B0D0328C22064005634FD /* BMKBikeRouteDetailModel.h */,
-				093B0D0828C22064005634FD /* BMKBikeRouteDetailModel.m */,
-				093B0D0B28C22064005634FD /* BMKBikeRouteDetailViewController.h */,
-				093B0D0628C22064005634FD /* BMKBikeRouteDetailViewController.m */,
-				093B0D0C28C22064005634FD /* BMKBikeRouteLineTableViewCell.h */,
-				093B0D0528C22064005634FD /* BMKBikeRouteLineTableViewCell.m */,
-				093B0D0A28C22064005634FD /* BMKBikeRoutePlanViewController.h */,
-				093B0D0928C22064005634FD /* BMKBikeRoutePlanViewController.mm */,
-				093B0D0728C22064005634FD /* BMKCustomSelectedButton.h */,
-				093B0D0428C22064005634FD /* BMKCustomSelectedButton.m */,
-			);
-			path = BikePlan;
-			sourceTree = "<group>";
-		};
-		093B0D0D28C22064005634FD /* WalkPlan */ = {
-			isa = PBXGroup;
-			children = (
-				093B0D0F28C22064005634FD /* BMKWalkRouteDetailModel.h */,
-				093B0D1328C22064005634FD /* BMKWalkRouteDetailModel.m */,
-				093B0D1528C22064005634FD /* BMKWalkRouteDetailViewController.h */,
-				093B0D1028C22064005634FD /* BMKWalkRouteDetailViewController.m */,
-				093B0D1128C22064005634FD /* BMKWalkRouteLineTableViewCell.h */,
-				093B0D1428C22064005634FD /* BMKWalkRouteLineTableViewCell.m */,
-				093B0D0E28C22064005634FD /* BMKWalkRoutePlanViewController.h */,
-				093B0D1228C22064005634FD /* BMKWalkRoutePlanViewController.mm */,
-			);
-			path = WalkPlan;
-			sourceTree = "<group>";
-		};
-		093B0D1628C22064005634FD /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				093B0D1828C22064005634FD /* BMKFootView.h */,
-				093B0D1A28C22064005634FD /* BMKFootView.m */,
-				093B0D1728C22064005634FD /* BMKRoutePlanSearchView.h */,
-				093B0D1928C22064005634FD /* BMKRoutePlanSearchView.m */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		093B0D1B28C22065005634FD /* TabsSwitch */ = {
-			isa = PBXGroup;
-			children = (
-				093B0D1C28C22065005634FD /* BMKTabsSwitchViewController.h */,
-				093B0D1D28C22065005634FD /* BMKTabsSwitchViewController.m */,
-			);
-			path = TabsSwitch;
-			sourceTree = "<group>";
-		};
-		093B0D1E28C22065005634FD /* BMKPickUpPoints */ = {
-			isa = PBXGroup;
-			children = (
-				093B0D2028C22065005634FD /* BMKJumpingView.h */,
-				093B0D2428C22065005634FD /* BMKJumpingView.m */,
-				093B0D2328C22065005634FD /* BMKPickUpPointsViewController.h */,
-				093B0D2128C22065005634FD /* BMKPickUpPointsViewController.m */,
-				093B0D1F28C22065005634FD /* BMKPoiInfoCell.h */,
-				093B0D2228C22065005634FD /* BMKPoiInfoCell.m */,
-			);
-			path = BMKPickUpPoints;
-			sourceTree = "<group>";
-		};
-		093B0D2528C22065005634FD /* AnnotationViewMoving */ = {
-			isa = PBXGroup;
-			children = (
-				093B0D2628C22065005634FD /* BMKAnnotationMovingViewController.h */,
-				093B0D2728C22065005634FD /* BMKAnnotationMovingViewController.m */,
-			);
-			path = AnnotationViewMoving;
-			sourceTree = "<group>";
-		};
-		093B0D2828C22065005634FD /* BMKCustomAnnotation */ = {
-			isa = PBXGroup;
-			children = (
-				093B0D2C28C22065005634FD /* BMKCustomAnnotationView.h */,
-				093B0D2928C22065005634FD /* BMKCustomAnnotationView.m */,
-				093B0D2B28C22065005634FD /* BMKCustomAnnotationViewController.h */,
-				093B0D2A28C22065005634FD /* BMKCustomAnnotationViewController.m */,
-			);
-			path = BMKCustomAnnotation;
-			sourceTree = "<group>";
-		};
-		093B0D2D28C22065005634FD /* AnnotationViewFitMap */ = {
-			isa = PBXGroup;
-			children = (
-				093B0D2E28C22065005634FD /* BMKAnnotationViewFitMapViewController.h */,
-				093B0D3028C22065005634FD /* BMKAnnotationViewFitMapViewController.m */,
-				093B0D2F28C22065005634FD /* poiInfo.json */,
-			);
-			path = AnnotationViewFitMap;
-			sourceTree = "<group>";
-		};
-		093B0D3128C22066005634FD /* BMKOverlayClicked */ = {
-			isa = PBXGroup;
-			children = (
-				093B0D3528C22066005634FD /* BMKOverlayClickedViewController.h */,
-				093B0D3328C22066005634FD /* BMKOverlayClickedViewController.mm */,
-				093B0D3228C22066005634FD /* chatian.sty */,
-				093B0D3428C22066005634FD /* haidian.json */,
-			);
-			path = BMKOverlayClicked;
-			sourceTree = "<group>";
-		};
-		093B0D3628C22066005634FD /* BaseController */ = {
-			isa = PBXGroup;
-			children = (
-				093B0D3928C22066005634FD /* BMKCataloguePage.h */,
-				093B0D3E28C22066005634FD /* BMKCataloguePage.m */,
-				093B0D3D28C22066005634FD /* BMKCatalogueTableViewCell.h */,
-				093B0D3A28C22066005634FD /* BMKCatalogueTableViewCell.m */,
-				093B0D3828C22066005634FD /* BMKNavigationController.h */,
-				093B0D3C28C22066005634FD /* BMKNavigationController.m */,
-				093B0D3B28C22066005634FD /* BMKSecondaryCataloguePage.h */,
-				093B0D3728C22066005634FD /* BMKSecondaryCataloguePage.m */,
-			);
-			path = BaseController;
-			sourceTree = "<group>";
-		};
-		093B0D3F28C22066005634FD /* BMKCustomMap */ = {
-			isa = PBXGroup;
-			children = (
-				093B0D4228C22066005634FD /* BMKCustomMapController.h */,
-				093B0D4428C22066005634FD /* BMKCustomMapController.m */,
-				093B0D4028C22066005634FD /* BMKSegmentView.h */,
-				093B0D4328C22066005634FD /* BMKSegmentView.m */,
-				093B0D4128C22066005634FD /* chuxing.sty */,
-				093B0D4528C22066005634FD /* yanmou.sty */,
-			);
-			path = BMKCustomMap;
-			sourceTree = "<group>";
-		};
-		093B0D4628C22066005634FD /* BMKShowOutsideMap */ = {
-			isa = PBXGroup;
-			children = (
-				093B0D4828C22066005634FD /* BMKShowOutsideMapViewController.h */,
-				093B0D4728C22066005634FD /* BMKShowOutsideMapViewController.m */,
-			);
-			path = BMKShowOutsideMap;
-			sourceTree = "<group>";
-		};
-		093B0D8028C223C9005634FD /* icons */ = {
-			isa = PBXGroup;
-			children = (
-				093B0D8128C223C9005634FD /* bmk_interaction.png */,
-				093B0D8228C223C9005634FD /* bmk_search.png */,
-				093B0D8328C223C9005634FD /* bmk_mapdraw.png */,
-				093B0D8428C223C9005634FD /* bmk_map.png */,
-				093B0D8528C223C9005634FD /* bmk_routeplan.png */,
-				093B0D8628C223C9005634FD /* bmk_trajectory.png */,
-			);
-			path = icons;
-			sourceTree = "<group>";
-		};
 		093B0D8D28C22945005634FD /* GlobalLocation */ = {
 			isa = PBXGroup;
 			children = (
 				0942E5D328C1B59000AFE2F9 /* LocationManager */,
-				093B0D8F28C22B29005634FD /* BMKGlobalLocController.h */,
-				093B0D9028C22B2A005634FD /* BMKGlobalLocController.m */,
-				093B0D8E28C22B29005634FD /* BMKGlobalLocInfoView.h */,
-				093B0D9228C22C31005634FD /* BMKGlobalLocInfoView.m */,
-				093B0D9328C22C31005634FD /* BMKGlobalLocTabView.h */,
-				093B0D9428C22C31005634FD /* BMKGlobalLocTabView.m */,
 			);
 			path = GlobalLocation;
 			sourceTree = "<group>";
@@ -8810,30 +8366,6 @@
 				0942E72F28C1EB8100AFE2F9 /* NSData+CRC32.m */,
 			);
 			path = Tools;
-			sourceTree = "<group>";
-		};
-		0942E74028C20C5200AFE2F9 /* Baidu_Map */ = {
-			isa = PBXGroup;
-			children = (
-				093B0D8028C223C9005634FD /* icons */,
-				093B0D2D28C22065005634FD /* AnnotationViewFitMap */,
-				093B0D2528C22065005634FD /* AnnotationViewMoving */,
-				093B0CE228C22064005634FD /* AnnotationViewScale */,
-				093B0D3628C22066005634FD /* BaseController */,
-				093B0D2828C22065005634FD /* BMKCustomAnnotation */,
-				093B0D3F28C22066005634FD /* BMKCustomMap */,
-				093B0CD828C22064005634FD /* BMKMapScreenshot */,
-				093B0CE728C22064005634FD /* BMKMultiPaopao */,
-				093B0D3128C22066005634FD /* BMKOverlayClicked */,
-				093B0D1E28C22065005634FD /* BMKPickUpPoints */,
-				093B0CEB28C22064005634FD /* BMKPlaceSearch */,
-				093B0CCF28C22064005634FD /* BMKPointCluster */,
-				093B0D4628C22066005634FD /* BMKShowOutsideMap */,
-				093B0CF428C22064005634FD /* RoutePlan */,
-				093B0CDE28C22064005634FD /* SmoothMoving */,
-				093B0D1B28C22065005634FD /* TabsSwitch */,
-			);
-			path = Baidu_Map;
 			sourceTree = "<group>";
 		};
 		094D8A1B28B610B200B15609 /* D3View */ = {
@@ -15896,7 +15428,6 @@
 				094D8E1F28B8CC8C00B15609 /* place.png in Resources */,
 				307FF90728DC4A7600D6C951 /* PiePolylineChartViewController.xib in Resources */,
 				0676992328B07D5A0009140B /* AFJRACBaseViewController.xib in Resources */,
-				093B0D8828C223C9005634FD /* bmk_search.png in Resources */,
 				309936DB28C8C9E000C704D0 /* chooser-moment-icon-music@2x.png in Resources */,
 				094D8DA928B8C52800B15609 /* Sources3.gif in Resources */,
 				0996D55D28C34ED700680425 /* personal_info_02.png in Resources */,
@@ -15941,7 +15472,6 @@
 				30E3BB5528DEA2A400E4C601 /* sf-outer-limits.upright.ttf in Resources */,
 				30806D4428D0362D006C0D30 /* SegmentedBarViewController.xib in Resources */,
 				094D8E2128B8CC8C00B15609 /* 2.jpg in Resources */,
-				093B0D7228C22067005634FD /* poiInfo.json in Resources */,
 				309936D428C8C9E000C704D0 /* chooser-moment-icon-music-highlighted@2x.png in Resources */,
 				09F62ADF28B9C9720093BC6F /* srart_bg.jpg in Resources */,
 				300C7F2C28DEE2340046CE53 /* AFJMotionBluSamplerController.xib in Resources */,
@@ -15973,7 +15503,6 @@
 				06040EB428DE12F500863329 /* m33@2x.png in Resources */,
 				09F62AE328B9C9720093BC6F /* dashed_line.png in Resources */,
 				309936CF28C8C9E000C704D0 /* chooser-moment-icon-camera-highlighted@2x.png in Resources */,
-				093B0D7B28C22067005634FD /* chuxing.sty in Resources */,
 				307FF84928DC0A5D00D6C951 /* userpic2.jpg in Resources */,
 				094D8DF228B8C72E00B15609 /* Sample5.jpg in Resources */,
 				300C808B28DEFA550046CE53 /* LSTPopViewGroupTestVC.xib in Resources */,
@@ -16086,7 +15615,6 @@
 				094D8DFF28B8C72E00B15609 /* Sample2.jpg in Resources */,
 				094D8DA428B8C52800B15609 /* CustomSources6.gif in Resources */,
 				302A14D028C987FF000AE3E4 /* SUPRegisterViewController.xib in Resources */,
-				093B0D8928C223C9005634FD /* bmk_mapdraw.png in Resources */,
 				300C808928DEFA550046CE53 /* LSTPopViewGroupTestView.xib in Resources */,
 				06BA2CE128B7696D0069B0F9 /* AFJFakeLabelViewController.xib in Resources */,
 				308E9E4028D08F3800A423A6 /* StreamViewController.xib in Resources */,
@@ -16125,7 +15653,6 @@
 				30B0F74F28E152E60059605D /* TTMDetailViewController.xib in Resources */,
 				309936DA28C8C9E000C704D0 /* chooser-button-tab@2x.png in Resources */,
 				094D8DE528B8C72E00B15609 /* Sample11.jpg in Resources */,
-				093B0D5128C22067005634FD /* sport_path.json in Resources */,
 				30163D6428D30E8F003D67EA /* FZLSJW.ttf in Resources */,
 				300C80A728DEFA560046CE53 /* LSTPopViewTestVC.xib in Resources */,
 				302A14D428C987FF000AE3E4 /* SUPLoginSuccessViewControlle.xib in Resources */,
@@ -16135,7 +15662,6 @@
 				06040EB528DE12F500863329 /* m15@2x.png in Resources */,
 				30968B2028D1C10200716E94 /* HQLUserDefaultsViewController.xib in Resources */,
 				300C807D28DEFA550046CE53 /* LSTPopViewQQView.xib in Resources */,
-				093B0D7E28C22067005634FD /* yanmou.sty in Resources */,
 				307FF84C28DC0A5D00D6C951 /* userpic4.jpg in Resources */,
 				06040EC628DE12F500863329 /* m29@2x.png in Resources */,
 				06040ED428DE12F500863329 /* sample.jpg in Resources */,
@@ -16212,7 +15738,6 @@
 				06040E5F28DE125D00863329 /* SpeechSynthesisViewController.xib in Resources */,
 				307FF85B28DC0A5D00D6C951 /* Single_Selected@2x.png in Resources */,
 				09F62AF928B9F34A0093BC6F /* ad_1.jpg in Resources */,
-				093B0D7628C22067005634FD /* haidian.json in Resources */,
 				30968C0F28D1DE2C00716E94 /* 支付宝付款-标准.ai in Resources */,
 				308E9E3628D08F3800A423A6 /* ic_record@2x.png in Resources */,
 				30806D3228D02DA6006C0D30 /* FilteredImageViewController.xib in Resources */,
@@ -16292,7 +15817,6 @@
 				30806D3628D02F14006C0D30 /* M13ProgressViewBarNavigationControllerViewController.xib in Resources */,
 				309936D628C8C9E000C704D0 /* Like-Blue@2x.png in Resources */,
 				305C5F0E28E1854500BA908A /* xl_clock_minuteHand.png in Resources */,
-				093B0D8A28C223C9005634FD /* bmk_map.png in Resources */,
 				0908707628A50C3C00CBEEA8 /* Main.storyboard in Resources */,
 				06040E7528DE129B00863329 /* BrowseCodeViewController.xib in Resources */,
 				307FF91728DC4A7600D6C951 /* RealmDemosViewController.xib in Resources */,
@@ -16337,10 +15861,8 @@
 				300C806C28DEFA550046CE53 /* LSTPopViewBottomInputView.xib in Resources */,
 				305C5F0A28E1854500BA908A /* xl_clock_back.png in Resources */,
 				06040ECE28DE12F500863329 /* m6@2x.png in Resources */,
-				093B0D8C28C223C9005634FD /* bmk_trajectory.png in Resources */,
 				09F62AF528B9F34A0093BC6F /* ZYBannerView.bundle in Resources */,
 				094D8DAC28B8C52800B15609 /* Sources7.gif in Resources */,
-				093B0D7428C22067005634FD /* chatian.sty in Resources */,
 				09F62AE228B9C9720093BC6F /* logo_img@2x.png in Resources */,
 				30806D4628D04FB1006C0D30 /* SegmentedRingViewController.xib in Resources */,
 				3024290228F41B1000FA034B /* SamplePermissionViewController.xib in Resources */,
@@ -16360,9 +15882,7 @@
 				062ABBA929C98D2C00C32501 /* full-screen-sample-0.jpg in Resources */,
 				06040ED028DE12F500863329 /* stage_6@2x.png in Resources */,
 				3062379C28D31B0C006300DE /* honeybee.png in Resources */,
-				093B0D5528C22067005634FD /* poiInfo_multi.json in Resources */,
 				307FF90428DC4A7600D6C951 /* BarChartViewController.xib in Resources */,
-				093B0D8728C223C9005634FD /* bmk_interaction.png in Resources */,
 				307FF84828DC0A5D00D6C951 /* userpic3.jpg in Resources */,
 				06040E5428DE125D00863329 /* DynamicBehaviorsViewController.xib in Resources */,
 				06040EBB28DE12F500863329 /* stage_7@2x.png in Resources */,
@@ -16371,7 +15891,6 @@
 				06040ECA28DE12F500863329 /* m20@2x.png in Resources */,
 				094D8E0328B8C72E00B15609 /* VerticalViewController.xib in Resources */,
 				305C5F0728E1854500BA908A /* xl_clock_hourHand.png in Resources */,
-				093B0D4E28C22066005634FD /* sport_path_shot.json in Resources */,
 				300C808528DEFA550046CE53 /* LSTPopViewXibView.xib in Resources */,
 				06040E4628DE125D00863329 /* ImageFiltersViewController.xib in Resources */,
 				094D8DAF28B8C52800B15609 /* CustomSources14.gif in Resources */,
@@ -16399,7 +15918,6 @@
 				309936B728C8C9E000C704D0 /* microPhone_bottom@2x.png in Resources */,
 				30C3A83B28DD9F8400603600 /* AFJBTPeripheralModeViewController.xib in Resources */,
 				30806D3A28D0309E006C0D30 /* PieViewController.xib in Resources */,
-				093B0D8B28C223C9005634FD /* bmk_routeplan.png in Resources */,
 				06040EDE28DE12F500863329 /* m34@2x.png in Resources */,
 				30E3BB4F28DEA2A400E4C601 /* shark.png in Resources */,
 				307FF91228DC4A7600D6C951 /* ScatterChartViewController.xib in Resources */,
@@ -16644,7 +16162,6 @@
 			files = (
 				300AEC7429A496AE00206C6D /* QDCollectionViewDemoCell.m in Sources */,
 				300C819A28E14F0B0046CE53 /* CoreImageBlurTransition.m in Sources */,
-				093B0D9128C22B2A005634FD /* BMKGlobalLocController.m in Sources */,
 				30623B6628D320BD006300DE /* UIImage+JKFileName.m in Sources */,
 				30623B6828D320BD006300DE /* UILabel+JKAutomaticWriting.m in Sources */,
 				307FF86528DC0A5D00D6C951 /* RetractableViewController.m in Sources */,
@@ -16672,7 +16189,6 @@
 				0942E6FF28C1B59100AFE2F9 /* FHXFloatWinCell.m in Sources */,
 				307FF87128DC0A5D00D6C951 /* ListImageCell.m in Sources */,
 				30623B4628D320BD006300DE /* UIButton+CZAddition.m in Sources */,
-				093B0D5F28C22067005634FD /* BMKTransitRouteDetailViewController.m in Sources */,
 				06BA2CDA28B767FB0069B0F9 /* SXColorGradientView.m in Sources */,
 				30A84BCD28DC9F8D00C592C8 /* AFJPeerTalkSampleViewController.m in Sources */,
 				30623B6B28D320BD006300DE /* UIScrollView+JKAddition.m in Sources */,
@@ -16701,7 +16217,6 @@
 				30C90C5B28D9EBCF0086BBFE /* UIViewController+Swizzling.m in Sources */,
 				3008B6AC28D2CFDA005709A6 /* AFJColor.m in Sources */,
 				30968BFD28D1DE2C00716E94 /* HQLOrderTableViewController.m in Sources */,
-				093B0D6328C22067005634FD /* BMKBikeRouteDetailModel.m in Sources */,
 				06BA2CE928B76E800069B0F9 /* AFJGraph2ViewController.m in Sources */,
 				094D8FEB28B9C36400B15609 /* NSObject+RMCopyable.m in Sources */,
 				06040E4E28DE125D00863329 /* WebPaginationViewController.m in Sources */,
@@ -16715,7 +16230,6 @@
 				0996D56728C595C100680425 /* AFJGradientViewController.m in Sources */,
 				300AEC4D29A496AD00206C6D /* QDFoldCollectionViewLayout.m in Sources */,
 				0942E6B828C1B59100AFE2F9 /* NSMutableString+Safe.m in Sources */,
-				093B0D5E28C22067005634FD /* BMKTransitRouteTableViewCell.m in Sources */,
 				09FB778B28AB95E700B31F8F /* TYAlertController+BlurEffects.m in Sources */,
 				3075ADE028D2DB5500B011C3 /* AFJCollectionViewController.m in Sources */,
 				0996D55328C34ECD00680425 /* PersonalInfoPopView.m in Sources */,
@@ -16747,7 +16261,6 @@
 				3068A66A28D5B3000000F947 /* WXSTransitionManager.m in Sources */,
 				0942E6E228C1B59100AFE2F9 /* BaseNetWork.m in Sources */,
 				300AEC9029A496AE00206C6D /* QDDynamicHeightTableViewCell.m in Sources */,
-				093B0D5B28C22067005634FD /* BMKTransitRouteLineDetailModel.m in Sources */,
 				0942E6ED28C1B59100AFE2F9 /* LoadingAnimation.m in Sources */,
 				0942E6AE28C1B59100AFE2F9 /* CountDownManager.m in Sources */,
 				307FF80528DC0A3000D6C951 /* AFJRETableViewViewController.m in Sources */,
@@ -16767,7 +16280,6 @@
 				300C7F5628DEF1060046CE53 /* AFJFeSpinnerViewController.m in Sources */,
 				06040E6D28DE125D00863329 /* ActivityTrackingViewController.m in Sources */,
 				094D8D6428B8BC6300B15609 /* WSLTransitionAnimationTwo.m in Sources */,
-				093B0D7928C22067005634FD /* BMKNavigationController.m in Sources */,
 				3068A65F28D5B3000000F947 /* WXSTransitionManager+BoomAnimation.m in Sources */,
 				06A82E6628C4420B00D94AB8 /* ShowImageViewController.m in Sources */,
 				06040E5B28DE125D00863329 /* QRCodeViewController.m in Sources */,
@@ -16783,7 +16295,6 @@
 				091A8E3328B32BAD00B854CC /* AFJLogResultsTableController.m in Sources */,
 				094D8DA028B8C52800B15609 /* UIImageView+GIFExtension.m in Sources */,
 				30623BD928D320BE006300DE /* NSString+JKUUID.m in Sources */,
-				093B0D5D28C22067005634FD /* BMKTransitRouteLineTableViewCell.m in Sources */,
 				307FF87028DC0A5D00D6C951 /* XIBTestCell.m in Sources */,
 				06BA2CDB28B767FB0069B0F9 /* MarqueeDemoPage.m in Sources */,
 				30C90BC328D9C7680086BBFE /* JFSearchViewController.m in Sources */,
@@ -16842,7 +16353,6 @@
 				300C81AA28E14F0B0046CE53 /* DMScaleTransition.m in Sources */,
 				091A8E9E28B4830700B854CC /* FICDPhotosTableViewCell.m in Sources */,
 				094D8E0D28B8CC4300B15609 /* AFJScrollPicViewController.m in Sources */,
-				093B0D5928C22067005634FD /* UIImage+BMKImage.m in Sources */,
 				0942E71E28C1B59200AFE2F9 /* FhxMarginLabel.m in Sources */,
 				30E3BBB728DEC12E00E4C601 /* CoreTicket+CoreDataProperties.m in Sources */,
 				300C806828DEFA550046CE53 /* LSTPopViewCenterInputView.m in Sources */,
@@ -16902,7 +16412,6 @@
 				091A8E7428B35C2100B854CC /* LDNetPing.m in Sources */,
 				0942E71528C1B59200AFE2F9 /* SelectTimeAreaPickerView.m in Sources */,
 				0942E6EA28C1B59100AFE2F9 /* FHXLeftTitleBtn.m in Sources */,
-				093B0D4F28C22067005634FD /* BMKMapScreenshotController.mm in Sources */,
 				30623C0E28D320BE006300DE /* MKMapView+JKZoomLevel.m in Sources */,
 				30C90C5028D9EBCF0086BBFE /* YBPasterView.m in Sources */,
 				309936A028C8C9E000C704D0 /* YSCVoiceLoadingCircleView.m in Sources */,
@@ -16953,7 +16462,6 @@
 				300AEC7D29A496AE00206C6D /* QDSingleImagePickerPreviewViewController.m in Sources */,
 				301F5A7428C8B4B500F865A4 /* ZFAutoPlayerViewController.m in Sources */,
 				300AEC8629A496AE00206C6D /* QDCollectionStackDemoViewController.m in Sources */,
-				093B0D7A28C22067005634FD /* BMKCataloguePage.m in Sources */,
 				300AEC9929A496AE00206C6D /* QMUIConfigurationTemplateGrapefruit.m in Sources */,
 				300C80DC28DF06AE0046CE53 /* ObservableCustomStyle.swift in Sources */,
 				309936AD28C8C9E000C704D0 /* YSCCircleLoadAnimationView.m in Sources */,
@@ -17013,16 +16521,13 @@
 				30806D0E28D029A3006C0D30 /* FilteredImageViewController.m in Sources */,
 				300C809928DEFA550046CE53 /* LSTIndexAdView.m in Sources */,
 				300AEC3429A496AD00206C6D /* QDBlurEffectViewController.m in Sources */,
-				093B0D6228C22067005634FD /* BMKBikeRouteDetailViewController.m in Sources */,
 				300AECA129A496AE00206C6D /* QDCommonGridViewController.m in Sources */,
-				093B0D6B28C22067005634FD /* BMKTabsSwitchViewController.m in Sources */,
 				300AEB2F299E4AFD00206C6D /* AFJNativeViewController.m in Sources */,
 				091A92B128B4C75500B854CC /* AFJWebKitViewController.m in Sources */,
 				0996D54E28C34ECC00680425 /* LineFromBottomView.m in Sources */,
 				30623BF328D320BE006300DE /* NSNumber+JKCGFloat.m in Sources */,
 				3068A69B28D5BD7F0000F947 /* DanmakuRenderer.m in Sources */,
 				309936A128C8C9E000C704D0 /* YSCNewVoiceWaveView.m in Sources */,
-				093B0D6428C22067005634FD /* BMKBikeRoutePlanViewController.mm in Sources */,
 				0942E6B528C1B59100AFE2F9 /* Encryp.m in Sources */,
 				300AEC3829A496AD00206C6D /* QDLabelViewController.m in Sources */,
 				30623B5628D320BD006300DE /* UIImage+JKBlur.m in Sources */,
@@ -17031,7 +16536,6 @@
 				0942E6A628C1B59100AFE2F9 /* ClearCacheManager.m in Sources */,
 				30968B0C28D1BEB200716E94 /* HQLFIleManagerUsuallyMethodViewController.m in Sources */,
 				3010C7F928D0784E00E4CE69 /* HQLAnnotation.m in Sources */,
-				093B0D7328C22067005634FD /* BMKAnnotationViewFitMapViewController.m in Sources */,
 				30623C0128D320BE006300DE /* NSObject+JKAddProperty.m in Sources */,
 				30092E6728F26BA90058DFDD /* MASExampleMarginView.m in Sources */,
 				30958AFC28C87B9800B724A6 /* EFBasicViewController.m in Sources */,
@@ -17060,12 +16564,10 @@
 				302428FA28F410DC00FA034B /* AFJPermissionViewController.m in Sources */,
 				300AEC6629A496AE00206C6D /* QDReplicatorLayerViewController.m in Sources */,
 				0942E6C228C1B59100AFE2F9 /* YSCountDown.m in Sources */,
-				093B0D7828C22067005634FD /* BMKCatalogueTableViewCell.m in Sources */,
 				30C90C1828D9E4020086BBFE /* IFValenciaFilter.m in Sources */,
 				309936A628C8C9E000C704D0 /* YSCVoiceWaveView.m in Sources */,
 				3099368E28C8C9E000C704D0 /* YSCRippleAnimationViewController.m in Sources */,
 				303B168728D47FEF009F878B /* HXLanguageManager.m in Sources */,
-				093B0D7C28C22067005634FD /* BMKSegmentView.m in Sources */,
 				06040E4D28DE125D00863329 /* ImageFiltersViewController.m in Sources */,
 				30C90C0C28D9E4020086BBFE /* GPUImageSixInputFilter.m in Sources */,
 				30968B0F28D1BEB200716E94 /* CFileUtils.m in Sources */,
@@ -17090,7 +16592,6 @@
 				301F5A6E28C8B4B500F865A4 /* NSString+Size.m in Sources */,
 				091A8E7628B35C2100B854CC /* LDNetDiagnoService.m in Sources */,
 				300C80AF28DEFBF00046CE53 /* LSTBaseVC.m in Sources */,
-				093B0D4C28C22066005634FD /* BMKClusterAnnotationPage.m in Sources */,
 				30623C1128D320BE006300DE /* CAMediaTimingFunction+JKAdditionalEquations.m in Sources */,
 				09FB783728ACF43B00B31F8F /* BezierPathView.m in Sources */,
 				093B0D9F28C2FE39005634FD /* AFJHelpViewController.m in Sources */,
@@ -17103,7 +16604,6 @@
 				30806D1628D029A3006C0D30 /* UINavigationController+M13ProgressViewBar.m in Sources */,
 				3068A59928D4AB910000F947 /* PayService.m in Sources */,
 				300AEC5929A496AD00206C6D /* QMUIInteractiveDebugPanelItem.m in Sources */,
-				093B0D6928C22067005634FD /* BMKRoutePlanSearchView.m in Sources */,
 				09FB783828ACF43B00B31F8F /* UIImageView+Tranform3D.m in Sources */,
 				300AEC3329A496AD00206C6D /* QDColorViewController.m in Sources */,
 				30623BE128D320BE006300DE /* NSString+JKHash.m in Sources */,
@@ -17115,7 +16615,6 @@
 				0942E6CE28C1B59100AFE2F9 /* LoadPodImage.m in Sources */,
 				0942E73A28C1EB8200AFE2F9 /* NSData+CRC32.m in Sources */,
 				30092E6228F26BA90058DFDD /* MASExampleSafeAreaLayoutGuideViewController.m in Sources */,
-				093B0D5328C22067005634FD /* BMKPinAnnotationScaleView.m in Sources */,
 				305C5EE828E182B600BA908A /* TestZoomHeader2.m in Sources */,
 				300C7FAA28DEF1870046CE53 /* FeWifiManViewController.m in Sources */,
 				30454F1228F3B37400717CCE /* MASConstraint.m in Sources */,
@@ -17221,7 +16720,6 @@
 				30623BFB28D320BE006300DE /* NSObject+JKGCD.m in Sources */,
 				30454F1128F3B37400717CCE /* View+MASAdditions.m in Sources */,
 				30C90C7B28D9F98E0086BBFE /* AFJImageSampleViewController.m in Sources */,
-				093B0D7028C22067005634FD /* BMKCustomAnnotationView.m in Sources */,
 				094D8FE328B9C36400B15609 /* ConfigEntity.m in Sources */,
 				30623BC428D320BE006300DE /* NSBundle+JKAppIcon.m in Sources */,
 				30454F1428F3B37400717CCE /* MASViewAttribute.m in Sources */,
@@ -17236,7 +16734,6 @@
 				305C5F0628E1854500BA908A /* XLClockHand.m in Sources */,
 				094D8FE728B9C36400B15609 /* ClientCoreSDK.m in Sources */,
 				30623B8D28D320BD006300DE /* UIView+JKVisuals.m in Sources */,
-				093B0D5028C22067005634FD /* BMKSmoothMovingViewController.m in Sources */,
 				30E3BB6528DEC11D00E4C601 /* AFJCoreDataViewController.m in Sources */,
 				308E9E3028D08F3800A423A6 /* HQLRecorderViewController.m in Sources */,
 				094D8F7C28B9BE8700B15609 /* IMClientManager.m in Sources */,
@@ -17245,7 +16742,6 @@
 				3068A69428D5BD7F0000F947 /* DemoDanmakuModel.m in Sources */,
 				094D8E2A28B8CF3700B15609 /* SYMD5ViewController.m in Sources */,
 				094D8D6328B8BC6300B15609 /* WSLTransitionInteractiveTwo.m in Sources */,
-				093B0D4B28C22066005634FD /* BMKClusterManager.m in Sources */,
 				30968B1128D1BEB200716E94 /* HQLSandBoxPathViewController.m in Sources */,
 				300C7FA728DEF1870046CE53 /* FeEqualizerViewController.m in Sources */,
 				0941AD2E28ADEA0F00382C70 /* MSActiveConfigConfigurationState.m in Sources */,
@@ -17271,7 +16767,6 @@
 				300C7FAD28DEF1870046CE53 /* FeHourGlassViewController.m in Sources */,
 				300C7FB128DEF1870046CE53 /* FeVietNamBar.m in Sources */,
 				30623B6028D320BD006300DE /* UIImage+JKAnimatedGIF.m in Sources */,
-				093B0D7728C22067005634FD /* BMKSecondaryCataloguePage.m in Sources */,
 				30C90BCA28D9C7680086BBFE /* JFThumbnailViewController.m in Sources */,
 				094D8A6B28B878B400B15609 /* AFJRegularMatchViewController.m in Sources */,
 				300AEC6329A496AE00206C6D /* QDRippleAnimationViewController.m in Sources */,
@@ -17304,12 +16799,10 @@
 				3094392028C896A10063EAC7 /* AFJPagedFlowViewController.m in Sources */,
 				302A14CF28C987FF000AE3E4 /* SUPRegisterViewController.m in Sources */,
 				06BA2CD528B767FB0069B0F9 /* UIColor+Wonderful.m in Sources */,
-				093B0D6A28C22067005634FD /* BMKFootView.m in Sources */,
 				3099368928C8C9E000C704D0 /* YSCVoiceWaveViewController.m in Sources */,
 				300C806B28DEFA550046CE53 /* LSTPopViewBottomInputView.m in Sources */,
 				30806C1D28CDEEF8006C0D30 /* AFJProductManager.m in Sources */,
 				3068A66D28D5B3000000F947 /* WXSTransitionProperty.m in Sources */,
-				093B0D6C28C22067005634FD /* BMKPickUpPointsViewController.m in Sources */,
 				3068A59828D4AB910000F947 /* UserService.m in Sources */,
 				305C5F1628E1855B00BA908A /* AFJClockSampleViewController.m in Sources */,
 				3068A69828D5BD7F0000F947 /* DanmakuRetainer.m in Sources */,
@@ -17450,7 +16943,6 @@
 				30623BFD28D320BE006300DE /* NSObject+JKEasyCopy.m in Sources */,
 				30C90C0E28D9E4020086BBFE /* GPUImageFiveInputFilter.m in Sources */,
 				06BA2CD728B767FB0069B0F9 /* SXMarquee.m in Sources */,
-				093B0D9628C22C31005634FD /* BMKGlobalLocTabView.m in Sources */,
 				30623BA528D320BD006300DE /* UIImageView+JKLetters.m in Sources */,
 				30092E6328F26BA90058DFDD /* MASExampleAspectFitView.m in Sources */,
 				09E3334E28C0BFFE00CD1343 /* MainH5WidgetViewController.m in Sources */,
@@ -17475,7 +16967,6 @@
 				30092E6428F26BA90058DFDD /* MASExampleRemakeView.m in Sources */,
 				3010C80328D0790000E4CE69 /* Placemark.m in Sources */,
 				30806C1428CDD7F3006C0D30 /* UIViewController+ZJScrollPageController.m in Sources */,
-				093B0D6528C22067005634FD /* BMKWalkRouteDetailViewController.m in Sources */,
 				30958AFF28C87B9800B724A6 /* EFBigLineViewController.m in Sources */,
 				300C7F4828DEEAF40046CE53 /* MyTestReusableView.m in Sources */,
 				30623B7E28D320BD006300DE /* UIColor+JKWeb.m in Sources */,
@@ -17491,7 +16982,6 @@
 				30806D1528D029A3006C0D30 /* PieViewController.m in Sources */,
 				0942E6DB28C1B59100AFE2F9 /* UUID.m in Sources */,
 				090870AA28A510DC00CBEEA8 /* AFJRootViewController.m in Sources */,
-				093B0D6128C22067005634FD /* BMKBikeRouteLineTableViewCell.m in Sources */,
 				301F5A7D28C8B4B500F865A4 /* ZFOtherCell.m in Sources */,
 				303E4C9528E1767300738F5C /* AFJPMTweenViewController.m in Sources */,
 				300C81AB28E14F0B0046CE53 /* DMBaseTransition.m in Sources */,
@@ -17520,7 +17010,6 @@
 				303B166B28D32F16009F878B /* DismissingAnimationController.m in Sources */,
 				3001E86C28DC90D8005157E6 /* HidePlaceholderViewController.m in Sources */,
 				301F5A7528C8B4B500F865A4 /* ZFTableHeaderViewController.m in Sources */,
-				093B0D5728C22067005634FD /* BMKSug+POICitySearchViewController.m in Sources */,
 				30968BFC28D1DE2C00716E94 /* HQLICBCPayViewController.m in Sources */,
 				094D8A4728B86A2A00B15609 /* WHC_GestureDragPlateView.m in Sources */,
 				30623BAE28D320BD006300DE /* UIViewController+JKVisible.m in Sources */,
@@ -17543,7 +17032,6 @@
 				30E3BBBE28DEC12E00E4C601 /* CoreTeacher+CoreDataClass.m in Sources */,
 				300C819C28E14F0B0046CE53 /* CoreImageMotionBlurTransition.m in Sources */,
 				309935A728C8C42F00C704D0 /* DownLoadViewController.m in Sources */,
-				093B0D5C28C22067005634FD /* BMKTransitRoutePlanViewController.mm in Sources */,
 				300C7FA828DEF1870046CE53 /* FeLoadingIconBox.m in Sources */,
 				30623BE328D320BE006300DE /* NSString+JKRemoveEmoji.m in Sources */,
 				06AAED4028DB60010028AE90 /* fishhook.c in Sources */,
@@ -17553,7 +17041,6 @@
 				30623BBD28D320BE006300DE /* NSDictionary+JKSafeAccess.m in Sources */,
 				301F5A8928C8B4B500F865A4 /* ZFDouyinCollectionViewController.m in Sources */,
 				094D8FD928B9C36400B15609 /* QoS4SendDaemon.m in Sources */,
-				093B0D4A28C22066005634FD /* BMKCluster.m in Sources */,
 				30092E6828F26BA90058DFDD /* MASExampleBasicView.m in Sources */,
 				06CB113A28AA0812009BD8D9 /* SYAESViewController.m in Sources */,
 				094D8FDF28B9C36400B15609 /* PKeepAliveResponse.m in Sources */,
@@ -17632,12 +17119,10 @@
 				30E3BBA728DEC12E00E4C601 /* CDStudent.m in Sources */,
 				30623ACB28D320BC006300DE /* UIView+GestureCallback.m in Sources */,
 				30623B4C28D320BD006300DE /* UIView+Positioning.m in Sources */,
-				093B0D6628C22067005634FD /* BMKWalkRoutePlanViewController.mm in Sources */,
 				30E3BBBB28DEC12E00E4C601 /* CoreSnack+CoreDataClass.m in Sources */,
 				094D8FE928B9C36400B15609 /* NSUserDefaults+RMSaveCustomObject.m in Sources */,
 				300AEC8E29A496AE00206C6D /* QDStaticTableViewController.m in Sources */,
 				30623B7728D320BD006300DE /* UIButton+JKIndicator.m in Sources */,
-				093B0D5628C22067005634FD /* BMKPoiAnnotation.m in Sources */,
 				0942E6B028C1B59100AFE2F9 /* FHXHelp.m in Sources */,
 				30623B5B28D320BD006300DE /* UIImage+JKDarkMode.m in Sources */,
 				3024290328F41B1000FA034B /* SamplePermissionViewController.m in Sources */,
@@ -17671,7 +17156,6 @@
 				309936C628C8C9E000C704D0 /* DCPathCenterButton.m in Sources */,
 				0942E6A928C1B59100AFE2F9 /* FHXContext.m in Sources */,
 				30C90C1228D9E4020086BBFE /* IFSierraFilter.m in Sources */,
-				093B0D5228C22067005634FD /* BMKAnnotationScaleViewController.m in Sources */,
 				30623AD828D320BC006300DE /* UIView+Constraints.m in Sources */,
 				09F62AE728B9F29C0093BC6F /* AFJBannerViewController.m in Sources */,
 				30623B9928D320BD006300DE /* UITextView+JKPlaceHolder.m in Sources */,
@@ -17725,7 +17209,6 @@
 				300C809F28DEFA550046CE53 /* LSTLaunchMutiPopViewVC.m in Sources */,
 				0942E6EB28C1B59100AFE2F9 /* FHXAnimationProgress.m in Sources */,
 				09FB77B328AC9B9000B31F8F /* AFJSampleViewController.m in Sources */,
-				093B0D6828C22067005634FD /* BMKWalkRouteLineTableViewCell.m in Sources */,
 				3099369128C8C9E000C704D0 /* YSCReplicatorAnimationViewController.m in Sources */,
 				300C7FBA28DEF1870046CE53 /* FeHandwritingViewController.m in Sources */,
 				307FF86E28DC0A5D00D6C951 /* ListHeaderView.m in Sources */,
@@ -17739,10 +17222,8 @@
 				307FF93228DC4A7700D6C951 /* HorizontalBarChartViewController.m in Sources */,
 				300C81AC28E14F0B0046CE53 /* HUTransitionVerticalLinesAnimator.m in Sources */,
 				3094391828C88EB80063EAC7 /* AFJCDButtonViewController.m in Sources */,
-				093B0D6F28C22067005634FD /* BMKAnnotationMovingViewController.m in Sources */,
 				300C7FA028DEF1870046CE53 /* FeTenDot.m in Sources */,
 				303C6B3429C346420092980E /* AFJFlutterMessageViewController.m in Sources */,
-				093B0D7D28C22067005634FD /* BMKCustomMapController.m in Sources */,
 				30806D1B28D029A3006C0D30 /* M13ProgressViewRing.m in Sources */,
 				30163DA428D31188003D67EA /* PPNumberButtonViewController.m in Sources */,
 				300C808628DEFA550046CE53 /* LSTPopViewXibView.m in Sources */,
@@ -17763,7 +17244,6 @@
 				09FB77FB28ACF17A00B31F8F /* GyroscopeViewController.m in Sources */,
 				30623C0A28D320BE006300DE /* NSDate+JKUtilities.m in Sources */,
 				300C81AE28E14F0B0046CE53 /* HUTransitionAnimator.m in Sources */,
-				093B0D7528C22067005634FD /* BMKOverlayClickedViewController.mm in Sources */,
 				094D8F8428B9BE8700B15609 /* IMMainViewController.m in Sources */,
 				30C3A83A28DD9F8400603600 /* AFJBTPeripheralModeViewController.m in Sources */,
 				30E3BBAB28DEC12E00E4C601 /* Snack.m in Sources */,
@@ -17785,7 +17265,6 @@
 				0942E71728C1B59200AFE2F9 /* FHXMaskBtn.m in Sources */,
 				307FF87F28DC3A3C00D6C951 /* UIColor+Hexadecimal.m in Sources */,
 				0942E6F428C1B59100AFE2F9 /* AdvertiseGradientView.m in Sources */,
-				093B0D6028C22067005634FD /* BMKCustomSelectedButton.m in Sources */,
 				30163D7F28D30ED9003D67EA /* UILabel+ChangeRightAndLeftAlignment.m in Sources */,
 				30623ACE28D320BC006300DE /* UIView+Nib.m in Sources */,
 				3062375E28D3163F006300DE /* HQLCodeResignView.m in Sources */,
@@ -17829,7 +17308,6 @@
 				091A8E8528B376C100B854CC /* JsApiTestSwift.swift in Sources */,
 				30E3BBB128DEC12E00E4C601 /* CoreCoach+CoreDataProperties.m in Sources */,
 				094D8FE128B9C36400B15609 /* PLoginInfoResponse.m in Sources */,
-				093B0D6E28C22067005634FD /* BMKJumpingView.m in Sources */,
 				091A8E8828B3778100B854CC /* JsApiTest.m in Sources */,
 				300C7FA428DEF1870046CE53 /* FeHandwriting.m in Sources */,
 				309936B228C8C9E000C704D0 /* UITableViewController+YSCRefresh.m in Sources */,
@@ -17850,14 +17328,12 @@
 				30C90BC228D9C7680086BBFE /* JFThumbnailCell.m in Sources */,
 				30806C1628CDD7F3006C0D30 /* ZJCollectionView.m in Sources */,
 				094D8F8528B9BE8700B15609 /* IMLoginViewController.m in Sources */,
-				093B0D4928C22066005634FD /* BMKClusterQuadtree.m in Sources */,
 				307FF87728DC358100D6C951 /* AFJEmptyDetailTableViewController.m in Sources */,
 				0908711F28A63AA500CBEEA8 /* APLDetailViewController.m in Sources */,
 				06040E5828DE125D00863329 /* MultipeerConnectivityViewController.m in Sources */,
 				309936CA28C8C9E000C704D0 /* TransitionAnimationController.m in Sources */,
 				3010C84828D0827C00E4CE69 /* HQLHotCityTableViewCell.m in Sources */,
 				0942E72128C1B59200AFE2F9 /* NetworkMonitor.m in Sources */,
-				093B0D9528C22C31005634FD /* BMKGlobalLocInfoView.m in Sources */,
 				300C7FAE28DEF1870046CE53 /* FeThreeDotGlowViewController.m in Sources */,
 				30092E6A28F26BA90058DFDD /* MASExampleDebuggingView.m in Sources */,
 				0942E71D28C1B59200AFE2F9 /* FHXAuthorizationManager.m in Sources */,
@@ -17886,7 +17362,6 @@
 				09FB77FA28ACF17A00B31F8F /* LightSensitiveViewController.m in Sources */,
 				0942E6D928C1B59100AFE2F9 /* LocationManager.m in Sources */,
 				3068A61D28D5AE260000F947 /* WAAVSEDubbedCommand.m in Sources */,
-				093B0D5828C22067005634FD /* BMKSugInfoCell.m in Sources */,
 				0942E6C128C1B59100AFE2F9 /* GetVC.m in Sources */,
 				30806CAD28CEBFF8006C0D30 /* AFJLogManager.m in Sources */,
 				06040E4828DE125D00863329 /* MapDirectionsViewController.m in Sources */,
@@ -17946,7 +17421,6 @@
 				305C5EE628E182B600BA908A /* TableViewExampleVC.m in Sources */,
 				091A8E7228B35C2100B854CC /* LDNetTimer.m in Sources */,
 				30B0F74C28E1512E0059605D /* TTMDetailViewController.m in Sources */,
-				093B0D6728C22067005634FD /* BMKWalkRouteDetailModel.m in Sources */,
 				30454F0E28F3B37400717CCE /* MASConstraintMaker.m in Sources */,
 				307FF93528DC4A7700D6C951 /* ColoredLineChartViewController.m in Sources */,
 				300AEC6429A496AE00206C6D /* QDAllAnimationViewController.m in Sources */,
@@ -17972,7 +17446,6 @@
 				300AEC6B29A496AE00206C6D /* QDDropdownNotificationViewController.m in Sources */,
 				309936C528C8C9E000C704D0 /* DCPathItemButton.m in Sources */,
 				3062375828D3163F006300DE /* SelwynExpandableTextView.m in Sources */,
-				093B0D7128C22067005634FD /* BMKCustomAnnotationViewController.m in Sources */,
 				301F5A6828C8B4B500F865A4 /* ZFNormalViewController.m in Sources */,
 				300AEC7029A496AE00206C6D /* QDThemeViewController.m in Sources */,
 				30E3BBC028DEC12E00E4C601 /* CoreWorker+CoreDataClass.m in Sources */,
@@ -18015,7 +17488,6 @@
 				30623C0F28D320BE006300DE /* MKMapView+JKBetterMaps.m in Sources */,
 				091A92AC28B4C70200B854CC /* GoodDetailController.m in Sources */,
 				0942E6F528C1B59100AFE2F9 /* AdvertiseCountDownNsObject.m in Sources */,
-				093B0D7F28C22067005634FD /* BMKShowOutsideMapViewController.m in Sources */,
 				3068A62328D5B2AD0000F947 /* AFJTransAnimation2ViewController.m in Sources */,
 				30623BB928D320BE006300DE /* UITextField+JKInputLimit.m in Sources */,
 				30E3BBB828DEC12E00E4C601 /* CorePlayer+CoreDataProperties.m in Sources */,
@@ -18074,7 +17546,6 @@
 				30968B2328D1C10200716E94 /* HQLKeyArchiverViewController.m in Sources */,
 				0942E6FA28C1B59100AFE2F9 /* LoadingGif.m in Sources */,
 				300C819228E14F0B0046CE53 /* BouncePresentTransition.m in Sources */,
-				093B0D6D28C22067005634FD /* BMKPoiInfoCell.m in Sources */,
 				305B3C9028F29816008A2F9C /* ShopCarBtn.m in Sources */,
 				3068A66B28D5B3000000F947 /* WXSTransitionManager+SystermAnimation.m in Sources */,
 				307FF93728DC4A7700D6C951 /* LineChart1ViewController.m in Sources */,
@@ -18123,7 +17594,6 @@
 				06040E4F28DE125D00863329 /* SpeechSynthesisViewController.m in Sources */,
 				0942E71928C1B59200AFE2F9 /* MoveBtnVC.m in Sources */,
 				30623C0828D320BE006300DE /* NSDate+JKInternetDateTime.m in Sources */,
-				093B0D5A28C22067005634FD /* BMKTransitRouteLineModel.m in Sources */,
 				06A82E5128C441F500D94AB8 /* AFJCutterViewController.m in Sources */,
 				3099367E28C8C9E000C704D0 /* MCFireworksButton.m in Sources */,
 				300AEC3E29A496AD00206C6D /* QDChangeNavBarStyleViewController.m in Sources */,
@@ -18172,7 +17642,6 @@
 				300AECBC29A4A5DB00206C6D /* AFJRootListViewController.m in Sources */,
 				30623C0328D320BE006300DE /* NSObject+JKRuntime.m in Sources */,
 				300C7F4928DEEAF40046CE53 /* ZLMultilineTextCell.m in Sources */,
-				093B0D4D28C22066005634FD /* BMKShotView.m in Sources */,
 				300C807528DEFA550046CE53 /* LSTPopViewTVViewCell.m in Sources */,
 				30623B9728D320BD006300DE /* UITextView+JKSelect.m in Sources */,
 				300C809328DEFA550046CE53 /* LSTPopViewPriorityVC.m in Sources */,
@@ -18190,7 +17659,6 @@
 				09F62AF728B9F34A0093BC6F /* ZYBannerCell.m in Sources */,
 				094D8A4B28B86A2A00B15609 /* WHC_CircleView.m in Sources */,
 				30454F0D28F3B37400717CCE /* MASCompositeConstraint.m in Sources */,
-				093B0D5428C22067005634FD /* BMKMultiPaopaoViewController.m in Sources */,
 				307CE37728DC964E00687F63 /* AFJSphereViewController.m in Sources */,
 				30623BEF28D320BE006300DE /* NSUserDefaults+JKiCloudSync.m in Sources */,
 				300AEC9A29A496AE00206C6D /* QMUIConfigurationTemplate.m in Sources */,

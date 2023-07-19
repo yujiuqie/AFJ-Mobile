@@ -235,12 +235,12 @@ target 'AFJ-iOS' do
   
 #  pod 'CYLTabBarController/Lottie', '~> 1.29.0'  # 依赖Lottie库
   
-  pod 'BaiduMapKit/Map'
-  pod 'BaiduMapKit/Search'
-  pod 'BaiduMapKit/Base'
-  pod 'BaiduMapKit/Utils'
-  pod 'BaiduMapKit/Cloud'
-  pod 'BMKLocationKit'
+#  pod 'BaiduMapKit/Map'
+#  pod 'BaiduMapKit/Search'
+#  pod 'BaiduMapKit/Base'
+#  pod 'BaiduMapKit/Utils'
+#  pod 'BaiduMapKit/Cloud'
+#  pod 'BMKLocationKit'
   
   pod 'UMCommon'
   pod 'UMDevice'

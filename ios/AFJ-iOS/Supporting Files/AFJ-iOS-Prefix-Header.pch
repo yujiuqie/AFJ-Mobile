@@ -48,11 +48,11 @@
     #import "ThirdParty.h"
     #import "ColorHeader.h"
     #import "FontHeader.h"
-    #import <BaiduMapAPI_Base/BMKBaseComponent.h>
-    #import <BaiduMapAPI_Map/BMKMapComponent.h>
-    #import <BaiduMapAPI_Cloud/BMKCloudSearchComponent.h>
-    #import <BaiduMapAPI_Search/BMKSearchComponent.h>
-    #import <BaiduMapAPI_Utils/BMKUtilsComponent.h>
+//    #import <BaiduMapAPI_Base/BMKBaseComponent.h>
+//    #import <BaiduMapAPI_Map/BMKMapComponent.h>
+//    #import <BaiduMapAPI_Cloud/BMKCloudSearchComponent.h>
+//    #import <BaiduMapAPI_Search/BMKSearchComponent.h>
+//    #import <BaiduMapAPI_Utils/BMKUtilsComponent.h>
     #import "LocationManager.h"
     #import "BaseNetWork.h"
     #import "JSDVCRouter.h"
